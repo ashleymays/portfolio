@@ -12,21 +12,21 @@
 // });
 
 
-let lastScrollTop, currentScrollTop = 0;
+// let lastScrollTop, currentScrollTop = 0;
 
-$(document).ready(function() {
-    $(window).scroll(function() {
-        lastScrollTop = currentScrollTop;
-        currentScrollTop = window.scrollY;
+// $(document).ready(function() {
+//     $(window).scroll(function() {
+//         lastScrollTop = currentScrollTop;
+//         currentScrollTop = window.scrollY;
         
-        // user has scrolled up -> show header;
-        if (currentScrollTop <= lastScrollTop) {
-            $("header").slideDown();
-        }
+//         // user has scrolled up -> show header;
+//         if (currentScrollTop <= lastScrollTop) {
+//             $("header").slideDown();
+//         }
 
-        // user has scrolled down -> hide header
-        else {
-            $("header").slideUp();
-        }
-    })
-})
+//         // user has scrolled down -> hide header
+//         else {
+//             $("header").slideUp();
+//         }
+//     })
+// })
