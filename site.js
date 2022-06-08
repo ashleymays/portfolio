@@ -30,3 +30,8 @@
 //         }
 //     })
 // })
+
+window.onscroll = function(e) {
+    let viewportHeight = window.innerHeight;
+    window.scrollBy(0, viewportHeight);
+}

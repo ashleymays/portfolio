@@ -9,7 +9,7 @@ html, body {
 
 body {
     font-size: 16px;
-    background-color: #e4e4e4;
+    background-color: #101010;
 }
 
 h1, h2, h3, h4, h5, h6, p, a {
@@ -18,67 +18,56 @@ h1, h2, h3, h4, h5, h6, p, a {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    color: #1a1a1a;
+    color: #c9c9c9;
 }
 
-h1, h2, h3 {
-    font-family: 'DM Sans', sans-serif;
+h1, h2, h3, a {
+    font-family: 'Mulish', sans-serif;
     font-weight: 400;
 }
 
-h1, h2 {
-    font-size: 3.65rem;
-    margin-bottom: 8vh;
+h1 {
+    font-size: 3.25rem;
 }
 
 h2 {
-    padding-right: 3.5vw;
-    white-space: nowrap;
-}
-
-#about > div, #work > div, #contact > div {
-    display: flex;
-    flex-flow: row;
-    align-items: center;
-}
-
-.line {
-    background-color: #1a1a1a;
-    height: 0.275vh;
-    width: 100%;
+    font-size: 3rem;
+    line-height: 0;
 }
 
 h3 {
-    font-size: 3rem;
+    font-size: 1.5rem;
     line-height: 1em;
 }
 
 p, a {
-    font-family: 'Roboto', sans-serif;
     text-decoration: none;
     background: none;
 }
 
 p {
-    font-size: 1.25rem;
-    font-weight: 400;
+    font: 400 1rem 'Open Sans';
     line-height: 1.5em;
-    color: #555;
+    color: #5a5a5a;
 }
 
-header > nav, #home, #about, #work, #contact, footer {
+a {
+    text-transform: uppercase;
+}
+
+nav, #home, #about, #work, #contact, footer {
     margin: 0 9.5vw;
 }
 
-#about > div, #work > div, #contact > div {
-    width: 100%;
+header, #contact, footer {
+    display: none !important;
 }
 
 header {
     width: 100%;
     z-index: 1;
-    /* position: fixed;
-    top: 0; */
+    position: fixed;
+    top: 0;
     padding: 1.5vh 0;
     border-top: none;
     border-left: none;
@@ -96,10 +85,11 @@ header > nav {
 }
 
 header a {
-    font-size: 0.95rem;
+    font-size: 0.85rem;
     color: inherit;
     position: relative;
     padding: 0.5vh 0.1vw;
+    color: #778d9b;
 }
 
 header a::before {
@@ -107,11 +97,11 @@ header a::before {
     display: inline-block;
     height: 0.22vh;
     padding: 0;
-    background-color: #1a1a1a;
+    background-color: #778d9b;
     position: absolute;
-    bottom: 0;
+    top: 50%;
     left: 0;
-    transition: padding 0.15s;
+    transition: padding 0.4s;
     transition-timing-function: ease;
 }
 
@@ -125,11 +115,7 @@ header > nav > div {
 }
 
 header > nav > div > a {
-    margin-right: 3.5vw;
-}
-
-header {
-    visibility: hidden;
+    margin-right: 4vw;
 }
 
 #home {
@@ -137,47 +123,92 @@ header {
 }
 
 #home h1 {
-    /* margin: 19vh 0 0; */
-    margin: 7.25vh 0 0;
+    margin: 35vh 0 0;
     line-height: 1.5em;
+    width: 85%;
 }
 
 #about {
     height: 65vh;
+    display: flex;
+    flex-flow: row;
+    align-items: flex-start;
+    justify-content: space-between;
 }
 
 #about a {
     font-size: 1.25rem;
-    color: #a3c6c4;
+}
+
+#about p {
+    width: 35vw;
 }
 
 #work {
     display: flex;
-    flex-flow: column;
-    padding: 15vh 0;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20vh 0;
+}
+
+#work h2 {
+    margin-bottom: 10vh;
+}
+
+#work > div {
+    width: 26vw;
 }
 
 #work section {
     display: flex;
     flex-flow: column;
-    width: 62vw;
-    align-self: flex-end;
+    align-items: flex-end;
 }
 
 #work article {
-    display: flex;
-    flex-flow: row;
-    width: 100%;
-    align-items: flex-start;
-    padding: 0 2vw 4vh;
+    width: 39vw;
+    height: 23.5vh;
+    margin-bottom: 3vh;
+    padding: 1.25vh 2.15vw;
+    border: 2px solid transparent;
+    border-radius: 0.65vw;
+    background-color: #161616;
+    transition-duration: 0.35s;
 }
 
-#work article div {
-    margin-left: 6vw;
+#work article:hover {
+    box-shadow: 0 0 25px rgba(0,0,0,0.2), 10px 15px 25px rgba(0,0,0,0.4);
+}
+
+#work h3 {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#work article > div {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#work a {
+   margin-left: 1.1vw;
+}
+
+#work img {
+    width: 1.25vw;
 }
 
 #contact { 
     height: 65vh;
+}
+
+#contact h2 {
+    display: none !important;
 }
 
 footer {
@@ -189,6 +220,6 @@ footer p {
 }
 
 footer p a {
-    color: #1a1a1a;
+    color: #778d9b;
     font-size: inherit;
 }
