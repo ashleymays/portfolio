@@ -12,115 +12,111 @@
     <link rel="preload" as="image" href="https://drive.google.com/uc?export=view&id=1xoG2c528d7eWrkwamdFH38-_9Dfqqmrk">
     <link rel="preload" as="image" href="https://drive.google.com/uc?export=view&id=1trCEDGnYItkj8GoziGblh8sU5YqxLp42">
     <link rel="stylesheet" href="site.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script type="text/javascript" src="site.js"></script>
 </head>
 <body>
-    <!--Header-->
-    <header>
-        <nav>
-            <div>
-                <a href="#about">About</a>
-                <a href="#work">Work</a>
-                <a href="#contact">Contact</a>
-                <a target="_blank" href="https://drive.google.com/file/d/1YCQ58TPJrq8THzxngMX1nwb7-bi9HNEi/view?usp=sharing">Resume</a>
-            </div>
-            <a href="#">Ashley Mays</a>
-        </nav>
-    </header>
-
+    <main>
     <!--Hero Section-->
-    <section id="home">
-        <h1>
-            Hi, I’m Ashley. <br /> I'm a software engineer.
-        </h1>
-    </section>
-
-    <!--About Section-->
-    <section id="about">
-        <h2>About Me</h2>
-        <p>            
-            I started programming in 2019 to satisfy a degree requirement. 
-            I was nervous to take the course because I had absolutely no 
-            background in computer science at the time and programming 
-            looked far too difficult. When I started the class, though, 
-            it became my new favorite hobby, and in 2021 I decided to pursue 
-            software development full-time. <br/><br/>
-            My ultimate goal is to use my background in mathematics to create 
-            software that benefits humanity. I’d also like to learn more about 
-            embedded systems and machine learning, and I’d like the freedom to 
-            continuously improve my developing capabilities.
-        </p>
-    </section>
-
-    <!--Work Section-->
-    <section id="work">
-        <div>
-            <h2>My Work</h2>
-            <p>
-                Some projects that I'm proud of. Each of these projects taught me something new, whether
-                it be new software, a new framework, or how to manage my time properly.
-            </p>
-        </div>
-        <section>
-            <article>
-                <h3>
-                    Login and Registration System
-                    <div>
-                        <a target="_blank" href="">
-                            <img src="https://drive.google.com/uc?export=view&id=1M_PwLPc5PoucIBUQH5SxKalXbWRjMYVd" />
-                        </a>
-                        <a target="_blank" href="">
-                            <img src="https://drive.google.com/uc?export=view&id=1SnOuLdZqou2NIsUmhAQ6V8rT0_xgR3v7" />
-                        </a>
-                    </div>
-                </h3>
-                <p>
-                    A login and registration system written in modern C++.
-                </p>
-            </article>
-
-            <article>
-                <h3>
-                    Open Source Contribution
-                    <div>
-                        <a target="_blank" href="">
-                            <img src="https://drive.google.com/uc?export=view&id=1M_PwLPc5PoucIBUQH5SxKalXbWRjMYVd" />
-                        </a>
-                        <a target="_blank" href="">
-                            <img src="https://drive.google.com/uc?export=view&id=1SnOuLdZqou2NIsUmhAQ6V8rT0_xgR3v7" />
-                        </a>
-                    </div>
-                </h3>
-                <p>
-                    I added the class representation of a circular singly linked list 
-                    to an open source repository on data structures and algorithms.
-                </p>
-            </article>
-
-            <article>
-                <h3>
-                    Path
-                    <div>
-                        <a target="_blank" href="">
-                            <img src="https://drive.google.com/uc?export=view&id=1M_PwLPc5PoucIBUQH5SxKalXbWRjMYVd" />
-                        </a>
-                        <a target="_blank" href="">
-                            <img src="https://drive.google.com/uc?export=view&id=1SnOuLdZqou2NIsUmhAQ6V8rT0_xgR3v7" />
-                        </a>
-                    </div>
-                </h3>
-                <p>
-                    A game based on Hamiltonian paths made with Unity3D and Blender.
-                </p>
-            </article>
+        <section id="home">
+            <div class="container">
+                <h1>
+                    Hi, I’m Ashley. <br /> I'm a software engineer.
+                </h1>
+            </div>
         </section>
-    </section>
 
-    <!--Contact Section-->
-    <section id="contact">
-        <h2>Contact Me</h2>
-    </section>
+        <!--About Section-->
+        <section id="about">
+            <div class="container">
+                <h2>About Me</h2>
+                <p>            
+                    I started programming in 2019 to satisfy a degree requirement. 
+                    I was nervous to take the course because I had absolutely no 
+                    background in computer science at the time and programming 
+                    looked far too difficult. When I started the class, though, 
+                    it became my new favorite hobby, and in 2021 I decided to pursue 
+                    software development full-time. <br/><br/>
+                    My ultimate goal is to use my background in mathematics to create 
+                    software that benefits humanity. I’d also like to learn more about 
+                    embedded systems and machine learning, and I’d like the freedom to 
+                    continuously improve my developing capabilities.
+                </p>
+            </div>
+        </section>
+
+        <!--Work Section-->
+        <section id="work">
+            <div class="container">
+                <div class="work__title">
+                    <h2>My Work</h2>
+                    <p>
+                        Some projects that I'm proud of. Each of these projects taught me something new, whether
+                        it be new software, a new framework, or how to manage my time properly.
+                    </p>
+                </div>
+                <section>
+                    <article>
+                        <h3>
+                            Login and Registration System
+                            <div>
+                                <a target="_blank" href="">
+                                    <img src="https://drive.google.com/uc?export=view&id=1M_PwLPc5PoucIBUQH5SxKalXbWRjMYVd" />
+                                </a>
+                                <a target="_blank" href="">
+                                    <img src="https://drive.google.com/uc?export=view&id=1SnOuLdZqou2NIsUmhAQ6V8rT0_xgR3v7" />
+                                </a>
+                            </div>
+                        </h3>
+                        <p>
+                            A login and registration system written in modern C++.
+                        </p>
+                    </article>
+
+                    <article>
+                        <h3>
+                            Open Source Contribution
+                            <div>
+                                <a target="_blank" href="">
+                                    <img src="https://drive.google.com/uc?export=view&id=1M_PwLPc5PoucIBUQH5SxKalXbWRjMYVd" />
+                                </a>
+                                <a target="_blank" href="">
+                                    <img src="https://drive.google.com/uc?export=view&id=1SnOuLdZqou2NIsUmhAQ6V8rT0_xgR3v7" />
+                                </a>
+                            </div>
+                        </h3>
+                        <p>
+                            I added the class representation of a circular singly linked list 
+                            to an open source repository on data structures and algorithms.
+                        </p>
+                    </article>
+
+                    <article>
+                        <h3>
+                            Path
+                            <div>
+                                <a target="_blank" href="">
+                                    <img src="https://drive.google.com/uc?export=view&id=1M_PwLPc5PoucIBUQH5SxKalXbWRjMYVd" />
+                                </a>
+                                <a target="_blank" href="">
+                                    <img src="https://drive.google.com/uc?export=view&id=1SnOuLdZqou2NIsUmhAQ6V8rT0_xgR3v7" />
+                                </a>
+                            </div>
+                        </h3>
+                        <p>
+                            A game based on Hamiltonian paths made with Unity3D and Blender.
+                        </p>
+                    </article>
+                </section>
+            </div>
+        </section>
+
+        <!--Contact Section-->
+        <section id="contact">
+            <div class="container">
+                <h2>Contact Me</h2>
+            </div>
+        </section>
+    </main>
 
     <!--Footer-->
     <footer>

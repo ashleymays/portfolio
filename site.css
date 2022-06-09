@@ -7,9 +7,20 @@ html, body {
     width: 100%;
 }
 
-body {
+main {
     font-size: 16px;
     background-color: #101010;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
 }
 
 h1, h2, h3, h4, h5, h6, p, a {
@@ -59,77 +70,21 @@ nav, #home, #about, #work, #contact, footer {
     margin: 0 9.5vw;
 }
 
-header, #contact, footer {
+#home, #about, #work, #contact {
+    height: 100vh;
+    scroll-snap-align: start;
+}
+
+#contact, footer {
     display: none !important;
 }
 
-header {
-    width: 100%;
-    z-index: 1;
-    position: fixed;
-    top: 0;
-    padding: 1.5vh 0;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    border-bottom: 1px solid transparent;
-    background-color: inherit;
-}
-
-header > nav {
-    display: flex;
-    flex-flow: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1vh 0;
-}
-
-header a {
-    font-size: 0.85rem;
-    color: inherit;
-    position: relative;
-    padding: 0.5vh 0.1vw;
-    color: #778d9b;
-}
-
-header a::before {
-    content: "";
-    display: inline-block;
-    height: 0.22vh;
-    padding: 0;
-    background-color: #778d9b;
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transition: padding 0.4s;
-    transition-timing-function: ease;
-}
-
-header a:hover::before {
-    padding: 0 50%;
-}
-
-header > nav > div {
-    display: flex;
-    flex-flow: row;
-}
-
-header > nav > div > a {
-    margin-right: 4vw;
-}
-
-#home {
-    height: 85vh;
-}
-
 #home h1 {
-    margin: 35vh 0 0;
     line-height: 1.5em;
     width: 85%;
 }
 
 #about {
-    height: 65vh;
     display: flex;
     flex-flow: row;
     align-items: flex-start;
@@ -148,7 +103,6 @@ header > nav > div > a {
     display: flex;
     flex-flow: row;
     justify-content: space-between;
-    align-items: center;
     padding: 20vh 0;
 }
 
@@ -156,7 +110,7 @@ header > nav > div > a {
     margin-bottom: 10vh;
 }
 
-#work > div {
+.work__title {
     width: 26vw;
 }
 
@@ -201,10 +155,6 @@ header > nav > div > a {
 
 #work img {
     width: 1.25vw;
-}
-
-#contact { 
-    height: 65vh;
 }
 
 #contact h2 {
