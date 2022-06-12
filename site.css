@@ -7,14 +7,17 @@ html, body {
     width: 100%;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-size: 16px;
     background-color: #121212;
 }
 
 main {
-    padding: 0 13vw;
-    scroll-behavior: smooth;
+    padding: 0 12vw;
 }
 
 
@@ -31,6 +34,7 @@ h1, h2, h3, h4, h5, h6, p, a {
 h1 {
     font-size: 4.5rem;
     font-weight: 400;
+    margin-top: 35vh;
 }
 
 h2 {
@@ -128,7 +132,8 @@ nav a:hover::after {
     display: flex;
     flex-flow: row;
     justify-content: space-between;
-    padding: 20vh 0;
+    margin: 16vh 0;
+    padding: 4vh 0;
 }
 
 #home {
@@ -139,26 +144,25 @@ nav a:hover::after {
     position: relative;
 }
 
-#home h1 {
-    margin: 35vh 0 0;
-}
-
-#home img {
+#home a {
     position: absolute;
     bottom: 7.5%;
     left: 50%;
     transform: translateX(-50%);
-    width: 2.35em;
     transform: rotateZ(90deg);
-    animation: scrollDown 0.725s ease-out infinite alternate;
+    animation: scrollDown 0.7225s ease-out infinite alternate;
+}
+
+#home img {
+    width: 2.3rem;
 }
 
 @keyframes scrollDown {
     from {
-        bottom: 6.25%;
+        bottom: 6.75%;
     }
     to {
-        bottom: 8.5%;
+        bottom: 8.75%;
     }
 }
 
@@ -232,7 +236,23 @@ footer a {
     transition-duration: 0.35s;
 }
 
-/* SMALLER MOBILE DEVICES */
+/* SUPER TINY STUFF */
+@media screen and (max-width: 320px) {
+    h1 {
+        font-size: 2.475rem;
+        margin-top: 14vh;
+    }
+}
+
+/* MOST SMALLER MOBILE DEVICES */
+@media screen and (min-width: 321px) and (max-width: 767px) {
+    h1 {
+        font-size: 3.2rem;
+        margin-top: 20.5vh;
+    }
+}
+
+/* ALL SMALLER MOBILE DEVICES */
 @media screen and (max-width: 767px) {
     main {
         padding: 0 9vw;
@@ -267,6 +287,10 @@ footer a {
 @media screen and (min-width: 768px) and (max-width: 1200px) {
     main {
         padding: 0 8vw;
+    }
+
+    #home img {
+        width: 2.75rem;
     }
 
     #about div, #contact div {
