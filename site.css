@@ -17,34 +17,24 @@ body {
 }
 
 main {
-    padding: 0 12vw;
+    padding: 0 11vw;
 }
 
 
 h1, h2, h3, h4, h5, h6, p, a, footer {
     font-family: 'Mulish', sans-serif;
     background: transparent;
-    color: #c0c0c0;
+    color: #d5d5d5;
 }
 
 h1, h2, h3, h4, h5, h6, p, a {
     padding: 0;
 }
 
-h3, p, a {
-    font-weight: 300;
-    font-size: 1.85rem;
-}
-
-p, a {
-    text-decoration: none;
-    background: transparent;
-}
-
 h1 {
     font-size: 4.5rem;
     font-weight: 400;
-    margin-top: 30vh;
+    margin-top: 35vh;
 }
 
 h2 {
@@ -54,15 +44,19 @@ h2 {
     line-height: 0;
 }
 
-h3 {
-    margin: 0;
-    font-weight: 400;
-    font-size: 4rem;
+h3, p, a {
+    font-weight: 300;
+    font-size: 1.85rem;
 }
 
 h4 {
-    font-size: 1.125rem;
+    font-size: 4.5rem;
     font-weight: 400;
+}
+
+p, a {
+    text-decoration: none;
+    background: transparent;
 }
 
 a {
@@ -80,10 +74,71 @@ span {
     align-items: baseline;
 }
 
+span img {
+    display: inline-block;
+    width: 1em;
+    margin-left: 0.21em;
+    transform: rotateZ(-45deg);
+    transition-duration: 0.3s;
+}
+
+a:hover span img {
+    margin: 0 0 0.7em 0.7em;
+}
+
+header, nav, nav div {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    display: none;
+}
+
+nav {
+    padding: 2.75vh 9vw;
+    width: 100%;
+}
+
+nav div {
+    width: 25%;
+}
+
+nav a {
+    font-size: 0.875rem;
+    padding: 1.5vh 0;
+    position: relative;
+}
+
+nav a::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 0.15vh;
+    width: 0;
+    background-color: #d5d5d5;
+    transition-duration: 0.75s;
+}
+
+nav a:hover::after {
+    width: 100%;
+    transition-duration: 0.35s;
+}
+
 #about, #work, #contact {
     display: flex;
     flex-flow: row;
     justify-content: space-between;
+    margin: 16vh 0;
+    padding: 4vh 0;
 }
 
 #home {
@@ -120,11 +175,6 @@ span {
     align-items: baseline;
 }
 
-#about {
-    margin: 30vh 0;
-    padding: 10vh 0;
-}
-
 #about div {
     width: 52%;
 }
@@ -137,43 +187,62 @@ span {
     margin-top: 15vh;
 }
 
-#about span img {
-    display: inline-block;
-    width: 1em;
-    margin-left: 0.21em;
-    transform: rotateZ(-45deg);
-    transition-duration: 0.3s;
-}
-
-#about a:hover span img {
-    margin: 0 0 0.7em 0.7em;
-}
-
 #work {
     display: flex;
-    flex-flow: column;
-    align-items: flex-start;
-    margin: 10vh 0;
+    flex-flow: row;
+    justify-content: space-between;
+}
+
+#work section {
+    width: 52%;
 }
 
 #work article {
-    margin: 15vh 0 25vh;
-    display: block;
-    width: max-content;
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    width: 100%;
+    height: max-content;
+    margin-bottom: 12vh;
 }
 
-#work article:last-child {
-    text-align: right;
-    align-self: flex-end;
+#work div {
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+}
+
+#work h4 {
+    margin: 0 0 5vh;
 }
 
 #work a {
     display: block !important;
+}
+
+#work a::after {
+    content: "";
+    display: block;
+    height: 0.05em;
+    width: 0;
+    margin-top: 0.15vh;
+    background-color: #d5d5d5;
     transition-duration: 0.25s;
 }
 
+#work a:hover::after {
+    width: 100%;
+}
+
+#work p {
+    font-size: 1.25rem;
+    font-weight: 300;
+    width: 100%;
+    margin-top: 6vh;
+}
+
 #contact {
-    margin: 15vh 0;
+    padding: 5vh 0;
 }
 
 #contact div {
@@ -183,19 +252,6 @@ span {
 #contact div a {
     margin-bottom: 1.5em;
 }
-
-#contact span img {
-    display: inline-block;
-    width: 1em;
-    margin-left: 0.21em;
-    transform: rotateZ(-45deg);
-    transition-duration: 0.3s;
-}
-
-#contact a:hover span img {
-    margin: 0 0 0.7em 0.7em;
-}
-
 
 footer {
     display: block;
@@ -217,6 +273,23 @@ footer a {
         font-size: 2.475rem;
         margin-top: 14vh;
     }
+
+    h4 {
+        font-size: 2.475rem;
+    }
+
+    #work a {
+        font-size: 2rem;
+        width: 100%;
+    }
+
+    #work a::after {
+        height: 0.075em;
+    }
+
+    #work p {
+        margin-top: 25vh;
+    }
 }
 
 /* MOST SMALLER MOBILE DEVICES */
@@ -224,6 +297,14 @@ footer a {
     h1 {
         font-size: 3.2rem;
         margin-top: 20.5vh;
+    }
+
+    h4 {
+        font-size: 3.2rem;
+    }
+
+    #work p {
+        margin-top: 12vh;
     }
 }
 
@@ -233,7 +314,7 @@ footer a {
         padding: 0 9vw;
     }
 
-    #about, #contact {
+    #about, #contact, #work {
         flex-flow: column;
     }
 
@@ -241,15 +322,32 @@ footer a {
         width: 100%;
     }
 
+    #work section {
+        width: 100%;
+    }
+
+    #work h2 {
+        display: none !important;
+    }
+
+    #work a {
+        font-size: 2rem;
+        width: 100%;
+    }
+
+    #work a::after {
+        height: 0.075em;
+    }
+
     h2 {
         margin-bottom: 10vh;
     }
 
-    h3, p, a {
+    p, a {
         font-size: 1.1rem;
     }
 
-    #about span img, #contact span img {
+    span img {
         width: 1em;
     }
 
