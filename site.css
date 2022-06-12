@@ -24,24 +24,11 @@ main {
 h1, h2, h3, h4, h5, h6, p, a, footer {
     font-family: 'Mulish', sans-serif;
     background: transparent;
-    color: #c9c9c9;
+    color: #c0c0c0;
 }
 
 h1, h2, h3, h4, h5, h6, p, a {
     padding: 0;
-}
-
-h1 {
-    font-size: 4.5rem;
-    font-weight: 400;
-    margin-top: 35vh;
-}
-
-h2 {
-    font-size: 1.125rem;
-    font-weight: 400;
-    text-transform: uppercase;
-    line-height: 0;
 }
 
 h3, p, a {
@@ -52,6 +39,30 @@ h3, p, a {
 p, a {
     text-decoration: none;
     background: transparent;
+}
+
+h1 {
+    font-size: 4.5rem;
+    font-weight: 400;
+    margin-top: 30vh;
+}
+
+h2 {
+    font-size: 1.125rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 0;
+}
+
+h3 {
+    margin: 0;
+    font-weight: 400;
+    font-size: 4rem;
+}
+
+h4 {
+    font-size: 1.125rem;
+    font-weight: 400;
 }
 
 a {
@@ -69,71 +80,10 @@ span {
     align-items: baseline;
 }
 
-span img {
-    display: inline-block;
-    width: 1em;
-    margin-left: 0.21em;
-    transform: rotateZ(-45deg);
-    transition-duration: 0.3s;
-}
-
-a:hover span img {
-    margin: 0 0 0.7em 0.7em;
-}
-
-header, nav, nav div {
-    display: flex;
-    flex-flow: row;
-    align-items: center;
-    justify-content: space-between;
-}
-
-header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1;
-    display: none;
-}
-
-nav {
-    padding: 2.75vh 9vw;
-    width: 100%;
-}
-
-nav div {
-    width: 25%;
-}
-
-nav a {
-    font-size: 0.875rem;
-    padding: 1.5vh 0;
-    position: relative;
-}
-
-nav a::after {
-    content: "";
-    display: block;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    height: 0.15vh;
-    width: 0;
-    background-color: #c9c9c9;
-    transition-duration: 0.75s;
-}
-
-nav a:hover::after {
-    width: 100%;
-    transition-duration: 0.35s;
-}
-
 #about, #work, #contact {
     display: flex;
     flex-flow: row;
     justify-content: space-between;
-    margin: 16vh 0;
-    padding: 4vh 0;
 }
 
 #home {
@@ -170,6 +120,11 @@ nav a:hover::after {
     align-items: baseline;
 }
 
+#about {
+    margin: 30vh 0;
+    padding: 10vh 0;
+}
+
 #about div {
     width: 52%;
 }
@@ -182,36 +137,43 @@ nav a:hover::after {
     margin-top: 15vh;
 }
 
+#about span img {
+    display: inline-block;
+    width: 1em;
+    margin-left: 0.21em;
+    transform: rotateZ(-45deg);
+    transition-duration: 0.3s;
+}
+
+#about a:hover span img {
+    margin: 0 0 0.7em 0.7em;
+}
+
 #work {
-    display: none;
-}
-
-#work section {
-    width: 60%;
-}
-
-#work article {
-    content: "";
-    display: flex;
-    flex-flow: row;
-    align-items: flex-start;
-    width: 100%;
-    height: max-content;
-    margin-bottom: 10vh;
-}
-
-#work div {
     display: flex;
     flex-flow: column;
     align-items: flex-start;
+    margin: 10vh 0;
 }
 
-#work p {
-    display: none;
+#work article {
+    margin: 15vh 0 25vh;
+    display: block;
+    width: max-content;
+}
+
+#work article:last-child {
+    text-align: right;
+    align-self: flex-end;
+}
+
+#work a {
+    display: block !important;
+    transition-duration: 0.25s;
 }
 
 #contact {
-    padding: 15vh 0;
+    margin: 15vh 0;
 }
 
 #contact div {
@@ -221,6 +183,19 @@ nav a:hover::after {
 #contact div a {
     margin-bottom: 1.5em;
 }
+
+#contact span img {
+    display: inline-block;
+    width: 1em;
+    margin-left: 0.21em;
+    transform: rotateZ(-45deg);
+    transition-duration: 0.3s;
+}
+
+#contact a:hover span img {
+    margin: 0 0 0.7em 0.7em;
+}
+
 
 footer {
     display: block;
@@ -274,7 +249,7 @@ footer a {
         font-size: 1.1rem;
     }
 
-    span img {
+    #about span img, #contact span img {
         width: 1em;
     }
 
