@@ -24,7 +24,7 @@ main {
 h1, h2, h3, h4, h5, h6, p, a, footer {
     font-family: 'Mulish', sans-serif;
     background: transparent;
-    color: #d5d5d5;
+    color: #e0e0e0;
 }
 
 h1, h2, h3, h4, h5, h6, p, a {
@@ -84,53 +84,6 @@ span img {
 
 a:hover span img {
     margin: 0 0 0.7em 0.7em;
-}
-
-header, nav, nav div {
-    display: flex;
-    flex-flow: row;
-    align-items: center;
-    justify-content: space-between;
-}
-
-header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1;
-    display: none;
-}
-
-nav {
-    padding: 2.75vh 9vw;
-    width: 100%;
-}
-
-nav div {
-    width: 25%;
-}
-
-nav a {
-    font-size: 0.875rem;
-    padding: 1.5vh 0;
-    position: relative;
-}
-
-nav a::after {
-    content: "";
-    display: block;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    height: 0.15vh;
-    width: 0;
-    background-color: #d5d5d5;
-    transition-duration: 0.75s;
-}
-
-nav a:hover::after {
-    width: 100%;
-    transition-duration: 0.35s;
 }
 
 #about, #work, #contact {
@@ -226,7 +179,7 @@ nav a:hover::after {
     height: 0.05em;
     width: 0;
     margin-top: 0.15vh;
-    background-color: #d5d5d5;
+    background-color: #e0e0e0;
     transition-duration: 0.25s;
 }
 
