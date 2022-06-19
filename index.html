@@ -1,22 +1,38 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html>
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ashley Mays</title>
+    <title>Portfolio Website</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="preload" as="image" href="https://drive.google.com/uc?export=view&id=1CttoNe_2vS2hCwjWcXBRIhaM2vM4fAA1" />
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600&family=Montserrat:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="site.css" />
-    <script defer type="text/javascript" src="site.js"></script>
 </head>
 <body>
+    <header>
+        <nav>
+            <div>
+                <a href="#work">Work</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+                <a target="_blank" href="https://drive.google.com/uc?export=view&id=1-JGnLZNEoZfSWNlcn2-jYjHFO41n6Mo6">Resume</a>
+            </div>
+            <a href="#">Ashley Mays</a>
+        </nav>
+    </header>
     <main>
-        <!--Hero-->
+        <!--Home-->
         <section id="home">
-            <h1>Hello! I'm Ashley. <br /> I'm a Software Engineer.</h1>
-            <a href="#about"><img src="https://drive.google.com/uc?export=view&id=1CttoNe_2vS2hCwjWcXBRIhaM2vM4fAA1" /></a>
+            <div>
+                <h5>Hello everyone!</h5>
+                <h1>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Consectetur adipiscing elit, sed do eiusmod tempor.
+                </h1>
+            </div>
         </section>
 
         <!--About-->
@@ -24,56 +40,91 @@
             <h2>About Me</h2>
             <div>
                 <p>
-                    I’m a software engineer based in Fresno, California. I love using my math background to make really cool software and applications.
-                    Right now I’m looking for an entry level position at a US-based company where I can grow as a developer.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut labore et dolore magna 
+                    aliqua. Sed tempus urna et pharetra pharetra massa massa. 
+                    Sagittis orci a scelerisque purus semper eget duis at tellus. 
+                    Orci sagittis eu volutpat odio facilisis mauris sit amet. Lorem 
+                    dolor sed viverra ipsum nunc. 
                     <br /><br />
-                    When I’m not coding, you’ll find me cooking something and smashing keys on a piano in my apartment.
+                    Id ornare arcu odio ut sem nulla. 
+                    At consectetur lorem donec massa. Pellentesque habitant morbi 
+                    tristique senectus et netus et malesuada fames.Iaculis eu non 
+                    diam phasellus vestibulum lorem. Id diam maecenas ultricies mi. 
+                    Sed nisi lacus sed viverra tellus. 
+                    <br /><br />
+                    Volutpat maecenas volutpat 
+                    blandit aliquam etiam erat. Elementum tempus egestas sed sed 
+                    risus pretium quam vulputate.
                 </p>
-                <a target="_blank" href="https://drive.google.com/uc?export=view&id=1f0wjHbQH5AW7axCnZy4LAm5dlp9m_Xlb">See My Resume<span><img src="https://drive.google.com/uc?export=view&id=1CttoNe_2vS2hCwjWcXBRIhaM2vM4fAA1" /></span></a>
             </div>
         </section>
 
         <!--Work-->
         <section id="work"> 
-            <h2>My Work</h2>  
+            <h2>My Work</h2>
             <section>        
                 <article>
-                    <h4>01</h4>
-                    <a target="_blank" href="https://github.com/ashleymays/Login-and-Registration-System">Login and Registration System</a>
+                    <div class="work__links">
+                        <a target="_blank" title="Github" href="https://github.com/ashleymays/Login-and-Registration-System"><span class="material-symbols-outlined">code</span></a>
+                        <!-- <a href=""><span class="material-symbols-outlined">laptop_chromebook</span></a> -->
+                    </div>
+                    <h3>Login and Registration System</h3>
                     <p>
                         A login and registration system written in modern C++. 
                         Users can create a profile, change their username and 
-                        password, and log back into their profile. Their accounts will exist after 
-                        closing the application.
+                        password, and log back into their profile.
                     </p>
                 </article>
 
                 <article>
-                    <h4>02</h4>
-                    <a target="_blank" href="https://github.com/shree1999/Data-Structures-and-Algorithms/blob/3b351fd4b7185161429470be46bd291290d57952/LinkedList-dataStructure/circularSinglyLL-implementation/main.cpp">Open Source Contribution</a>
+                    <div class="work__links">
+                        <a target="_blank" title="Github" href="https://github.com/shree1999/Data-Structures-and-Algorithms/commit/3b351fd4b7185161429470be46bd291290d57952"><span class="material-symbols-outlined">code</span></a>
+                        <!-- <a href=""><span class="material-symbols-outlined">laptop_chromebook</span></a> -->
+                    </div>
+                    <h3>Open Source Contribution</h3>
                     <p>
-                        A contribution to an open source repository on data structures 
-                        and algorithms. I added the class representation of the circular 
-                        singly linked list and the major operations associated with it.
+                        I added the class representation of the circular 
+                        singly linked list to a repository on data structures and algorithms.
                     </p>
                 </article>
             </section> 
         </section>
 
+        <!--Blog-->
+        <!-- <section id="blog">
+            <h2>Recent Blog Posts</h2>
+            <div>
+                <a href="">
+                    <h3>Fake Blog Post Here</h3>
+                    <p>June 18 2022</p>
+                </a>
+                <a href="">
+                    <h3>Another Post Here</h3>
+                    <p>June 11 2022</p>
+                </a>
+                <a href="">
+                    <h3>This is the Last One</h3>
+                    <p>June 4 2022</p>
+                </a>
+            </div>
+        </section> -->
+
         <!--Contact-->
         <section id="contact">
             <h2>Where To Find Me</h2>
             <div>
-                <a target="_blank" href="https://twitter.com/ashleymays091">Twitter<span><img src="https://drive.google.com/uc?export=view&id=1CttoNe_2vS2hCwjWcXBRIhaM2vM4fAA1" /></span></a>
-                <a target="_blank" href="https://github.com/ashleymays">Github<span><img src="https://drive.google.com/uc?export=view&id=1CttoNe_2vS2hCwjWcXBRIhaM2vM4fAA1" /></span></a>
-                <a target="_blank" href="https://www.linkedin.com/in/ashleymays091">Linkedin<span><img src="https://drive.google.com/uc?export=view&id=1CttoNe_2vS2hCwjWcXBRIhaM2vM4fAA1" /></span></a>
-                <a href="mailto:ashleymays091@gmail.com">ashleymays091@gmail.com<span><img src="https://drive.google.com/uc?export=view&id=1CttoNe_2vS2hCwjWcXBRIhaM2vM4fAA1" /></span></a>
+                <a target="_blank" href="https://twitter.com/ashleymays091">Twitter</a>
+                <a target="_blank" href="https://github.com/ashleymays">Github</a>
+                <a target="_blank" href="https://www.linkedin.com/in/ashleymays091">Linkedin</a>
+                <a href="mailto:ashleymays091@gmail.com">ashleymays091@gmail.com</a>
             </div>
         </section>
-    </main>
 
-    <footer>
-        &copy; 2022 Created and designed by Ashley Mays. Arrow icon by <a href="https://iconscout.com/contributors/becris">Becris</a>.
-    </footer>
+        <!--Footer-->
+        <footer>
+            &copy; 2022 Designed and developed by Ashley Mays.
+        </footer>
+    </main>
 </body>
 </html>
