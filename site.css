@@ -22,7 +22,7 @@ html {
 html[data-theme='dark'] {
     --bg-color: hsl(216, 8%, 13%);
     --primary-text-color: hsl(216, 4%, 86%);
-    --second-text-color: hsl(216, 3%, 50%);
+    --second-text-color: hsl(216, 3%, 55%);
     --title-font-wgt: 400;
 }
 
@@ -47,7 +47,7 @@ h5, p {
 }
 
 h1 {
-    font-size: 2.2rem;
+    font-size: 2.35rem;
     font-weight: var(--title-font-wgt);
     line-height: 1.65em;
     margin: 0;
@@ -66,11 +66,11 @@ h2, h3, h5, p, a {
 h2, h5 {
     text-transform: uppercase;
     letter-spacing: 0.1em;
-    font-size: 1.025rem;
+    font-size: 0.975rem;
 }
 
 h3, p, a {
-    font-size: 1.1rem;
+    font-size: 1.05rem;
 }
 
 h5 {
@@ -99,7 +99,7 @@ body > div {
     width: 100%;
     height: 100%;
     outline: none;
-    border: 2px solid var(--primary-text-color);
+    border: transparent;
     border-radius: 50%;
     background-color: var(--primary-text-color);
     cursor: pointer;
@@ -107,22 +107,22 @@ body > div {
     box-shadow: 0 3px 3px rgb(0,0,0,0.2);
 }
 
-.material-symbols-rounded, .material-icons-round {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: var(--bg-color) !important;
+#dark-icon, #light-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--bg-color) !important;
 }
 
-.material-symbols-rounded {
-  font-size: 1.9rem !important;
-  visibility: visible;
+#dark-icon {
+    font-size: 1.9rem !important;
+    visibility: visible;
 }
 
-.material-icons-round {
-  font-size: 1.8rem !important;
-  visibility: hidden;
+#light-icon {
+    font-size: 1.85rem !important;
+    visibility: hidden;
 }
 
 #work, #about, #contact, #blog {
@@ -131,7 +131,7 @@ body > div {
     align-items: baseline;
     justify-content: space-between;
     width: 100%;
-    padding: 10.5vh 0;
+    padding: 9.25vh 0;
 }
 
 #work section, #about div, #blog div, #contact div {
@@ -169,6 +169,10 @@ body > div {
     width: 97%;
 }
 
+.material-symbols-outlined {
+    font-size: 1.5em !important;
+}
+
 .work__links {
     display: flex;
     flex-flow: row;
@@ -194,3 +198,97 @@ footer {
     font-size: 0.9rem;
 }
 
+
+/* SUPER TINY STUFF */
+@media screen and (max-width: 320px) {
+    html {
+        font-size: 12px;
+    }
+
+    #home div {
+        display: flex;
+        flex-flow: column;
+        margin: 18vh 0 0;
+    }
+}
+
+/* MOST SMALLER MOBILE DEVICES */
+@media screen and (min-width: 321px) and (max-width: 767px) {
+    
+}
+
+/* ALL SMALLER MOBILE DEVICES */
+@media screen and (max-width: 767px) {
+    html {
+        font-size: 14px;
+    }
+
+    main {
+        margin: 0 7vw;
+    }
+
+    h2 {
+        width: 100%;
+        text-align: left;
+        margin-bottom: 3vh;
+        font-size: 1.1rem;
+    }
+
+    h2, h5 {
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        font-size: 1.1rem;
+    }
+    
+    h3, p, a {
+        font-size: 1.05rem;
+    }
+
+    #work, #about, #contact, #blog {
+        flex-flow: column;
+        padding: 5vh 0;
+    }
+
+    #work section, #about div, #blog div, #contact div {
+        width: 100%;
+    }
+
+    #work h2 {
+        display: none;
+    }
+
+    #work p {
+        width: 100%;
+    }
+
+    #work section {
+        display: flex;
+        flex-flow: column;
+    }
+
+    #work article {
+        padding: 0;
+        height: max-content;
+    }
+
+    .work__links {
+        display: flex;
+        flex-flow: row;
+        align-items: baseline;
+        justify-content: space-between;
+        width: 24%;
+        margin-bottom: 1.5vh;
+    }
+
+    #contact div {
+        display: flex;
+        flex-flow: column;
+        justify-content: space-between;
+        height: 15vh;
+    }
+}
+
+/* TABLETS */
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+    
+}
