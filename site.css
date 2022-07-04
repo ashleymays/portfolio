@@ -46,12 +46,13 @@ p, a, footer {
   position: absolute;
   top: 10%;
   right: 10%;
-  background-color: #e0e0e0;
+  background-color: #22303c;
   display: flex;
   flex-flow: row;
   align-items: center;
   justify-content: center;
   padding: 0 2rem;
+  font-size: 1.5rem !important;
 }
 
 h1 {
