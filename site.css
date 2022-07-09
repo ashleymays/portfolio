@@ -23,6 +23,7 @@ html {
 body {
     background-color: var(--bkg-color);
     height: 100vh;
+    overflow: hidden;
 }
 
 main {
@@ -30,7 +31,7 @@ main {
     flex-flow: row;
     align-items: center;
     justify-content: space-between;
-    margin: 23vh 10vw;
+    margin: 4rem 10vw;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -92,12 +93,12 @@ a {
     flex-flow: row;
     align-items: baseline;
     justify-content: space-between;
-    width: 16.5rem;
+    width: 15rem;
     margin-top: 4.5vh;
 }
 
 .home__contact a {
-    width: 2.1rem;
+    width: 2.5rem;
     height: max-content;
     transition-duration: 0.25s;
 }
@@ -114,6 +115,7 @@ a {
   display: flex;
   flex-flow: column;
   width: 46%;
+  margin-top: 5rem;
 }
 
 #work article {
@@ -125,8 +127,8 @@ a {
     border: transparent;
     border-radius: 0.75rem;
     padding: 0.775rem 3.25rem;
-    margin: 0.8vh 0;
-    transition-duration: 0.3s;
+    margin: 0.8rem 0;
+    transition-duration: 0.2s;
 }
 
 #work article:hover {
@@ -138,13 +140,12 @@ a {
     flex-flow: row;
     align-items: baseline;
     justify-content: flex-end;
-    width: 13%;
 }
 
 .work__links a {
     color: var(--primary-text-color) !important;
-    transition-duration: 0.25s;
-    margin-left: 0.25rem;
+    transition-duration: 0.2s;
+    margin-left: 2rem;
 }
 
 .work__links a:hover {
@@ -161,6 +162,7 @@ a {
 @media screen and (max-width: 767px) {
     body {
         height: max-content;
+        overflow: visible;
     }
 
     main {
