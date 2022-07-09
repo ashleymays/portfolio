@@ -29,7 +29,7 @@ main {
     flex-flow: row;
     align-items: center;
     justify-content: space-between;
-    height: max-content;
+    height: 100vh;
     margin: 23vh 10vw;
 }
 
