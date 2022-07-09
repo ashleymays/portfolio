@@ -22,6 +22,7 @@ html {
 
 body {
     background-color: var(--bkg-color);
+    height: 100vh;
 }
 
 main {
@@ -29,7 +30,6 @@ main {
     flex-flow: row;
     align-items: center;
     justify-content: space-between;
-    height: 100vh;
     margin: 23vh 10vw;
 }
 
