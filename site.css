@@ -137,13 +137,14 @@ a {
     display: flex;
     flex-flow: row;
     align-items: baseline;
-    justify-content: space-between;
+    justify-content: flex-end;
     width: 13%;
 }
 
 .work__links a {
     color: var(--primary-text-color) !important;
     transition-duration: 0.25s;
+    margin-left: 0.25rem;
 }
 
 .work__links a:hover {
