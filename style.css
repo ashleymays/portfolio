@@ -7,7 +7,7 @@
     --project-bkg-color: #192734;
     --tertiary-color: #22303c;
     --primary-text-color: #fff;
-    --secondary-text-color: #8889a6;
+    --secondary-text-color: hsl(210, 25%, 60%);
     --accent-color: #50FFB1;
 }
 
@@ -23,15 +23,10 @@ html {
 body {
     background-color: var(--bkg-color);
     height: 100vh;
-    overflow: hidden;
 }
 
 main {
-    display: flex;
-    flex-flow: row;
-    align-items: center;
-    justify-content: space-between;
-    margin: 4rem 10vw;
+    margin: 20vh 9vw;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -44,9 +39,18 @@ p, a, footer {
 }
 
 h1 {
+    display: inline-block;
     font-weight: 500;
-    font-size: 3.65rem;
-    margin-bottom: 2.75vh;
+    font-size: clamp(3.75rem, 2.7vw, 8rem);
+}
+
+h1::before {
+    content: "";
+    display: inline-block;
+    width: clamp(5rem, 5vw, 15rem);
+    height: 0.075em;
+    margin: 0 0.5em 0.25em 0;
+    background-color: var(--primary-text-color);
 }
 
 h3 {
@@ -54,14 +58,14 @@ h3 {
     flex-flow: row;
     align-items: baseline;
     justify-content: space-between;
-    font-size: 2rem;
+    font-size: clamp(1.8rem, 1.45vw, 5rem) !important;
     font-weight: 400;
     line-height: 1.4em;
 }
 
 p {
     color: var(--secondary-text-color);
-    font-size: 1.725rem;
+    font-size: clamp(1.5rem, 1.125vw, 3.5rem);
     font-weight: 300;
     line-height: 1.55em;
 }
@@ -71,7 +75,8 @@ a {
 }
 
 #home {
-    width: 41%;
+    position: fixed;
+    width: 35%;
 }
 
 #home > div {
@@ -82,6 +87,7 @@ a {
 #home p > a {
     color: var(--primary-text-color);
     transition-duration: 0.25s;
+    font-weight: 300;
 }
 
 #home p > a:hover {
@@ -93,12 +99,12 @@ a {
     flex-flow: row;
     align-items: baseline;
     justify-content: space-between;
-    width: 15rem;
+    width: clamp(11.5rem, 9vw, 25rem);
     margin-top: 4.5vh;
 }
 
 .home__contact a {
-    width: 2.5rem;
+    width: clamp(2rem, 1.5vw, 4.5rem);
     height: max-content;
     transition-duration: 0.25s;
 }
@@ -112,23 +118,27 @@ a {
 }
 
 #work {
-  display: flex;
-  flex-flow: column;
-  width: 46%;
-  margin-top: 5rem;
+    position: absolute;
+    right: 10vw;
+    content: "";
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 36%;
 }
 
 #work article {
     display: flex;
-    flex-flow: row wrap;
-    align-items: center;
+    flex-flow: column;
+    justify-content: center;
     background-color: var(--project-bkg-color);
+    width: 100%;
     height: max-content;
     border: transparent;
     border-radius: 0.75rem;
-    padding: 0.775rem 3.25rem;
+    padding: 0.5vw 2vw;
     margin: 0.8rem 0;
-    transition-duration: 0.2s;
+    transition-duration: 0.2s;    
 }
 
 #work article:hover {
@@ -137,7 +147,7 @@ a {
 
 .work__links {
     display: flex;
-    flex-flow: row;
+    flex-flow: row-reverse;
     align-items: baseline;
     justify-content: flex-end;
 }
@@ -145,7 +155,7 @@ a {
 .work__links a {
     color: var(--primary-text-color) !important;
     transition-duration: 0.2s;
-    margin-left: 2rem;
+    margin-left: clamp(1.5rem, 1.3vw, 5rem);
 }
 
 .work__links a:hover {
@@ -159,21 +169,18 @@ a {
 }
 
 /* ALL SMALLER MOBILE DEVICES */
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1024px) {
     body {
         height: max-content;
         overflow: visible;
     }
 
     main {
-        flex-flow: column;
-        justify-content: flex-start;
-        height: max-content;
-        margin: 0 7.5vw;
+        margin: 3vh 5.5vw;
     }
 
     h1 {
-        margin-bottom: 4vh;
+        margin-bottom: 2vh;
     }
 
     h3 {
@@ -182,45 +189,15 @@ a {
 
     #home, #work {
         width: 100%;
-    }
-
-    #home {
-        padding: 7.5vh 0 0;
-    }
-
-    .home__contact {
-        width: 14.5rem;
-    }
-
-    .home__contact a {
-        width: 1.9rem;
+        position: relative;
     }
 
     #work {
         padding: 10vh 0 7.5vh;
+        right: 0;
     }
 
     #work article {
         padding: 0.775rem 2.35rem;
-    }
-}
-
-/* TABLETS */
-@media screen and (min-width: 768px) and (max-width: 1200px) {
-    main {
-        margin: 23vh 6.5vw;
-    }
-
-    #home {
-        width: 43%;
-    }
-
-    .home__contact {
-        width: 16rem;
-        margin-top: 2vh;
-    }
-
-    #work {
-        width: 51.5%;
     }
 }
