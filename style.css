@@ -7,7 +7,7 @@
     --project-bkg-color: #192734;
     --tertiary-color: #22303c;
     --primary-text-color: #fff;
-    --secondary-text-color: hsl(210, 25%, 60%);
+    --secondary-text-color: hsl(210, 17%, 70%);
     --accent-color: #50FFB1;
 }
 
@@ -26,7 +26,7 @@ body {
 }
 
 main {
-    margin: 20vh 9vw;
+    margin: 18vh 9vw;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -99,7 +99,7 @@ a {
     flex-flow: row;
     align-items: baseline;
     justify-content: space-between;
-    width: clamp(11.5rem, 9vw, 25rem);
+    width: clamp(12.5rem, 10vw, 26rem);
     margin-top: 4.5vh;
 }
 
