@@ -26,7 +26,7 @@ main {
     padding: 20vh 8vw 0;
 }
 
-h1, h2, h3, h4, h5, h6, p, a {
+h1, h2, h3, h4, h5, h6, p, a, footer {
     font-family: 'Figtree', sans-serif;
     font-weight: 400;
     line-height: 1.5em;
@@ -46,9 +46,12 @@ h2 {
     line-height: 1.25em;
 }
 
+p, .home__contact__link, footer {
+    color: var(--secondary-text-color);
+}
+
 p, .home__contact__link {
     font-size: 1.8rem;
-    color: var(--secondary-text-color);
 }
 
 a {
@@ -117,6 +120,13 @@ a {
     font-size: 2.25rem;
 }
 
+footer {
+    position: fixed;
+    bottom: 0;
+    padding: 5vh 0;
+    font-size: 1.6rem;
+}
+
 
 /* ALL SMALLER MOBILE DEVICES */
 @media screen and (max-width: 1024px) {
@@ -171,5 +181,9 @@ a {
 
     .project:hover {
         margin-left: inherit;
+    }
+
+    footer {
+        padding: 2vh 0;
     }
 }
