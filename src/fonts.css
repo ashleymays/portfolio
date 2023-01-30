@@ -1,0 +1,58 @@
+/* 
+/////////////////////////////////////////////////////////////////////////////////////////////
+//
+//  Font Family:    HK Grotesk
+//  Font Weight:    Light
+//
+/////////////////////////////////////////////////////////////////////////////////////////////
+*/
+
+@font-face {
+    font-family: 'HK Grotesk';
+    font-weight: light;
+    font-style: normal;
+    src: url('../public/fonts/HKGrotesk-Light.otf') format('opentype'),
+        url('../public/fonts/HKGrotesk-Light.woff') format('woff');
+}
+
+
+
+
+
+/* 
+/////////////////////////////////////////////////////////////////////////////////////////////
+//
+//  Font Family:    HK Grotesk
+//  Font Weight:    Medium
+//
+/////////////////////////////////////////////////////////////////////////////////////////////
+*/
+
+@font-face {
+    font-family: 'HK Grotesk';
+    font-weight: medium;
+    font-style: normal;
+    src: url('../public/fonts/HKGrotesk-Medium.otf') format('opentype'),
+        url('../public/fonts/HKGrotesk-Medium.woff') format('woff');
+}
+
+
+
+
+
+/* 
+/////////////////////////////////////////////////////////////////////////////////////////////
+//
+//  Font Family:    HK Grotesk
+//  Font Weight:    Regular
+//
+/////////////////////////////////////////////////////////////////////////////////////////////
+*/
+
+@font-face {
+    font-family: "HK Grotesk";
+    font-weight: normal;
+    font-style: normal;
+    src: url('../public/fonts/HKGrotesk-Regular.otf') format('opentype'),
+        url('../public/fonts/HKGrotesk-Regular.woff') format('woff');
+}
