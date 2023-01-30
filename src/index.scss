@@ -1,13 +1,53 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('./fonts.css');
+
+html, body {
+    width: 100%;
+    margin: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html {
+    font-size: 16px;
+}
+
+h1, h2, h3, h4, header, footer, p, a {
+    font-family: 'HK Grotesk';
+}
+
+h1, h2, h3, h4, p, a {
+    font-weight: normal;
+}
+
+header, footer {
+    font-weight: light;
+}
+
+button, a {
+    outline: none;
+    border: none;
+    background: transparent;
+    font-family: inherit;
+    color: inherit;
+    text-decoration: none;
+
+    &:hover {
+        background: transparent;
+    }
+}
+
+.flex-row {
+    display: flex;
+    flex-flow: row;
+}
+
+.flex-col {
+    display: flex;
+    flex-flow: column;
+}
+
+.flex-al-center {
+    align-items: center;
+}
+
+.flex-just-spc-btwn {
+    justify-content: space-between;
 }
