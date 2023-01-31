@@ -4,12 +4,12 @@ import './Header.scss';
 function Header() {
     return (
         <header className="flex-row flex-al-center flex-just-spc-btwn width-100">
-            <NavLink className='header__element' to="/">Ashley Mays</NavLink>
+            <NavLink to="/">Ashley Mays</NavLink>
             <nav className="flex-row flex-al-center flex-just-spc-btwn">
-                <NavLink className='header__element' to="/">Work</NavLink>
-                <NavLink className='header__element' to="/about">About</NavLink>
-                <NavLink className='header__element' to="/">Contact</NavLink>
-                <NavLink className='header__element' to="/">Resume</NavLink>
+                <NavLink to="/">Work</NavLink>
+                <NavLink to="/about">About</NavLink>
+                <NavLink to="/">Contact</NavLink>
+                <NavLink to="/">Resume</NavLink>
             </nav>
         </header>
     )
