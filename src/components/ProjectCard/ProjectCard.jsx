@@ -5,7 +5,7 @@ import './ProjectCard.scss';
 function ProjectCard() {
     return (
         projectCard.map((project) => 
-            <div>
+            <div key={project.title}>
                 <h2>{project.title}</h2>
                 <p>{project.techStack}</p>
                 <Divider />
