@@ -1,5 +1,9 @@
 @import url('./fonts.css');
 
+* {
+    box-sizing: border-box;
+}
+
 html, body {
     width: 100%;
     margin: 0;
@@ -50,4 +54,8 @@ button, a {
 
 .flex-just-spc-btwn {
     justify-content: space-between;
+}
+
+.width-100 {
+    width: 100%;
 }

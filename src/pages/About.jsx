@@ -1,6 +1,8 @@
+import Layout from "../layout/Layout";
+
 function About() {
     return (
-        <div></div>
+        <Layout>About Page</Layout>
     )
 }
 
