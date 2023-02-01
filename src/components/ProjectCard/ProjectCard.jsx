@@ -1,6 +1,5 @@
 import Divider from '../Divider/Divider';
 import projectCard from '../../constants/projectCard';
-import './ProjectCard.scss';
 
 function ProjectCard() {
     return (
