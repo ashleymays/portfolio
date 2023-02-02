@@ -1,5 +1,7 @@
 @import url('./fonts.css');
 
+
+
 * {
     box-sizing: border-box;
 }
@@ -58,7 +60,7 @@ button, a {
 }
 
 section {
-    min-height: 100vh;
+    min-height: 80vh;
 }
 
 .flex-row {
@@ -81,6 +83,10 @@ section {
 
 .flex-just-spc-btwn {
     justify-content: space-between;
+}
+
+.flex-just-center {
+    justify-content: center;
 }
 
 .width-100 {

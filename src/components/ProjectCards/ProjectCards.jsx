@@ -3,12 +3,16 @@ import projectCards from '../../constants/projectCards';
 
 function ProjectCards() {
     return (
-        projectCards.map((projectCard) => 
-            <ProjectCard
-                title={projectCard.title}
-                techStack={projectCard.techStack}
-            />
-        )
+        <section>
+        {
+            projectCards.map((projectCard) => 
+                <ProjectCard
+                    title={projectCard.title}
+                    techStack={projectCard.techStack}
+                />
+            )
+        }
+        </section>
     )
 }
 
