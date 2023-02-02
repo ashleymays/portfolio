@@ -1,4 +1,4 @@
-const projectCard = [
+const projectCards = [
     {
         title: 'Banana Republic Clone',
         techStack: 'React, GraphQL, SCSS'
@@ -13,4 +13,4 @@ const projectCard = [
     }
 ];
 
-export default projectCard;
+export default projectCards;
