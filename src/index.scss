@@ -57,6 +57,10 @@ button, a {
     }
 }
 
+section {
+    min-height: 100vh;
+}
+
 .flex-row {
     display: flex;
     flex-flow: row;
