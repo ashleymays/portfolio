@@ -30,20 +30,24 @@ header, footer {
 
 h1 {
     font-size: 9.5rem;
-    margin-top: 1em;
+    margin: 1.125em 0 0.75em;
 }
 
 h2 {
-    font-size: 4.5rem;
+    font-size: 4.25rem;
     margin: 0.625em 0 0;
 }
 
 h3 {
-    font-size: 3rem;
+    font-size: 2.75rem;
 }
 
-p {
-    font-size: 1.25rem;
+h4 {
+    font-size: 2rem;
+}
+
+header, p {
+    font-size: 1.125rem;
 }
 
 button, a {
