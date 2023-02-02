@@ -5,7 +5,7 @@ function ProjectCard(props) {
         <div key={props.title}>
             <h2>{props.title}</h2>
             <p>{props.techStack}</p>
-            <Divider />
+            <Divider additionalClassName="add-divider-margins" />
         </div>
     )
 }
