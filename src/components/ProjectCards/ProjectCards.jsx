@@ -7,6 +7,7 @@ function ProjectCards() {
             {
                 projectCards.map((projectCard) => 
                     <ProjectCard
+                        key={projectCard.title}
                         title={projectCard.title}
                         techStack={projectCard.techStack}
                     />
