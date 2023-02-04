@@ -1,8 +1,8 @@
 import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
-import './Layout.scss';
 import Scrollbar from 'smooth-scrollbar';
 import { useEffect } from "react";
+import './Layout.scss';
 
 function Layout(props) {
     useEffect(() => {

@@ -4,8 +4,10 @@
     position: absolute;
     pointer-events: none;
     transform: translate(-50%, -50%);
-    padding: 2.25rem;
-    background: #FF0022;
-    opacity: 0.625;
+    padding: 5rem;
+    // background: #FF0022;
+    // opacity: 0.625;
+    background-color: white;
     z-index: 10001;
+    mix-blend-mode:difference
 }
