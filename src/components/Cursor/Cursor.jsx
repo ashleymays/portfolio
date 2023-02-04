@@ -1,25 +1,25 @@
+// Credit: https://plainenglish.io/blog/how-to-create-a-custom-cursor-in-react-272314682285
+
 import { useRef, useEffect } from 'react';
-import useMousePosition from '../../hooks/useMousePosition';
 import './Cursor.scss';
 
 function Cursor() {
-    const cursorPositionX = useRef(0);
-    const cursorPositionY = useRef(0);
+    const cursorPosition = useRef({ x: 0, y: 0 })
+    const mousePosition = useRef({ x: 0, y: 0 })
     const requestRef = useRef(null);
-    let mousePositionX = useRef(0);
-    let mousePositionY = useRef(0);
 
     useEffect(() => {
         const mouseMove = (e) => {
-            mousePositionX.current = e.pageX;
-            mousePositionY.current = e.pageY;
+            mousePosition.current.x = e.pageX;
+            mousePosition.current.y = e.pageY;
         }
-        const animation = () => {
-            cursorPositionX.current += (mousePositionX.current - cursorPositionX.current) / 10;
-            cursorPositionY.current += (mousePositionY.current - cursorPositionY.current) / 10;
 
-            document.getElementById('custom-cursor').style.left = `${cursorPositionX.current}px`;
-            document.getElementById('custom-cursor').style.top = `${cursorPositionY.current}px`;
+        const animation = () => {
+            cursorPosition.current.x += (mousePosition.current.x - cursorPosition.current.x) / 10;
+            cursorPosition.current.y += (mousePosition.current.y - cursorPosition.current.y) / 10;
+
+            document.getElementById('custom-cursor').style.left = `${cursorPosition.current.x}px`;
+            document.getElementById('custom-cursor').style.top = `${cursorPosition.current.y}px`;
 
             requestRef.current = requestAnimationFrame(animation);
         }
