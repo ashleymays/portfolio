@@ -14,18 +14,21 @@ function Cursor() {
             mousePosition.current.y = e.pageY;
         }
 
-        const animation = () => {
-            cursorPosition.current.x += (mousePosition.current.x - cursorPosition.current.x) / 10;
-            cursorPosition.current.y += (mousePosition.current.y - cursorPosition.current.y) / 10;
+        const cursorFollowAnimation = () => {
+            let distanceX = mousePosition.current.x - cursorPosition.current.x;
+            let distanceY = mousePosition.current.y - cursorPosition.current.y;
+
+            cursorPosition.current.x += distanceX / 10;
+            cursorPosition.current.y += distanceY / 10;
 
             document.getElementById('custom-cursor').style.left = `${cursorPosition.current.x}px`;
             document.getElementById('custom-cursor').style.top = `${cursorPosition.current.y}px`;
 
-            requestRef.current = requestAnimationFrame(animation);
+            requestRef.current = requestAnimationFrame(cursorFollowAnimation);
         }
 
         document.addEventListener('mousemove', mouseMove);
-        animation();
+        cursorFollowAnimation();
         return () => {
             document.removeEventListener('mousemove', mouseMove);
             cancelAnimationFrame(requestRef.current);
