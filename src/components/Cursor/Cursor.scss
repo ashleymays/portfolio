@@ -1,0 +1,11 @@
+#custom-cursor {
+    display: block;
+    padding: 1.75rem;
+    background: red;
+    border-radius: 50%;
+    opacity: 0.625;
+    position: fixed;
+    pointer-events: none;
+    cursor: default;
+    z-index: 2;
+}
