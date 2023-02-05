@@ -15,9 +15,30 @@ function Work() {
         <Layout>
             <h1>{currentProject.title}</h1>
             <p className='width-75'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam provident, nulla molestiae fugiat ipsam sit esse corporis consequatur labore, rem dolore illo atque iusto adipisci vitae eveniet sed? Suscipit, quisquam.
             </p>
-            <p>{currentProject.techStack}</p>
+            <p>
+                {currentProject.techStack}
+            </p>
+
+            <img alt="" src="" className='width-100' />
+
+            <h3>Background and Goals</h3>
+            <p className='width-75'>
+                {currentProject.copy.backgroundAndGoals}
+            </p>
+
+            <img alt="" src="" className='width-100' />
+            <img alt="" src="" className='width-100' />
+
+            <h3>Problems and Thought Process</h3>
+            <p className='width-75'>
+                {currentProject.copy.thoughtProcess}
+            </p>
+
+            <h3>Future</h3>
+            <p className='width-75'>
+                {currentProject.copy.future}
+            </p>
         </Layout>
     )
 }

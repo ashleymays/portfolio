@@ -6,6 +6,7 @@ const projects = [
         copy: {
             overview: '',
             backgroundAndGoals: '',
+            thoughtProcess: '',
             future: '',
         },
         images: null
@@ -17,6 +18,7 @@ const projects = [
         copy: {
             overview: '',
             backgroundAndGoals: '',
+            thoughtProcess: '',
             future: '',
         },
         images: null
@@ -28,6 +30,7 @@ const projects = [
         copy: {
             overview: '',
             backgroundAndGoals: '',
+            thoughtProcess: '',
             future: '',
         },
         images: null

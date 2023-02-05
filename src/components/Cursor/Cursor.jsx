@@ -18,8 +18,8 @@ function Cursor() {
             let distanceX = mousePosition.current.x - cursorPosition.current.x;
             let distanceY = mousePosition.current.y - cursorPosition.current.y;
 
-            cursorPosition.current.x += distanceX / 10;
-            cursorPosition.current.y += distanceY / 10;
+            cursorPosition.current.x += distanceX / 8;
+            cursorPosition.current.y += distanceY / 8;
 
             document.getElementById('custom-cursor').style.left = `${cursorPosition.current.x}px`;
             document.getElementById('custom-cursor').style.top = `${cursorPosition.current.y}px`;
