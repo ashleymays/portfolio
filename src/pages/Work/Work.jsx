@@ -1,4 +1,5 @@
 import Layout from '../../layout/Layout';
+import AnchorLinks from '../../components/AnchorLinks/AnchorLinks'
 import projects from '../../constants/projects';
 
 const getEndpoint = () => {
@@ -46,6 +47,8 @@ function Work() {
             <p className='width-57'>
                 {currentProject.copy.future}
             </p>
+
+            <AnchorLinks links={currentProject.links} />
         </Layout>
     )
 }

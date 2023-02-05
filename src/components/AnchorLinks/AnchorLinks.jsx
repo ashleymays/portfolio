@@ -8,7 +8,7 @@ function AnchorLinks(props) {
                 links.map((link) => 
                     <AnchorLink
                         href={link.href}
-                        url={link.url}
+                        title={link.title}
                     />
                 )
             }

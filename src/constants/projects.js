@@ -3,13 +3,18 @@ const projects = [
         endpoint: 'banana-republic',
         title: 'Banana Republic',
         techStack: 'React · GraphQL · SCSS',
+        links: [
+            {
+                githubLink: '',
+                title: 'Source Code'
+            }
+        ],
         copy: {
             overview: <></>,
             backgroundAndGoals: <></>,
             thoughtProcess: <></>,
             results: <></>,
             future: <></>,
-            githubLink: ''
         },
         images: null
     }, 
@@ -17,7 +22,12 @@ const projects = [
         endpoint: 'piano-sim',
         title: 'PianoSim',
         techStack: 'React · Node · Express · Web Audio API · MediaStream Recording API',
-        githubLink: 'https://github.com/ashleymays/piano-sim',
+        links: [
+            {
+                githubLink: 'https://github.com/ashleymays/piano-sim',
+                title: 'Source Code'
+            }
+        ],
         copy: {
             overview: <>An online piano keyboard simulator. Users can play with four different instrument sound options and sustain and soften effects. They can also record their playing and use it as a backing track.</>,
             backgroundAndGoals: <>When I started learning web development, I knew this was the first website I wanted to make. I didn't have a piano keyboard some years ago, so I tried to find one that I could play online. There were only a few options, and none of them had everything I wanted: good key mapping, decent instrument sounds, and reactive playback. So I built one myself. The purpose of this website is to offer people a chance to play an online piano keyboard that was as close to the real thing as possible.</>,
@@ -31,7 +41,12 @@ const projects = [
         endpoint: 'goodybee',
         title: 'GoodyBee',
         techStack: 'EJS · Node · Express · MongoDB · AWS · Heroku · REST API',
-        githubLink: 'https://github.com/ashleymays/goodybee',
+        links: [
+            {
+                githubLink: 'https://github.com/ashleymays/goodybee',
+                title: 'Source Code'
+            },
+        ],
         copy: {
             overview: <></>,
             backgroundAndGoals: <></>,

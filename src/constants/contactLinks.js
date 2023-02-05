@@ -1,11 +1,11 @@
 const contactLinks = [
     {
         href: "mailto:ashleymays091@gmail.com",
-        url: "ashleymays091@gmail.com"
+        title: "ashleymays091@gmail.com"
     },
     {
         href: "https://github.com/ashleymays",
-        url: "github.com/ashleymays"
+        title: "github.com/ashleymays"
     }
 ]
 

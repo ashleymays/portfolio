@@ -3,7 +3,7 @@ import './AnchorLink.scss';
 
 function AnchorLink(props) {
     const href = props.href;
-    const url = props.url;
+    const title = props.title;
     return (
         <a
             href={href}
@@ -11,7 +11,7 @@ function AnchorLink(props) {
             rel="noreferrer"
             className="flex-row flex-al-center"
         >
-            <h3>{url}</h3>
+            <h3>{title}</h3>
             <img className='arrow-img' alt="" src={arrowImageURL} />
         </a>
     )
