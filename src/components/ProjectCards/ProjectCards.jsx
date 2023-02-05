@@ -1,18 +1,20 @@
 import ProjectCard from './ProjectCard/ProjectCard';
-import projectCards from '../../constants/projectCards';
+import projects from '../../constants/projects';
 import Divider from '../Divider/Divider';
+import './ProjectCards.scss';
 
 function ProjectCards() {
     return (
-        <div className='min-height-80'>
+        <div className='project-cards-container min-height-80'>
             <h4>Selected Work</h4>
             <Divider />
             {
-                projectCards.map((projectCard) => 
+                projects.map((project) => 
                     <ProjectCard
-                        key={projectCard.title}
-                        title={projectCard.title}
-                        techStack={projectCard.techStack}
+                        endpoint={project.endpoint}
+                        key={project.title}
+                        title={project.title}
+                        techStack={project.techStack}
                     />
                 )
             }
