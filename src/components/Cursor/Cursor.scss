@@ -1,13 +1,11 @@
 #custom-cursor {
     display: block;
+    background: transparent;
+    border: 0.1rem solid #d2d2d2;
     border-radius: 50%;
     position: absolute;
     pointer-events: none;
     transform: translate(-50%, -50%);
-    padding: 5rem;
-    // background: #FF0022;
-    // opacity: 0.625;
-    background-color: white;
-    z-index: 10001;
-    mix-blend-mode:difference
+    padding: 2rem;
+    z-index: 10000;
 }
