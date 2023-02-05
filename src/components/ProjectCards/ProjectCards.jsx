@@ -4,7 +4,7 @@ import Divider from '../Divider/Divider';
 
 function ProjectCards() {
     return (
-        <section>
+        <div className='min-height-80'>
             <h4>Selected Work</h4>
             <Divider />
             {
@@ -16,7 +16,7 @@ function ProjectCards() {
                     />
                 )
             }
-        </section>
+        </div>
     )
 }
 

@@ -1,6 +1,6 @@
-import Layout from "../layout/Layout";
-import ProjectCards from "../components/ProjectCards/ProjectCards";
-import Contact from "../components/Contact/Contact";
+import Layout from "../../layout/Layout";
+import ProjectCards from "../../components/ProjectCards/ProjectCards";
+import Contact from "../../components/Contact/Contact";
 
 function Home() {
     return (

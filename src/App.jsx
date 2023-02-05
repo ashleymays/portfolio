@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Cursor from "./components/Cursor/Cursor";
-import Home from './pages/Home';
-import About from './pages/About';
+import Home from './pages/Home/Home';
+import About from './pages/About/About';
 import "./App.scss";
 
 function App() {
