@@ -14,7 +14,8 @@ function Work() {
     return (
         <Layout>
             <h1>{currentProject.title}</h1>
-            <p className='width-75'>
+            <p className='width-57'>
+                {currentProject.copy.overview}
             </p>
             <p>
                 {currentProject.techStack}
@@ -23,20 +24,26 @@ function Work() {
             <img alt="" src="" className='width-100' />
 
             <h3>Background and Goals</h3>
-            <p className='width-75'>
+            <p className='width-57'>
                 {currentProject.copy.backgroundAndGoals}
             </p>
 
             <img alt="" src="" className='width-100' />
-            <img alt="" src="" className='width-100' />
 
             <h3>Problems and Thought Process</h3>
-            <p className='width-75'>
+            <p className='width-57'>
                 {currentProject.copy.thoughtProcess}
             </p>
 
+            <img alt="" src="" className='width-100' />
+
+            <h3>Results</h3>
+            <p className='width-57'>
+                {currentProject.copy.results}
+            </p>
+
             <h3>Future</h3>
-            <p className='width-75'>
+            <p className='width-57'>
                 {currentProject.copy.future}
             </p>
         </Layout>

@@ -1,4 +1,4 @@
-import arrowImageURL from '../../icons/arrow.png';
+import arrowImageURL from '../../../icons/arrow.png';
 import './AnchorLink.scss';
 
 function AnchorLink(props) {
