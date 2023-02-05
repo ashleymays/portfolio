@@ -1,6 +1,6 @@
 const projectCards = [
     {
-        title: 'Banana Republic Clone',
+        title: 'Banana Republic',
         techStack: 'React, GraphQL, SCSS'
     }, 
     {
