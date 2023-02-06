@@ -29,19 +29,12 @@ function Work() {
                 {currentProject.copy.backgroundAndGoals}
             </p>
 
-            <img alt="" src="" className='width-100' />
-
             <h3>Problems and Thought Process</h3>
             <p className='width-57'>
                 {currentProject.copy.thoughtProcess}
             </p>
 
             <img alt="" src="" className='width-100' />
-
-            <h3>Results</h3>
-            <p className='width-57'>
-                {currentProject.copy.results}
-            </p>
 
             <h3>Future</h3>
             <p className='width-57'>
