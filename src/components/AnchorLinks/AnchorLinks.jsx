@@ -7,6 +7,7 @@ function AnchorLinks(props) {
             {
                 links.map((link) => 
                     <AnchorLink
+                        key={link.href}
                         href={link.href}
                         title={link.title}
                     />
