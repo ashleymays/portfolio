@@ -5,7 +5,7 @@ const projects = [
         techStack: 'React · Node · Express · Web Audio API · MediaStream Recording API',
         links: [
             {
-                githubLink: 'https://github.com/ashleymays/piano-sim',
+                href: 'https://github.com/ashleymays/piano-sim',
                 title: 'Source Code'
             }
         ],
@@ -23,7 +23,7 @@ const projects = [
         techStack: 'EJS · Node · Express · MongoDB · AWS · Heroku · REST API',
         links: [
             {
-                githubLink: 'https://github.com/ashleymays/goodybee',
+                href: 'https://github.com/ashleymays/goodybee',
                 title: 'Source Code'
             },
         ],
