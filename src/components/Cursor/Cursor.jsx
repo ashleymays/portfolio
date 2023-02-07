@@ -6,31 +6,43 @@ import './Cursor.scss';
 function Cursor() {
     const cursorPosition = useRef({ x: 0, y: 0 })
     const mousePosition = useRef({ x: 0, y: 0 })
+    const distance = useRef({ x: 0, y: 0 })
     const requestRef = useRef(null);
 
     useEffect(() => {
-        const mouseMove = (e) => {
-            mousePosition.current.x = e.pageX;
-            mousePosition.current.y = e.pageY;
+        const updateMousePosition = (event) => {
+            mousePosition.current.x = event.pageX;
+            mousePosition.current.y = event.pageY;
+        }
+
+        const updateDistance = () => {
+            distance.current.x = mousePosition.current.x - cursorPosition.current.x;
+            distance.current.y = mousePosition.current.y - cursorPosition.current.y;
+        }
+
+        const updateCustomCursorPosition = () => {
+            const drag = 10;
+            cursorPosition.current.x += distance.current.x / drag;
+            cursorPosition.current.y += distance.current.y / drag;
+        }
+
+        const moveCustomCursor = () => {
+            document.getElementById('custom-cursor').style.left = `${cursorPosition.current.x}px`;
+            document.getElementById('custom-cursor').style.top = `${cursorPosition.current.y}px`;
         }
 
         const cursorFollowAnimation = () => {
-            let distanceX = mousePosition.current.x - cursorPosition.current.x;
-            let distanceY = mousePosition.current.y - cursorPosition.current.y;
-
-            cursorPosition.current.x += distanceX / 8;
-            cursorPosition.current.y += distanceY / 8;
-
-            document.getElementById('custom-cursor').style.left = `${cursorPosition.current.x}px`;
-            document.getElementById('custom-cursor').style.top = `${cursorPosition.current.y}px`;
-
+            updateDistance();
+            updateCustomCursorPosition();
+            moveCustomCursor();
             requestRef.current = requestAnimationFrame(cursorFollowAnimation);
         }
 
-        document.addEventListener('mousemove', mouseMove);
+        document.addEventListener('mousemove', updateMousePosition);
         cursorFollowAnimation();
+
         return () => {
-            document.removeEventListener('mousemove', mouseMove);
+            document.removeEventListener('mousemove', updateMousePosition);
             cancelAnimationFrame(requestRef.current);
         }
     }, [])
