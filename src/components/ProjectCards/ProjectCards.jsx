@@ -6,8 +6,9 @@ function ProjectCards() {
     return (
         <div className='project-cards-container min-height-75'>
             {
-                projects.map((project) => 
+                projects.map((project, index) =>
                     <ProjectCard
+                        index={index}
                         endpoint={project.endpoint}
                         key={project.title}
                         title={project.title}

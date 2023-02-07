@@ -1,5 +1,20 @@
 const projects = [
     {
+        endpoint: 'banana-republic',
+        title: 'Banana Republic',
+        techStack: 'React · GraphQL · SCSS · REST API',
+        links: [
+            {
+                href: 'https://github.com/ashleymays/banana-republic-clone',
+                title: 'Source Code'
+            },
+        ],
+        copy: {
+            overview: <>A UI clone of the popular clothing website.</>,
+        },
+        images: null,
+    },
+    {
         endpoint: 'piano-sim',
         title: 'PianoSim',
         techStack: 'React · Node · Express · Web Audio API · MediaStream Recording API',
@@ -34,7 +49,7 @@ const projects = [
             future: <>GoodyBee was primarily for education rather than deployment; I learned how to integrate a REST API into a web application, how to structure a codebase with the MVC design pattern, how to use AWS to store data, and how to encrypt user information. With that, I'll consider this project complete for now.</>,
         },
         images: null,
-    }
+    },
 ];
 
 export default projects;
