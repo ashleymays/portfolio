@@ -6,8 +6,6 @@ import './ProjectCards.scss';
 function ProjectCards() {
     return (
         <div className='project-cards-container min-height-75'>
-            <h4>Selected Work</h4>
-            <Divider />
             {
                 projects.map((project) => 
                     <ProjectCard

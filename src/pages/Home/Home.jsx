@@ -5,7 +5,7 @@ import Contact from "../../components/Contact/Contact";
 function Home() {
     return (
         <Layout>
-            <h1>Heading Here <br /> or Something</h1>
+            <h1>I'm Ashley, <br />a web developer.</h1>
             <ProjectCards />
             <Contact />
         </Layout>

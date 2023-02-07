@@ -5,15 +5,20 @@ import { useEffect } from "react";
 import './Layout.scss';
 
 function Layout(props) {
+    const pageContents = props.children;
+
     useEffect(() => {
-        Scrollbar.init(document.querySelector('#my-scrollbar'), {});
+        const options = {
+
+        }
+        Scrollbar.init(document.getElementById('my-scrollbar'), options);
     }, [])
     
     return (
         <div id="my-scrollbar">
             <main>
                 <Header />
-                {props.children}
+                {pageContents}
                 <Footer />
             </main>
         </div>
