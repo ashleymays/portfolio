@@ -9,28 +9,28 @@ function Cursor() {
     const distance = useRef({ x: 0, y: 0 })
     const requestRef = useRef(null);
 
+    const updateMousePosition = (event) => {
+        mousePosition.current.x = event.pageX;
+        mousePosition.current.y = event.pageY;
+    }
+
+    const updateDistance = () => {
+        distance.current.x = mousePosition.current.x - cursorPosition.current.x;
+        distance.current.y = mousePosition.current.y - cursorPosition.current.y;
+    }
+
+    const updateCustomCursorPosition = () => {
+        const drag = 10;
+        cursorPosition.current.x += distance.current.x / drag;
+        cursorPosition.current.y += distance.current.y / drag;
+    }
+
+    const moveCustomCursor = () => {
+        document.getElementById('custom-cursor').style.left = `${cursorPosition.current.x}px`;
+        document.getElementById('custom-cursor').style.top = `${cursorPosition.current.y}px`;
+    }
+
     useEffect(() => {
-        const updateMousePosition = (event) => {
-            mousePosition.current.x = event.pageX;
-            mousePosition.current.y = event.pageY;
-        }
-
-        const updateDistance = () => {
-            distance.current.x = mousePosition.current.x - cursorPosition.current.x;
-            distance.current.y = mousePosition.current.y - cursorPosition.current.y;
-        }
-
-        const updateCustomCursorPosition = () => {
-            const drag = 10;
-            cursorPosition.current.x += distance.current.x / drag;
-            cursorPosition.current.y += distance.current.y / drag;
-        }
-
-        const moveCustomCursor = () => {
-            document.getElementById('custom-cursor').style.left = `${cursorPosition.current.x}px`;
-            document.getElementById('custom-cursor').style.top = `${cursorPosition.current.y}px`;
-        }
-
         const cursorFollowAnimation = () => {
             updateDistance();
             updateCustomCursorPosition();
