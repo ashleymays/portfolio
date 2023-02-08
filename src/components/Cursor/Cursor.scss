@@ -1,11 +1,11 @@
 #custom-cursor {
-    display: block;
-    background: #f2f2f2;
-    mix-blend-mode: difference;
-    border-radius: 50%;
-    position: absolute;
-    pointer-events: none;
-    transform: translate(-50%, -50%);
-    padding: 3.5rem;
-    z-index: 10000;
+  display: block;
+  background: #f2f2f2;
+  mix-blend-mode: difference;
+  border-radius: 50%;
+  position: absolute;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  padding: 3.5rem;
+  z-index: 10000;
 }

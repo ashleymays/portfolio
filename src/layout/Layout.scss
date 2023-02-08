@@ -1,12 +1,12 @@
 main {
-    width: 92vw;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+  width: 92vw;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 #my-scrollbar {
-    width: 100vw;
-    height: 100vh;
-    overflow: auto;
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
 }

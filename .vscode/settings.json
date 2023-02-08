@@ -1,0 +1,14 @@
+{
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": false
+    },
+    "editor.formatOnSave": false,
+    "eslint.alwaysShowStatus": true,
+    "files.autoSave": "onFocusChange",
+    "eslint.validate": [
+        "javascript",
+        "javascriptreact",
+        "html",
+        "typescriptreact"
+    ],
+}

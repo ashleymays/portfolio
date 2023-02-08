@@ -1,20 +1,13 @@
-import AnchorLink from './AnchorLink/AnchorLink';
+import AnchorLink from './AnchorLink/AnchorLink'
 
-function AnchorLinks(props) {
-    const links = props.links;
-    return (
-        <div className='flex-col flex-al-end flex-just-center min-height-75'>
-            {
-                links.map((link) => 
-                    <AnchorLink
-                        key={link.href}
-                        href={link.href}
-                        title={link.title}
-                    />
-                )
-            }
-        </div>
-    )
+function AnchorLinks ({ links }) {
+  return (
+    <div className="flex-col flex-al-end flex-just-center min-height-75">
+      {links.map((link) => (
+        <AnchorLink key={link.href} href={link.href} title={link.title} />
+      ))}
+    </div>
+  )
 }
 
-export default AnchorLinks;
+export default AnchorLinks

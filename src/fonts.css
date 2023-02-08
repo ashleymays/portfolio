@@ -8,16 +8,12 @@
 */
 
 @font-face {
-    font-family: 'HK Grotesk - Light';
-    font-weight: normal;
-    font-style: normal;
-    src: url('../public/fonts/HKGrotesk-Light.woff') format('woff'),
-        url('../public/fonts/HKGrotesk-Light.otf') format('opentype'),
+  font-family: "HK Grotesk - Light";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../public/fonts/HKGrotesk-Light.woff") format("woff"),
+    url("../public/fonts/HKGrotesk-Light.otf") format("opentype");
 }
-
-
-
-
 
 /* 
 /////////////////////////////////////////////////////////////////////////////////////////////
@@ -29,16 +25,12 @@
 */
 
 @font-face {
-    font-family: 'HK Grotesk - Medium';
-    font-weight: normal;
-    font-style: normal;
-    src: url('../public/fonts/HKGrotesk-Medium.woff') format('woff'),
-        url('../public/fonts/HKGrotesk-Medium.otf') format('opentype'),
+  font-family: "HK Grotesk - Medium";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../public/fonts/HKGrotesk-Medium.woff") format("woff"),
+    url("../public/fonts/HKGrotesk-Medium.otf") format("opentype");
 }
-
-
-
-
 
 /* 
 /////////////////////////////////////////////////////////////////////////////////////////////
@@ -50,9 +42,9 @@
 */
 
 @font-face {
-    font-family: "HK Grotesk - Regular";
-    font-weight: normal;
-    font-style: normal;
-    src: url('../public/fonts/HKGrotesk-Regular.woff') format('woff'),
-        url('../public/fonts/HKGrotesk-Regular.otf') format('opentype'),
+  font-family: "HK Grotesk - Regular";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../public/fonts/HKGrotesk-Regular.woff") format("woff"),
+    url("../public/fonts/HKGrotesk-Regular.otf") format("opentype");
 }

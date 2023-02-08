@@ -1,118 +1,139 @@
-@import url('./fonts.css');
+@import url("./fonts.css");
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-html, body {
-    width: 100%;
-    margin: 0;
+html,
+body {
+  width: 100%;
+  margin: 0;
 }
 
 html {
-    font-size: 16px;
+  font-size: 16px;
 }
 
 body {
-    background: #f2f2f2;
-} 
-
-h1, h2, h3, h4, header, footer, p, a {
-    color: #101010;
+  background: #f2f2f2;
 }
 
-h1, h2, h3, h4, header, footer, p, a {
-    font-family: 'HK Grotesk - Regular', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: normal;
+h1,
+h2,
+h3,
+h4,
+header,
+footer,
+p,
+a {
+  color: #101010;
 }
 
-header, footer {
-    padding: 2rem 0;
+h1,
+h2,
+h3,
+h4,
+header,
+footer,
+p,
+a {
+  font-family: "HK Grotesk - Regular", system-ui, -apple-system,
+    BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+    "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: normal;
+}
+
+header,
+footer {
+  padding: 2rem 0;
 }
 
 h1 {
-    font-size: 9.5rem;
-    margin: 0.9em 0 0.3em;
+  font-size: 9.5rem;
+  margin: 0.9em 0 0.3em;
 }
 
 h2 {
-    font-size: 4.5rem;
-    margin: 0.7em 0 0;
-    width: max-content;
+  font-size: 4.5rem;
+  margin: 0.7em 0 0;
+  width: max-content;
 }
 
 h3 {
-    font-size: 2.625rem;
-    margin: 1em 0;
-    line-height: 135%;
+  font-size: 2.625rem;
+  margin: 1em 0;
+  line-height: 135%;
 }
 
 h4 {
-    font-size: 2rem;
-    margin: 0;
-    line-height: 140%;
+  font-size: 2rem;
+  margin: 0;
+  line-height: 140%;
 }
 
-header, footer, p {
-    font-size: 1.125rem;
+header,
+footer,
+p {
+  font-size: 1.125rem;
 }
 
 p {
-    line-height: 157.5%;
-    opacity: 0.625;
+  line-height: 157.5%;
+  opacity: 0.625;
 }
 
-button, a {
-    outline: none;
-    border: none;
-    background: transparent;
-    font-family: inherit;
-    color: inherit;
-    text-decoration: none;
+button,
+a {
+  outline: none;
+  border: none;
+  background: transparent;
+  font-family: inherit;
+  color: inherit;
+  text-decoration: none;
 
-    &:hover {
-        background: transparent;
-    }
+  &:hover {
+    background: transparent;
+  }
 }
 
 .flex-row {
-    display: flex;
-    flex-flow: row;
+  display: flex;
+  flex-flow: row;
 }
 
 .flex-col {
-    display: flex;
-    flex-flow: column;
+  display: flex;
+  flex-flow: column;
 }
 
 .flex-al-center {
-    align-items: center;
+  align-items: center;
 }
 
 .flex-al-end {
-    align-items: end;
+  align-items: end;
 }
 
 .flex-just-spc-btwn {
-    justify-content: space-between;
+  justify-content: space-between;
 }
 
 .flex-just-center {
-    justify-content: center;
+  justify-content: center;
 }
 
 .width-100 {
-    width: 100%;
+  width: 100%;
 }
 
 .width-50 {
-    width: 50%;
+  width: 50%;
 }
 
 .min-height-75 {
-    min-height: 75vh;
+  min-height: 75vh;
 }
 
 .add-divider-margins {
-    margin: 3.5rem 0 0;
+  margin: 3.5rem 0 0;
 }

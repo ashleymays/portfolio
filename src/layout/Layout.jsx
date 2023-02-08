@@ -1,28 +1,26 @@
-import Header from "../components/Header/Header";
-import Footer from "../components/Footer/Footer";
-import Scrollbar from 'smooth-scrollbar';
-import { useEffect } from "react";
-import './Layout.scss';
+import Header from '../components/Header/Header'
+import Footer from '../components/Footer/Footer'
+import Scrollbar from 'smooth-scrollbar'
+import { useEffect } from 'react'
+import './Layout.scss'
 
-function Layout(props) {
-    const pageContents = props.children;
+function Layout (props) {
+  const pageContents = props.children
 
-    useEffect(() => {
-        const options = {
+  useEffect(() => {
+    const options = {}
+    Scrollbar.init(document.getElementById('my-scrollbar'), options)
+  }, [])
 
-        }
-        Scrollbar.init(document.getElementById('my-scrollbar'), options);
-    }, [])
-    
-    return (
-        <div id="my-scrollbar">
-            <main>
-                <Header />
-                {pageContents}
-                <Footer />
-            </main>
-        </div>
-    )
+  return (
+    <div id="my-scrollbar">
+      <main>
+        <Header />
+        {pageContents}
+        <Footer />
+      </main>
+    </div>
+  )
 }
 
-export default Layout;
+export default Layout
