@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+::selection {
+    background: #e1bffd;
+}
+
 html,
 body {
   width: 100%;
@@ -45,17 +49,19 @@ a {
 
 header,
 footer {
+  font-size: 1.05rem;
   padding: 2rem 0;
 }
 
 h1 {
-  font-size: 9.5rem;
-  margin: 0.9em 0 0.3em;
+  font-size: 9rem;
+  line-height: 105%;
 }
 
 h2 {
-  font-size: 4.5rem;
-  margin: 0.7em 0 0;
+  font-size: 4.375rem;
+  margin: 0.5em 0 0;
+  padding: 0;
   width: max-content;
 }
 
@@ -71,15 +77,10 @@ h4 {
   line-height: 140%;
 }
 
-header,
-footer,
 p {
   font-size: 1.125rem;
-}
-
-p {
   line-height: 157.5%;
-  opacity: 0.625;
+  opacity: 0.575;
 }
 
 button,

@@ -1,15 +1,16 @@
 import Layout from '../../layout/Layout'
 import ProjectCards from '../../components/ProjectCards/ProjectCards'
-import Contact from '../../components/Contact/Contact'
+// import Contact from '../../components/Contact/Contact'
+import './Home.scss'
 
 function Home () {
   return (
     <Layout>
-      <h1>
-        I&apos;m Ashley, <br />a web developer.
+      <h1 className='home-title'>
+        I&apos;m Ashley, <br />a web developer <br /> in Southern California.
       </h1>
       <ProjectCards />
-      <Contact />
+      {/* <Contact /> */}
     </Layout>
   )
 }

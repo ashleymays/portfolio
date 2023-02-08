@@ -1,6 +1,7 @@
 import Layout from '../../layout/Layout'
 import AnchorLinks from '../../components/AnchorLinks/AnchorLinks'
 import projects from '../../constants/projects'
+import './Work.scss'
 
 const getEndpoint = () => {
   const fullPath = window.location.pathname
@@ -16,7 +17,7 @@ function Work () {
 
   return (
     <Layout>
-      <h1>{currentProject.title}</h1>
+      <h1 className='project-title'>{currentProject.title}</h1>
       <p className="width-50">{currentProject.copy.overview}</p>
       <p>{currentProject.techStack}</p>
 
