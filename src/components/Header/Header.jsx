@@ -1,7 +1,8 @@
-import { NavLink } from 'react-router-dom'
-import './Header.scss'
+import { NavLink } from "react-router-dom";
+import ThemeButton from "../ThemeButton/ThemeButton";
+import "./Header.scss";
 
-function Header () {
+function Header() {
   return (
     <header className="flex-row flex-al-center flex-just-spc-btwn width-100">
       <NavLink to="/">Ashley Mays</NavLink>
@@ -11,9 +12,10 @@ function Header () {
         <NavLink to="/">Contact</NavLink>
         <NavLink to="/">Resume</NavLink>
       </nav>
-      <div></div>
+      <div />
+      <ThemeButton />
     </header>
-  )
+  );
 }
 
-export default Header
+export default Header;

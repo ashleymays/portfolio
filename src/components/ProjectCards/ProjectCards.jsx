@@ -1,8 +1,8 @@
-import ProjectCard from './ProjectCard/ProjectCard'
-import projects from '../../constants/projects'
-import './ProjectCards.scss'
+import ProjectCard from "./ProjectCard/ProjectCard";
+import projects from "../../constants/projects";
+import "./ProjectCards.scss";
 
-function ProjectCards () {
+function ProjectCards() {
   return (
     <div className="project-cards-container min-height-75">
       {projects.map((project, index) => (
@@ -15,7 +15,7 @@ function ProjectCards () {
         />
       ))}
     </div>
-  )
+  );
 }
 
-export default ProjectCards
+export default ProjectCards;

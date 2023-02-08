@@ -1,6 +1,6 @@
-import Divider from '../Divider/Divider'
+import Divider from "../Divider/Divider";
 
-function Footer () {
+function Footer() {
   return (
     <>
       <Divider />
@@ -9,7 +9,7 @@ function Footer () {
         <div>Inspired by the websites of Person 1, Person 2, and Person 3.</div>
       </footer>
     </>
-  )
+  );
 }
 
-export default Footer
+export default Footer;
