@@ -1,6 +1,6 @@
 const projects = [
   {
-    endpoint: <>banana-republic</>,
+    endpoint: 'banana-republic',
     title: <>Banana Republic</>,
     techStack: <>React &middot; GraphQL &middot; SCSS &middot; REST API</>,
     links: [
@@ -15,7 +15,7 @@ const projects = [
     images: []
   },
   {
-    endpoint: <>piano-sim</>,
+    endpoint: 'piano-sim',
     title: <>PianoSim</>,
     techStack:
       <>React &middot; Node &middot; Express &middot; Web Audio API &middot; MediaStream Recording API</>,
@@ -90,7 +90,7 @@ const projects = [
     images: []
   },
   {
-    endpoint: <>goodybee</>,
+    endpoint: 'goodybee',
     title: <>GoodyBee</>,
     techStack: <>EJS &middot; Node &middot; Express &middot; MongoDB &middot; AWS &middot; Heroku &middot; REST API</>,
     links: [
