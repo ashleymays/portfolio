@@ -20,7 +20,7 @@ function Cursor() {
     }
 
     const updateCustomCursorPosition = () => {
-        const drag = 10;
+        const drag = 5;
         cursorPosition.current.x += distance.current.x / drag;
         cursorPosition.current.y += distance.current.y / drag;
     }

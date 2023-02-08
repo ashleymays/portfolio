@@ -15,31 +15,53 @@ function Work() {
     return (
         <Layout>
             <h1>{currentProject.title}</h1>
-            <p className='width-57'>
+            <p className='width-50'>
                 {currentProject.copy.overview}
             </p>
             <p>
                 {currentProject.techStack}
             </p>
 
-            <img alt="" src="" className='width-100' />
+            {
+                currentProject.images[0] && 
+                <img alt={currentProject.images[0].alt} src={currentProject.images[0].src} className='width-100' />
+            }
 
-            <h3>Background and Goals</h3>
-            <p className='width-57'>
-                {currentProject.copy.backgroundAndGoals}
-            </p>
+            {
+                currentProject.copy.backgroundAndGoals && 
+                <>
+                    <h3>Background and Goals</h3>
+                    <p className='width-50'>
+                        {currentProject.copy.backgroundAndGoals}
+                    </p>
+                </>
+            }
 
-            <h3>Problems and Thought Process</h3>
-            <p className='width-57'>
-                {currentProject.copy.thoughtProcess}
-            </p>
+            {
+                currentProject.copy.thoughtProcess && 
+                <>
+                    <h3>Problems and Thought Process</h3>
+                    <p className='width-50'>
+                        {currentProject.copy.thoughtProcess}
+                    </p>
+                </>
+            }
 
-            <img alt="" src="" className='width-100' />
+            {
+                currentProject.images[1] && 
+                <img alt={currentProject.images[1].alt} src={currentProject.images[1].src} className='width-100' />
+            }
 
-            <h3>Future</h3>
-            <p className='width-57'>
-                {currentProject.copy.future}
-            </p>
+            {
+                currentProject.copy.future && 
+                <>
+                    <h3>Future</h3>
+                    <p className='width-50'>
+                        {currentProject.copy.future}
+                    </p>
+                </>
+            }
+                
 
             <AnchorLinks links={currentProject.links} />
         </Layout>

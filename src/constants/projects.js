@@ -12,7 +12,7 @@ const projects = [
         copy: {
             overview: <>A UI clone of the popular clothing website.</>,
         },
-        images: null,
+        images: [],
     },
     {
         endpoint: 'piano-sim',
@@ -30,7 +30,7 @@ const projects = [
             thoughtProcess: <>As my first "official" website using React, I naturally ran into many roadblocks. Structuring the codebase was, by far, the most difficult part. Separating the code into logical components is the whole bread-and-butter of React, but with this project, it was hard to decide exactly how to separate it so that it worked and made sense. I also spent way too long designing the UI, which was awful because most of the UI design came from a template.<br /><br />I was able to solve these problems by stepping away from the code and reading up on the best practices of working with React and on good coding practices in general, mostly from the book <i>Clean Code</i> by Robert C. Martin. From the reading, I learned how to write better functions and to write code that made sense even without comments.<br /><br />The logistics of actually playing notes was, oddly enough, the easiest part of working on PianoSim. I'd built a version of it months before building this one, so most of the logic code was already there. So the bulk of the work was figuring out where to put it.<br /><br />All in all, planning (or better yet, lack of planning) seemed to be my biggest mistake with this one. But I'm glad that I pushed through, because in the process I learned to plan everything before typing a single line of code. I also learned a ton of React.</>,
             future: <>I plan to add new features to PianoSim. The one at the top of my list is the ability to download recordings which will require a UI update. I also want to add more sound effects (think distortion and panning), MIDI playback, and a chord identifier that, when toggled, shows the chord that the user is playing. Lastly I'd like to add an actual landing page to add some professionalism and credibility. Eventually I'd like PianoSim to be a tool for people to learn how to play piano.</>,
         },
-        images: null,
+        images: [],
     }, 
     {
         endpoint: 'goodybee',
@@ -48,7 +48,7 @@ const projects = [
             thoughtProcess: <>Being my first website that used a REST API, I initially had trouble getting the right information with it. I also had trouble displaying data with EJS and working with Node.js and Express.js. My solution was to read any documentation there was and, if I couldn't find an answer, look it up on StackOverflow. I also watched a few Youtube videos to learn how to structure a full stack application with the MVC design pattern to ensure that the code would stay readable even after some time away from it.</>,
             future: <>GoodyBee was primarily for education rather than deployment; I learned how to integrate a REST API into a web application, how to structure a codebase with the MVC design pattern, how to use AWS to store data, and how to encrypt user information. With that, I'll consider this project complete for now.</>,
         },
-        images: null,
+        images: [],
     },
 ];
 

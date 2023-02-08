@@ -6,12 +6,10 @@ function ProjectCard(props) {
         return String(index + 1).padStart(2, '0');
     }
 
-    console.log(props.index)
-
     return (
         <div key={props.title} className="project-margin flex-row flex-al-center">
             <p className='project-index'>
-                {addPrecedingZero(props.index)}
+                {`${addPrecedingZero(props.index)}.`}
             </p>
             <div>
                 <NavLink to={`/work/${props.endpoint}`}>

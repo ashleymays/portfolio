@@ -49,11 +49,16 @@ h3 {
 
 h4 {
     font-size: 2rem;
+    margin: 0;
+    line-height: 140%;
+}
+
+header, footer, p {
+    font-size: 1.125rem;
 }
 
 p {
-    font-size: 1.125rem;
-    line-height: 155%;
+    line-height: 157.5%;
     opacity: 0.625;
 }
 
@@ -100,8 +105,8 @@ button, a {
     width: 100%;
 }
 
-.width-57 {
-    width: 57%;
+.width-50 {
+    width: 50%;
 }
 
 .min-height-75 {

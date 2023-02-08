@@ -11,6 +11,9 @@ function Header() {
                 <NavLink to="/">Contact</NavLink>
                 <NavLink to="/">Resume</NavLink>
             </nav>
+            <div>
+                
+            </div>
         </header>
     )
 }
