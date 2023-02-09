@@ -9,7 +9,7 @@ function Home() {
   const lines = [];
 
   homeTitle.forEach((line) => {
-    lines.push(<div className="hide-overflow">{useAnimation(line)}</div>);
+    lines.push(useAnimation(line));
   });
 
   return (

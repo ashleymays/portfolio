@@ -41,7 +41,6 @@ h1 {
   line-height: 105%;
   margin: 0;
   padding: 0;
-  @extend .hide-overflow;
 }
 
 h2 {
@@ -134,10 +133,12 @@ a {
   margin: 1em 0 0.3em;
 }
 
-.letter {
-  display: inline-block;
-}
-
 .hide-overflow {
+  height: 1em;
   overflow: hidden;
+  opacity: 0;
+
+  .letter {
+    display: inline-block;
+  }
 }
