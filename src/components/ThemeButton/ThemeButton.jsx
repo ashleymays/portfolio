@@ -7,22 +7,26 @@ import "./ThemeButton.scss";
 function ThemeButton() {
   const [isNightMode, setIsNightMode] = useState(localStorage.getItem("theme") === "Night");
 
-  const updateBackgroundColor = () => (isNightMode ? "#101010" : "#f2f2f2");
+  const chooseBackgroundColor = () => (isNightMode ? "#101010" : "#f2f2f2");
 
-  const updateColor = () => (isNightMode ? "#d5d5d5" : "#121212");
+  const chooseColor = () => (isNightMode ? "#d5d5d5" : "#121212");
 
   const changeTheme = () => {
     const body = document.querySelector("body");
-    body.style.background = updateBackgroundColor();
-    body.style.color = updateColor();
+    body.style.background = chooseBackgroundColor();
+    body.style.color = chooseColor();
+  };
+
+  const persistTheme = () => {
+    const theme = isNightMode ? "Night" : "Day";
+    localStorage.setItem("theme", theme);
   };
 
   const themeIcon = isNightMode ? <HiOutlineMoon /> : <HiOutlineSun />;
 
   useEffect(() => {
     changeTheme();
-    const theme = isNightMode ? "Night" : "Day";
-    localStorage.setItem("theme", theme);
+    persistTheme();
   }, [isNightMode]);
 
   return (
