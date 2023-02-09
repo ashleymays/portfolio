@@ -15,10 +15,10 @@ function useAnimation(title) {
       })
       .add({
         targets: ".letter",
-        translateY: ["1em", 0],
+        translateY: ["1.1em", 0],
         duration: 1200,
         easing: "easeOutQuint",
-        delay: anime.stagger(20),
+        delay: anime.stagger(17.5),
       });
   }, []);
 
