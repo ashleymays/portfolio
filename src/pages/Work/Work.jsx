@@ -3,7 +3,7 @@ import AnchorLinks from "../../components/AnchorLinks/AnchorLinks";
 import projects from "../../constants/projects";
 
 const getEndpoint = () => {
-  const fullPath = location.pathname;
+  const fullPath = window.location.pathname;
   const index = fullPath.lastIndexOf("/") + 1;
   return fullPath.slice(index);
 };

@@ -5,15 +5,15 @@ function ProjectCard(props) {
   const addPrecedingZero = (index) => String(index + 1).padStart(2, "0");
 
   return (
-    <div key={props.title} className="project-margin flex-row flex-al-center">
-      <p className="project-index">{`${addPrecedingZero(props.index)}.`}</p>
-      <div>
-        <NavLink to={`/work/${props.endpoint}`}>
+    <NavLink to={`/work/${props.endpoint}`}>
+      <div className="project-spacing flex-row flex-al-center">
+        <p className="project-index">{`${addPrecedingZero(props.index)}.`}</p>
+        <div>
           <h2>{props.title}</h2>
-        </NavLink>
-        <p>{props.techStack}</p>
+          <p>{props.techStack}</p>
+        </div>
       </div>
-    </div>
+    </NavLink>
   );
 }
 

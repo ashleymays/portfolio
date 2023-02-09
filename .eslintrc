@@ -7,8 +7,9 @@
     "no-restricted-globals": 0,
     "semi": 0,
     "quotes": 0,
-    "react/prop-types": 1,
-    "react/destructuring-assignment": 1,
-    "no-undef": 1
+    "react/prop-types": 0,
+    "react/destructuring-assignment": 0,
+    "no-undef": 1,
+    "prefer-destructuring": 0
   }
 }
