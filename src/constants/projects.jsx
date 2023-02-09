@@ -1,12 +1,12 @@
 const projects = [
   {
     endpoint: "banana-republic",
-    title: <>Banana Republic</>,
+    title: "Banana Republic",
     techStack: <>React &middot; GraphQL &middot; SCSS &middot; REST API</>,
     links: [
       {
-        href: <>https://github.com/ashleymays/banana-republic-clone</>,
-        title: <>Source Code</>,
+        href: "https://github.com/ashleymays/banana-republic-clone",
+        title: "Source Code",
       },
     ],
     copy: {
@@ -16,12 +16,12 @@ const projects = [
   },
   {
     endpoint: "piano-sim",
-    title: <>PianoSim</>,
+    title: "PianoSim",
     techStack: <>React &middot; Node &middot; Express &middot; Web Audio API &middot; MediaStream Recording API</>,
     links: [
       {
-        href: <>https://github.com/ashleymays/piano-sim</>,
-        title: <>Source Code</>,
+        href: "https://github.com/ashleymays/piano-sim",
+        title: "Source Code",
       },
     ],
     copy: {
@@ -78,12 +78,12 @@ const projects = [
   },
   {
     endpoint: "goodybee",
-    title: <>GoodyBee</>,
+    title: "GoodyBee",
     techStack: <>EJS &middot; Node &middot; Express &middot; MongoDB &middot; AWS &middot; Heroku &middot; REST API</>,
     links: [
       {
-        href: <>https://github.com/ashleymays/goodybee</>,
-        title: <>Source Code</>,
+        href: "https://github.com/ashleymays/goodybee",
+        title: "Source Code",
       },
     ],
     copy: {
@@ -121,12 +121,12 @@ const projects = [
   },
   {
     endpoint: "cpp-algorithms",
-    title: <>Algorithms</>,
+    title: "Algorithms",
     techStack: <>C++ &middot; Visual Studio</>,
     links: [
       {
-        href: <>https://github.com/ashleymays/algorithms</>,
-        title: <>Source Code</>,
+        href: "https://github.com/ashleymays/algorithms",
+        title: "Source Code",
       },
     ],
     copy: {

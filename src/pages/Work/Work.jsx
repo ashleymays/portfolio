@@ -1,3 +1,4 @@
+import useAnimation from "../../hooks/useAnimation";
 import Layout from "../../layout/Layout";
 import AnchorLinks from "../../components/AnchorLinks/AnchorLinks";
 import projects from "../../constants/projects";
@@ -11,10 +12,11 @@ const getEndpoint = () => {
 function Work() {
   const endpoint = getEndpoint();
   const currentProject = projects.find((project) => project.endpoint === endpoint);
+  const currentProjectTitle = useAnimation(currentProject.title);
 
   return (
     <Layout>
-      <h1 className="optional-heading-margin">{currentProject.title}</h1>
+      <h1 className="optional-heading-margin">{currentProjectTitle}</h1>
       <p className="width-50">{currentProject.copy.overview}</p>
       <p>{currentProject.techStack}</p>
 

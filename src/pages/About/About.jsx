@@ -1,11 +1,15 @@
+import useAnimation from "../../hooks/useAnimation";
 import Layout from "../../layout/Layout";
 import about from "../../constants/about";
 import "./About.scss";
 
 function About() {
+  const aboutTitle = "About Title";
+  const elements = useAnimation(aboutTitle);
+
   return (
     <Layout>
-      <h1 className="optional-heading-margin">Hello there!</h1>
+      <h1 className="optional-heading-margin">{elements}</h1>
       <div className="flex-row about-container">
         <div className="box" />
         <div className="about-text">
