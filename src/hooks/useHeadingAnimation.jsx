@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import anime from "animejs";
 
-function useAnimation(title) {
+function useHeadingAnimation(title) {
   const titleCharacters = [...title];
   const isSpaceCharacter = (char) => char === " ";
   const isNewLineCharacter = (char) => char === "\n";
@@ -39,4 +39,4 @@ function useAnimation(title) {
   return <div className="hide-overflow">{elements}</div>;
 }
 
-export default useAnimation;
+export default useHeadingAnimation;

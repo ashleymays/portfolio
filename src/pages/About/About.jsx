@@ -1,11 +1,11 @@
-import useAnimation from "../../hooks/useAnimation";
+import useHeadingAnimation from "../../hooks/useHeadingAnimation";
 import Layout from "../../layout/Layout";
 import about from "../../constants/about";
 import "./About.scss";
 
 function About() {
   const aboutTitle = "About Title";
-  const elements = useAnimation(aboutTitle);
+  const elements = useHeadingAnimation(aboutTitle);
 
   return (
     <Layout>

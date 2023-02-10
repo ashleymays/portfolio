@@ -1,4 +1,4 @@
-import useAnimation from "../../hooks/useAnimation";
+import useHeadingAnimation from "../../hooks/useHeadingAnimation";
 import Layout from "../../layout/Layout";
 import ProjectCards from "../../components/ProjectCards/ProjectCards";
 // import Contact from '../../components/Contact/Contact'
@@ -9,7 +9,7 @@ function Home() {
   const lines = [];
 
   homeTitle.forEach((line) => {
-    lines.push(useAnimation(line));
+    lines.push(useHeadingAnimation(line));
   });
 
   return (
