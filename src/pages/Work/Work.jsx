@@ -4,6 +4,7 @@ import projects from "../../constants/projects";
 import "./Work.scss";
 
 const getEndpoint = () => {
+  // eslint-disable-next-line no-undef
   const fullPath = window.location.pathname;
   const index = fullPath.lastIndexOf("/") + 1;
   return fullPath.slice(index);
