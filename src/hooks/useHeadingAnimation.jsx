@@ -5,8 +5,7 @@ function useHeadingAnimation(title) {
   const titleCharacters = [...title];
   const isSpaceCharacter = (char) => char === " ";
   const isNewLineCharacter = (char) => char === "\n";
-
-  useEffect(() => {
+  const animation = () =>
     anime
       .timeline({
         targets: ".hide-overflow",
@@ -16,10 +15,13 @@ function useHeadingAnimation(title) {
       .add({
         targets: ".letter",
         translateY: ["1.1em", 0],
-        duration: 1200,
+        duration: 1100,
         easing: "easeOutQuint",
-        delay: anime.stagger(17.5),
+        delay: anime.stagger(22.5),
       });
+
+  useEffect(() => {
+    animation();
   }, []);
 
   const elements = titleCharacters.map((char, index) => {

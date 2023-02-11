@@ -21,37 +21,39 @@ function Work() {
   return (
     <Layout>
       <h1 className="optional-heading-margin">{currentProjectTitle}</h1>
-      <p className="width-50">{currentProject.copy.overview}</p>
-      <p>{currentProject.techStack}</p>
 
-      {currentProject.images[0] && (
-        <ProjectImage alt={currentProject.images[0].alt} src={currentProject.images[0].img} />
-      )}
+      <p className="width-55">{currentProject.copy.overview}</p>
 
-      {currentProject.copy.backgroundAndGoals && (
-        <>
-          <h3>Background & Goals</h3>
-          <p className="width-50">{currentProject.copy.backgroundAndGoals}</p>
-        </>
-      )}
+      <div className="flex-col flex-al-end">
+        {currentProject.images[0] && (
+          <ProjectImage alt={currentProject.images[0].alt} src={currentProject.images[0].img} />
+        )}
 
-      {currentProject.copy.thoughtProcess && (
-        <>
-          <h3>Problems & Thought Process</h3>
-          <p className="width-50">{currentProject.copy.thoughtProcess}</p>
-        </>
-      )}
+        {currentProject.copy.backgroundAndGoals && (
+          <div className="width-55">
+            <h3>Background & Goals</h3>
+            <p>{currentProject.copy.backgroundAndGoals}</p>
+          </div>
+        )}
 
-      {currentProject.images[1] && (
-        <ProjectImage alt={currentProject.images[1].alt} src={currentProject.images[1].img} />
-      )}
+        {currentProject.copy.thoughtProcess && (
+          <div className="width-55">
+            <h3>Problems & Thought Process</h3>
+            <p>{currentProject.copy.thoughtProcess}</p>
+          </div>
+        )}
 
-      {currentProject.copy.future && (
-        <>
-          <h3>Future</h3>
-          <p className="width-50">{currentProject.copy.future}</p>
-        </>
-      )}
+        {currentProject.images[1] && (
+          <ProjectImage alt={currentProject.images[1].alt} src={currentProject.images[1].img} />
+        )}
+
+        {currentProject.copy.future && (
+          <div className="width-55">
+            <h3>Future</h3>
+            <p>{currentProject.copy.future}</p>
+          </div>
+        )}
+      </div>
     </Layout>
   );
 }
