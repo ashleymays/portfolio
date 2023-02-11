@@ -7,9 +7,9 @@ import "./ThemeButton.scss";
 function ThemeButton() {
   const [isNightMode, setIsNightMode] = useState(localStorage.getItem("theme") === "Night");
 
-  const chooseBackgroundColor = () => (isNightMode ? "#101010" : "#f2f2f2");
+  const chooseBackgroundColor = () => (isNightMode ? "var(--dark-bkg-color)" : "var(--light-bkg-color)");
 
-  const chooseColor = () => (isNightMode ? "#d5d5d5" : "#121212");
+  const chooseColor = () => (isNightMode ? "var(--dark-text-color)" : "var(--light-text-color)");
 
   const changeTheme = () => {
     const body = document.querySelector("body");

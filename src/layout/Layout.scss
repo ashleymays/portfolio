@@ -1,8 +1,6 @@
 main {
-  width: 92vw;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+  --page-spacing: 3.5vw;
+  padding: 0 var(--page-spacing);
 }
 
 #my-scrollbar {

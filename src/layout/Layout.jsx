@@ -13,7 +13,7 @@ function Layout(props) {
 
   return (
     <div id="my-scrollbar">
-      <main>
+      <main className="width-100">
         <Header />
         {pageContents}
         {/* <Footer /> */}
