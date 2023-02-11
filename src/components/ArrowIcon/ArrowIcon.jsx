@@ -1,5 +1,6 @@
 import { IconContext } from "react-icons";
 import { HiArrowRight } from "react-icons/hi2";
+import "./ArrowIcon.scss";
 
 function ArrowIcon() {
   return (
