@@ -1,10 +1,12 @@
 import { useEffect } from "react";
 import anime from "animejs";
+// import ArrowIcon from "../components/ArrowIcon/ArrowIcon";
 
 function useHeadingAnimation(title) {
   const titleCharacters = [...title];
   const isSpaceCharacter = (char) => char === " ";
   const isNewLineCharacter = (char) => char === "\n";
+  // const isArrow = (char) => char === ">";
   const animation = () =>
     anime
       .timeline({
