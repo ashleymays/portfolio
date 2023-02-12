@@ -3,7 +3,7 @@
   margin-bottom: 0.5em;
 
   &:hover .anchorlink__underline {
-    width: 100%;
+    width: 0;
   }
 }
 
@@ -12,7 +12,7 @@
   position: absolute;
   bottom: -0.125em;
   display: block;
-  width: 0;
+  width: 100%;
   background: var(--text-color);
   height: 0.0625em;
   transition-duration: 0.25s;
