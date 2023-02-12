@@ -30,10 +30,10 @@ function useHeadingAnimation(title) {
       })
       .add({
         targets: ".letter",
-        duration: 500,
+        duration: 450,
         translateY: ["1.1em", 0],
         easing: "easeOutCubic",
-        delay: anime.stagger(20),
+        delay: anime.stagger(22.5),
       });
 
   useEffect(() => {
