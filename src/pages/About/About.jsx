@@ -12,7 +12,7 @@ function About() {
       <h1 className="optional-heading-margin">{elements}</h1>
       <div className="flex-row about-container">
         <div className="about-text">
-          <h4>{about.introduction}</h4>
+          <p>{about.description}</p>
         </div>
       </div>
     </Layout>
