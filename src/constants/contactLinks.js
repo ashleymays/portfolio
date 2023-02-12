@@ -5,11 +5,11 @@ const contactLinks = [
   },
   {
     href: "https://github.com/ashleymays",
-    title: "Github",
+    title: "github.com/ashleymays",
   },
   {
     href: "https://www.linkedin.com/in/ashleymays091",
-    title: "Linkedin",
+    title: "linkedin.com/in/ashleymays091",
   },
 ];
 

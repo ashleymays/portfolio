@@ -3,6 +3,7 @@ import anime from "animejs";
 
 function useHeadingAnimation(title) {
   const titleCharacters = [...title];
+
   const isSpaceCharacter = (char) => char === " ";
   const isNewLineCharacter = (char) => char === "\n";
 
