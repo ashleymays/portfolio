@@ -11,7 +11,7 @@ html[data-theme="day"] {
 }
 
 html[data-theme="night"] {
-  --bkg-color: #181a1b;
+  --bkg-color: #202324;
   --text-color: #efefef;
 }
 
@@ -57,7 +57,7 @@ footer {
 
 h1 {
   font-size: 10.25em;
-  line-height: 90%;
+  line-height: 100%;
   margin: 0;
   padding: 0;
 }
@@ -144,8 +144,9 @@ a {
 }
 
 .hide-overflow {
-  height: 1.2em;
+  height: 1.4em;
   overflow: hidden;
+  margin-bottom: -0.35em;
   opacity: 0;
 
   .letter {

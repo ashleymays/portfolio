@@ -1,6 +1,6 @@
 .anchorlink {
   position: relative;
-  margin-bottom: 0.25em;
+  margin-bottom: 0.5em;
 
   &:hover 
   .anchorlink__underline {
@@ -11,10 +11,10 @@
 .anchorlink__underline {
   content: "";
   position: absolute;
-  bottom: 0;
+  bottom: -0.125em;
   display: block;
   width: 0;
   background: var(--text-color);
-  height: 0.075em;
+  height: 0.0625em;
   transition-duration: 0.5s;
 }
