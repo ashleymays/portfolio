@@ -1,6 +1,7 @@
 main {
   --page-spacing: 3.5vw;
   padding: 0 var(--page-spacing);
+  min-height: 100vh;
 }
 
 #my-scrollbar {

@@ -5,7 +5,7 @@ import "./ProjectCards.scss";
 
 function ProjectCards() {
   return (
-    <div className="project-cards-container min-height-75">
+    <div className="project-cards-container">
       {projects.map((project, index) => (
         <div key={project.endpoint}>
           <ProjectCard projectIndex={index} />

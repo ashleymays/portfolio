@@ -1,5 +1,6 @@
 import useHeadingAnimation from "../../hooks/useHeadingAnimation";
 import ProjectImage from "../../components/ProjectImage/ProjectImage";
+import AnchorLinks from "../../components/AnchorLinks/AnchorLinks";
 import Layout from "../../layout/Layout";
 import projects from "../../constants/projects";
 import "./Work.scss";
@@ -57,6 +58,12 @@ function Work() {
           <div className="width-55">
             <h3>Future</h3>
             <p>{currentProject.copy.future}</p>
+          </div>
+        )}
+
+        {currentProject.links && (
+          <div className="width-55">
+            <AnchorLinks links={currentProject.links} heading="h3" />
           </div>
         )}
       </div>

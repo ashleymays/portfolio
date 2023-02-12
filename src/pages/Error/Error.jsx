@@ -7,7 +7,7 @@ function Error() {
 
   return (
     <Layout>
-      <h1 className="flex-row flex-align-end min-height-75">{animatedHeading}</h1>
+      <h1 className="flex-row flex-align-end">{animatedHeading}</h1>
     </Layout>
   );
 }

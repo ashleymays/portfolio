@@ -16,10 +16,14 @@ function Layout(props) {
 
   return (
     <div id="my-scrollbar">
-      <main className="width-100">
-        <Header />
-        {pageContents}
-        <Footer />
+      <main className="flex-col flex-justify-space-btwn width-100">
+        <div>
+          <Header />
+        </div>
+        <div>{pageContents}</div>
+        <div>
+          <Footer />
+        </div>
       </main>
     </div>
   );

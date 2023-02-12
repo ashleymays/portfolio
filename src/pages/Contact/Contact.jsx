@@ -5,7 +5,7 @@ import contactLinks from "../../constants/contactLinks";
 function Contact() {
   return (
     <Layout>
-      <AnchorLinks links={contactLinks} />
+      <AnchorLinks links={contactLinks} heading="h2" />
     </Layout>
   );
 }
