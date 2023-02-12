@@ -8,7 +8,10 @@ function Layout(props) {
   const pageContents = props.children;
 
   useEffect(() => {
-    Scrollbar.init(document.getElementById("my-scrollbar"));
+    const options = {
+      damping: 0.05,
+    };
+    Scrollbar.init(document.getElementById("my-scrollbar"), options);
   }, []);
 
   return (

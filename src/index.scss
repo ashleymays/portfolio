@@ -4,11 +4,15 @@
   box-sizing: border-box;
 }
 
-:root {
-  --dark-bkg-color: #111414;
-  --light-bkg-color: #f7f7f7;
-  --dark-text-color: #efefef;
-  --light-text-color: #252525;
+:root,
+html[data-theme="day"] {
+  --bkg-color: #f7f7f7;
+  --text-color: #252525;
+}
+
+html[data-theme="night"] {
+  --bkg-color: #111414;
+  --text-color: #efefef;
 }
 
 html,
@@ -22,8 +26,8 @@ html {
 }
 
 body {
-  background: var(--light-bkg-color);
-  color: var(--light-text-color);
+  background: var(--bkg-color);
+  color: var(--text-color);
 }
 
 h1,

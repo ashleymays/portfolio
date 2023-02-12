@@ -1,0 +1,21 @@
+.project-image,
+.image-cover {
+  margin: 10vh calc(var(--page-spacing) * -1) 0;
+  width: 100vw;
+}
+
+.image-container {
+  width: max-content;
+  height: max-content;
+  position: relative;
+}
+
+.image-cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--bkg-color);
+  z-index: 2;
+}

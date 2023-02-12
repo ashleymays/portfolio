@@ -1,12 +1,25 @@
 import { useEffect } from "react";
 import anime from "animejs";
-// import ArrowIcon from "../components/ArrowIcon/ArrowIcon";
 
 function useHeadingAnimation(title) {
   const titleCharacters = [...title];
   const isSpaceCharacter = (char) => char === " ";
   const isNewLineCharacter = (char) => char === "\n";
-  // const isArrow = (char) => char === ">";
+
+  const animatedHeading = titleCharacters.map((char, index) => {
+    if (isSpaceCharacter(char)) {
+      return "\u00a0";
+    }
+    if (isNewLineCharacter(char)) {
+      return <br />;
+    }
+    return (
+      <span key={index.toString()} className="letter">
+        {char}
+      </span>
+    );
+  });
+
   const animation = () =>
     anime
       .timeline({
@@ -26,21 +39,7 @@ function useHeadingAnimation(title) {
     animation();
   }, []);
 
-  const elements = titleCharacters.map((char, index) => {
-    if (isSpaceCharacter(char)) {
-      return "\u00a0";
-    }
-    if (isNewLineCharacter(char)) {
-      return <br />;
-    }
-    return (
-      <span key={index.toString()} className="letter">
-        {char}
-      </span>
-    );
-  });
-
-  return <div className="hide-overflow">{elements}</div>;
+  return <div className="hide-overflow">{animatedHeading}</div>;
 }
 
 export default useHeadingAnimation;

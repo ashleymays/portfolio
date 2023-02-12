@@ -1,4 +1,5 @@
 import useHeadingAnimation from "../../hooks/useHeadingAnimation";
+import ProjectImage from "../../components/ProjectImage/ProjectImage";
 import Layout from "../../layout/Layout";
 import projects from "../../constants/projects";
 import "./Work.scss";
@@ -9,10 +10,6 @@ const getEndpoint = () => {
   const index = fullPath.lastIndexOf("/") + 1;
   return fullPath.slice(index);
 };
-
-function ProjectImage(props) {
-  return <img alt={props.alt} src={props.src} className="width-100 project-image" />;
-}
 
 function Work() {
   const endpoint = getEndpoint();

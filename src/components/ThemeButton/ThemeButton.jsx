@@ -7,14 +7,11 @@ import "./ThemeButton.scss";
 function ThemeButton() {
   const [isNightMode, setIsNightMode] = useState(localStorage.getItem("theme") === "Night");
 
-  const chooseBackgroundColor = () => (isNightMode ? "var(--dark-bkg-color)" : "var(--light-bkg-color)");
-
-  const chooseColor = () => (isNightMode ? "var(--dark-text-color)" : "var(--light-text-color)");
+  const getTheme = () => (isNightMode ? "night" : "day");
 
   const changeTheme = () => {
-    const body = document.querySelector("body");
-    body.style.background = chooseBackgroundColor();
-    body.style.color = chooseColor();
+    const html = document.querySelector("html");
+    html.setAttribute("data-theme", getTheme());
   };
 
   const persistTheme = () => {
