@@ -4,13 +4,8 @@ const projects = [
   {
     endpoint: `banana-republic`,
     title: `Banana Republic`,
-    techStack: `React \u00B7 GraphQL \u00B7 SCSS \u00B7 REST API`,
-    links: [
-      {
-        href: `https://github.com/ashleymays/banana-republic-clone`,
-        title: `Source Code`,
-      },
-    ],
+    techStack: `Linux \u00B7 PHP \u00B7 GraphQL \u00B7 SCSS \u00B7 REST API`,
+    links: null,
     copy: {
       overview: `A UI clone of the popular clothing website.`,
     },
