@@ -1,6 +1,6 @@
-// import Footer from '../components/Footer/Footer'
 import Scrollbar from "smooth-scrollbar";
 import { useEffect } from "react";
+import Footer from "../components/Footer/Footer";
 import Header from "../components/Header/Header";
 import "./Layout.scss";
 
@@ -19,7 +19,7 @@ function Layout(props) {
       <main className="width-100">
         <Header />
         {pageContents}
-        {/* <Footer /> */}
+        <Footer />
       </main>
     </div>
   );

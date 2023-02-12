@@ -9,7 +9,7 @@ function ProjectCards() {
       {projects.map((project, index) => (
         <div key={project.endpoint}>
           <ProjectCard projectIndex={index} />
-          <Divider />
+          {index !== projects.length - 1 && <Divider />}
         </div>
       ))}
     </div>
