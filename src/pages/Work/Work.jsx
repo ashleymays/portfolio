@@ -62,7 +62,7 @@ function Work() {
         )}
 
         {currentProject.links && (
-          <div className="width-55">
+          <div className="width-55 case-study-margins">
             <AnchorLinks links={currentProject.links} heading="h3" />
           </div>
         )}
