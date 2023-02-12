@@ -9,7 +9,7 @@ function Layout(props) {
 
   useEffect(() => {
     const options = {
-      damping: 0.05,
+      damping: 0.075,
     };
     Scrollbar.init(document.getElementById("my-scrollbar"), options);
   }, []);
