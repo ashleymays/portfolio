@@ -6,7 +6,7 @@ function ProjectImage(props) {
   useEffect(() => {
     anime({
       targets: ".project-image-cover",
-      duration: 2250,
+      duration: 1700,
       height: ["100%", 0],
       easing: "easeOutExpo",
     });
@@ -14,7 +14,7 @@ function ProjectImage(props) {
 
   return (
     <div className="project-image-container">
-      <img alt={props.alt} src={props.src} className={props.className} />
+      <img alt={props.alt} src={props.src} className={props.className || ""} />
       <div className="project-image-cover" />
     </div>
   );
