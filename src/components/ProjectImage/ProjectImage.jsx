@@ -6,7 +6,7 @@ function ProjectImage(props) {
   useEffect(() => {
     anime({
       targets: ".project-image-cover",
-      duration: 5000,
+      duration: 2250,
       height: ["100%", 0],
       easing: "easeOutExpo",
     });

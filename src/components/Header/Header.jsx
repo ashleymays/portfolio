@@ -9,13 +9,13 @@ function Header() {
     anime
       .timeline({
         targets: "header *",
-        duration: 100,
+        duration: 1,
         opacity: 1,
       })
       .add({
-        duration: 350,
-        rotateX: [90, 0],
-        easing: "linear",
+        duration: 900,
+        rotateX: [180, 0],
+        easing: "easeOutExpo",
       });
   }, []);
 
