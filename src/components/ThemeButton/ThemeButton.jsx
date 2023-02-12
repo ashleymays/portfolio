@@ -30,7 +30,7 @@ function ThemeButton() {
     <button
       type="button"
       name="theme-button"
-      className="flex-row flex-al-center"
+      className="flex-row flex-align-center"
       onClick={() => setIsNightMode(!isNightMode)}
     >
       {themeIcon}

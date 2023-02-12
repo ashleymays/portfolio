@@ -4,10 +4,10 @@ import "./Header.scss";
 
 function Header() {
   return (
-    <header className="flex-row flex-al-center flex-just-spc-btwn width-100">
+    <header className="flex-row flex-align-center flex-justify-space-btwn width-100">
       <NavLink to="/">Ashley Mays</NavLink>
       <div /> {/* Spacing buffer */}
-      <nav className="flex-row flex-al-center flex-just-spc-btwn">
+      <nav className="flex-row flex-align-center flex-justify-space-btwn">
         <NavLink to="/">Work</NavLink>
         <NavLink to="/about">About</NavLink>
         <NavLink to="/contact">Contact</NavLink>

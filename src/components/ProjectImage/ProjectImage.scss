@@ -1,16 +1,10 @@
-.project-image,
-.image-cover {
+.project-image-container {
   margin: 10vh calc(var(--page-spacing) * -1) 0;
   width: 100vw;
-}
-
-.image-container {
-  width: max-content;
-  height: max-content;
   position: relative;
 }
 
-.image-cover {
+.project-image-cover {
   position: absolute;
   top: 0;
   left: 0;

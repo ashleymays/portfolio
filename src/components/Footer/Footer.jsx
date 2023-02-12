@@ -4,7 +4,7 @@ function Footer() {
   return (
     <>
       <Divider />
-      <footer className="flex-row flex-al-center flex-just-spc-btwn">
+      <footer className="flex-row flex-align-center flex-justify-space-btwn">
         <div>Designed and developed by Ashley Mays.</div>
         <div>Inspired by the websites of Person 1, Person 2, and Person 3.</div>
       </footer>

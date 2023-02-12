@@ -5,7 +5,7 @@ import "./ProjectImage.scss";
 function ProjectImage(props) {
   useEffect(() => {
     anime({
-      targets: ".image-cover",
+      targets: ".project-image-cover",
       duration: 5000,
       height: ["100%", 0],
       easing: "easeOutExpo",
@@ -13,9 +13,9 @@ function ProjectImage(props) {
   }, []);
 
   return (
-    <div className="image-container">
-      <img alt={props.alt} src={props.src} className="project-image" />
-      <div className="image-cover" />
+    <div className="project-image-container">
+      <img alt={props.alt} src={props.src} className={props.className} />
+      <div className="project-image-cover" />
     </div>
   );
 }

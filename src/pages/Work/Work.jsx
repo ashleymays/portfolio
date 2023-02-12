@@ -4,14 +4,14 @@ import Layout from "../../layout/Layout";
 import projects from "../../constants/projects";
 import "./Work.scss";
 
-const getEndpoint = () => {
-  // eslint-disable-next-line no-undef
-  const fullPath = window.location.pathname;
-  const index = fullPath.lastIndexOf("/") + 1;
-  return fullPath.slice(index);
-};
-
 function Work() {
+  const getEndpoint = () => {
+    // eslint-disable-next-line no-undef
+    const fullPath = window.location.pathname;
+    const index = fullPath.lastIndexOf("/") + 1;
+    return fullPath.slice(index);
+  };
+
   const endpoint = getEndpoint();
   const currentProject = projects.find((project) => project.endpoint === endpoint);
   const currentProjectTitle = useHeadingAnimation(currentProject.title);
@@ -22,9 +22,13 @@ function Work() {
 
       <p className="width-55">{currentProject.copy.overview}</p>
 
-      <div className="flex-col flex-al-end">
+      <div className="flex-col flex-align-end">
         {currentProject.images[0] && (
-          <ProjectImage alt={currentProject.images[0].alt} src={currentProject.images[0].img} />
+          <ProjectImage
+            alt={currentProject.images[0].alt}
+            src={currentProject.images[0].img}
+            className="case-study-image"
+          />
         )}
 
         {currentProject.copy.backgroundAndGoals && (
@@ -42,7 +46,11 @@ function Work() {
         )}
 
         {currentProject.images[1] && (
-          <ProjectImage alt={currentProject.images[1].alt} src={currentProject.images[1].img} />
+          <ProjectImage
+            alt={currentProject.images[1].alt}
+            src={currentProject.images[1].img}
+            className="case-study-image"
+          />
         )}
 
         {currentProject.copy.future && (

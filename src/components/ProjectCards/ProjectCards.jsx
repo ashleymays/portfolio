@@ -8,7 +8,7 @@ function ProjectCards() {
     <div className="project-cards-container min-height-75">
       {projects.map((project, index) => (
         <div key={project.endpoint}>
-          <ProjectCard index={index} endpoint={project.endpoint} title={project.title} techStack={project.techStack} />
+          <ProjectCard projectIndex={index} />
           <Divider />
         </div>
       ))}
