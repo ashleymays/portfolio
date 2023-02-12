@@ -1,19 +1,24 @@
 .anchorlink {
   position: relative;
   margin-bottom: 0.5em;
-
-  &:hover .anchorlink__underline {
-    width: 0;
-  }
 }
 
 .anchorlink__underline {
   content: "";
   position: absolute;
-  bottom: -0.125em;
+  bottom: 0.1em;
   display: block;
-  width: 100%;
+  width: 0;
   background: var(--text-color);
   height: 0.0625em;
-  transition-duration: 0.25s;
+  animation: show-underline 1000ms 1 forwards;
+  animation-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+@keyframes show-underline {
+  from {
+    width: 0;
+  } to {
+    width: 100%;
+  }
 }
