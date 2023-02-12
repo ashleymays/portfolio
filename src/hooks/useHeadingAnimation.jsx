@@ -26,13 +26,14 @@ function useHeadingAnimation(title) {
       .timeline({
         targets: ".hide-overflow",
         opacity: 1,
-        duration: 600,
+        duration: 1,
       })
       .add({
         targets: ".letter",
-        translateY: ["1.4em", 0],
-        easing: "easeOutQuart",
-        delay: anime.stagger(22),
+        duration: 500,
+        translateY: ["1.1em", 0],
+        easing: "easeOutCubic",
+        delay: anime.stagger(20),
       });
 
   useEffect(() => {

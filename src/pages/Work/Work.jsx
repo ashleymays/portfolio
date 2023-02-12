@@ -21,7 +21,7 @@ function Work() {
     <Layout>
       <h1 className="optional-heading-margin">{currentProjectTitle}</h1>
 
-      <p className="width-55">{currentProject.copy.overview}</p>
+      <p className="width-50">{currentProject.copy.overview}</p>
 
       <div className="flex-col flex-align-end">
         {currentProject.images[0] && (
@@ -33,14 +33,14 @@ function Work() {
         )}
 
         {currentProject.copy.backgroundAndGoals && (
-          <div className="width-55">
+          <div className="width-50">
             <h3>Background & Goals</h3>
             <p>{currentProject.copy.backgroundAndGoals}</p>
           </div>
         )}
 
         {currentProject.copy.thoughtProcess && (
-          <div className="width-55">
+          <div className="width-50">
             <h3>Problems & Thought Process</h3>
             <p>{currentProject.copy.thoughtProcess}</p>
           </div>
@@ -55,14 +55,14 @@ function Work() {
         )}
 
         {currentProject.copy.future && (
-          <div className="width-55">
+          <div className="width-50">
             <h3>Future</h3>
             <p>{currentProject.copy.future}</p>
           </div>
         )}
 
         {currentProject.links && (
-          <div className="width-55 case-study-margins">
+          <div className="width-50 case-study-margins">
             <AnchorLinks links={currentProject.links} heading="h3" />
           </div>
         )}
