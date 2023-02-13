@@ -1,7 +1,6 @@
 import useHeadingAnimation from "../../hooks/useHeadingAnimation";
 import Layout from "../../layout/Layout";
 import ProjectCards from "../../components/ProjectCards/ProjectCards";
-// import Contact from '../../components/Contact/Contact'
 import "./Home.scss";
 
 function Home() {
@@ -16,7 +15,6 @@ function Home() {
     <Layout>
       <h1 className="home-title">{lines}</h1>
       <ProjectCards />
-      {/* <Contact /> */}
     </Layout>
   );
 }

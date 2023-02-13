@@ -15,7 +15,7 @@ const projects = [
     techStack: `Linux ${middot} PHP ${middot} GraphQL ${middot} SCSS ${middot} REST API`,
     links: null,
     copy: {
-      overview: <>A UI clone of the popular clothing website.</>,
+      overview: <>A UI clone of the popular clothing website. This is a work in progress.</>,
     },
     images: [],
   },
@@ -93,11 +93,12 @@ const projects = [
       ),
       thoughtProcess: (
         <>
-          Being my first website that used a REST API, I initially had trouble getting the right information with it. I
-          also had trouble displaying data with EJS and working with Node.js and Express.js. My solution was to read any
-          documentation there was and, if I couldn't find an answer, look it up on StackOverflow. I also watched a few
-          Youtube videos to learn how to structure a full stack application with the MVC design pattern to ensure that
-          the code would stay readable even after some time away from it.
+          I initially had trouble getting information from the API. Some of the documentation was out of date, so I had
+          to figure out the right format to send queries. Eventually I did it after studying the error codes returned.
+          {linebreak}I also had trouble displaying data with EJS and working with Node.js and Express.js. My solution
+          was to read any documentation there was and, if I couldn't find an answer, look it up on StackOverflow. I also
+          watched a few Youtube videos to learn how to structure a full stack application with the MVC design pattern to
+          ensure that the code would stay readable even after some time away from it.
         </>
       ),
       future: (

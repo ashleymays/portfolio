@@ -147,7 +147,7 @@ a {
   opacity: 0;
   word-wrap: break-word;
 
-  .letter {
+  .letter, .letter0, .letter1, .letter2 {
     display: inline-block;
   }
 }
