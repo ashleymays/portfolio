@@ -7,7 +7,7 @@
 :root,
 html[data-theme="day"] {
   --bkg-color: #fff;
-  --text-color: #2f2f2f;
+  --text-color: #2a2a2a;
 }
 
 html[data-theme="night"] {
@@ -56,7 +56,7 @@ footer {
 }
 
 h1 {
-  font-size: 9.75em;
+  font-size: 10.25em;
   line-height: 110%;
   margin: 0;
   padding: 0;
@@ -80,7 +80,8 @@ h4 {
   line-height: 140%;
 }
 
-p, li {
+p,
+li {
   font-size: 1.25em;
   line-height: 160%;
 }
@@ -145,9 +146,17 @@ a {
   overflow: hidden;
   margin-bottom: -0.05em;
   opacity: 0;
-  word-wrap: break-word;
+  display: flex;
+  max-width: 100vw;
+  flex-wrap: wrap;
 
-  .letter, .letter0, .letter1, .letter2 {
+  .letter {
     display: inline-block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 5em;
   }
 }

@@ -4,7 +4,7 @@ import ProjectCards from "../../components/ProjectCards/ProjectCards";
 import "./Home.scss";
 
 function Home() {
-  const homeTitle = ["I'm Ashley, \n", "a web developer\n", "in California."];
+  const homeTitle = ["I'm ", "Ashley, ", "a ", "software ", "developer ", "in ", "California."];
   const lines = [];
 
   homeTitle.forEach((line) => {

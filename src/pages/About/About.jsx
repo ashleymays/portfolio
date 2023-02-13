@@ -20,7 +20,7 @@ function About() {
           <p>Some tools I use:</p>
           <ul className="grid">
             {about.techStack.map((tool) => (
-              <li>{tool}</li>
+              <li key={tool}>{tool}</li>
             ))}
           </ul>
         </div>

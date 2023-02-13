@@ -1,18 +1,13 @@
 .project-card {
   padding: 3vh 0 5.75vh;
   position: relative;
+  transition-duration: 0.375s;
+
+  &:hover {
+    opacity: 1 !important;
+  }
 }
 
 .project-card__index {
   margin-right: 1.25em;
-}
-
-.project-card__image {
-  width: 50%;
-  height: auto;
-  position: absolute;
-  top: 60%;
-  right: 30%;
-  transform: translateY(-60%);
-  z-index: 2;
 }

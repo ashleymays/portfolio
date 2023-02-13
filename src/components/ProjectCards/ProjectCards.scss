@@ -1,3 +1,7 @@
 .project-cards-container {
   margin-top: 15vh;
+
+  &:hover .project-card {
+    opacity: 0.175;
+  }
 }

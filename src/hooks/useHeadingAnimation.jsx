@@ -3,23 +3,7 @@ import anime from "animejs";
 
 function useHeadingAnimation(title) {
   const titleCharacters = [...title];
-
   const isSpaceCharacter = (char) => char === " ";
-  const isNewLineCharacter = (char) => char === "\n";
-
-  const animatedHeading = titleCharacters.map((char, index) => {
-    if (isSpaceCharacter(char)) {
-      return "\u00a0";
-    }
-    if (isNewLineCharacter(char)) {
-      return <br />;
-    }
-    return (
-      <span key={index.toString()} className="letter">
-        {char}
-      </span>
-    );
-  });
 
   const animation = () =>
     anime
@@ -39,6 +23,17 @@ function useHeadingAnimation(title) {
   useEffect(() => {
     animation();
   }, []);
+
+  const animatedHeading = titleCharacters.map((char, index) => {
+    if (isSpaceCharacter(char)) {
+      return "\u00a0";
+    }
+    return (
+      <span key={index.toString()} className="letter">
+        {char}
+      </span>
+    );
+  });
 
   return <div className="hide-overflow">{animatedHeading}</div>;
 }

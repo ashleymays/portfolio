@@ -11,7 +11,7 @@ const linebreak = (
 const projects = [
   {
     endpoint: `banana-republic`,
-    title: `Banana Republic`,
+    title: [`Banana `, `Republic`],
     techStack: `Linux ${middot} PHP ${middot} GraphQL ${middot} SCSS ${middot} REST API`,
     links: null,
     copy: {
