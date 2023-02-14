@@ -12,4 +12,14 @@
   bottom: 0;
   background: var(--bkg-color);
   z-index: 2;
+  animation: remove-image-cover 3s forwards;
+}
+
+@keyframes remove-image-cover {
+  from {
+    height: 100%;
+  }
+  to {
+    height: 0;
+  }
 }
