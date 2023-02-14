@@ -1,41 +1,40 @@
-import { useEffect } from "react";
-import anime from "animejs";
+const isSpaceCharacter = (char) => char === " ";
 
-function useHeadingAnimation(title) {
-  const titleCharacters = [...title];
-  const isSpaceCharacter = (char) => char === " ";
-
-  const animation = () =>
-    anime
-      .timeline({
-        targets: ".hide-overflow",
-        opacity: 1,
-        duration: 1,
-      })
-      .add({
-        targets: ".letter",
-        duration: 450,
-        translateY: ["1.1em", 0],
-        easing: "easeOutCubic",
-        delay: anime.stagger(22.5),
-      });
-
-  useEffect(() => {
-    animation();
-  }, []);
-
-  const animatedHeading = titleCharacters.map((char, index) => {
-    if (isSpaceCharacter(char)) {
-      return "\u00a0";
+const getWordsFromTitle = (title) => {
+  let word = "";
+  let char = "";
+  const words = [];
+  for (let i = 0; i < title.length; ++i) {
+    char = title[i];
+    word += isSpaceCharacter(char) ? "\u00a0" : char;
+    if (isSpaceCharacter(char) || i === title.length - 1) {
+      words.push(word);
+      word = "";
     }
-    return (
-      <span key={index.toString()} className="letter">
-        {char}
+  }
+  return words;
+};
+
+const putWordsInDivs = (words) => {
+  const wordsDivs = [];
+  words.forEach((word, index) => {
+    wordsDivs.push(
+      <span key={index.toString()} className="word">
+        {word}
       </span>
     );
   });
+  return wordsDivs;
+};
 
-  return <div className="hide-overflow">{animatedHeading}</div>;
+function useHeadingAnimation(title) {
+  const words = getWordsFromTitle(title);
+
+  const wordsDivs = putWordsInDivs(words);
+
+  console.log(title);
+
+  return <div className="hide-overflow">{wordsDivs}</div>;
 }
 
 export default useHeadingAnimation;

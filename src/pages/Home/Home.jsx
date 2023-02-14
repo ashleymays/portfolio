@@ -4,7 +4,7 @@ import ProjectCards from "../../components/ProjectCards/ProjectCards";
 import "./Home.scss";
 
 function Home() {
-  const homeTitle = "Software \nDeveloper";
+  const homeTitle = "software developer";
 
   const animatedHeading = useHeadingAnimation(homeTitle);
 
