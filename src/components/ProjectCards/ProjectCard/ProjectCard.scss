@@ -1,11 +1,5 @@
 .project-card {
   padding: 3vh 0 5.75vh;
-  position: relative;
-  transition-duration: 0.375s;
-
-  &:hover {
-    opacity: 1 !important;
-  }
 }
 
 .project-card__index {

@@ -10,11 +10,9 @@ function ProjectCard(props) {
   return (
     <NavLink to={`/work/${currentProject.endpoint}`}>
       <div className="project-card flex-row flex-align-center">
-        {/* <p className="project-card__index">{`${addPrecedingZero(projectIndex)}.`}</p> */}
         <div className="flex-row flex-align-center flex-justify-space-btwn">
           <div>
             <h2>{currentProject.title}</h2>
-            {/* <p>{currentProject.techStack}</p> */}
           </div>
         </div>
       </div>
