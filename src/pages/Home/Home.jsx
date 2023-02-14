@@ -4,16 +4,13 @@ import ProjectCards from "../../components/ProjectCards/ProjectCards";
 import "./Home.scss";
 
 function Home() {
-  const homeTitle = ["I'm ", "Ashley, ", "a ", "software ", "developer ", "in ", "California."];
-  const lines = [];
+  const homeTitle = "I'm Ashley, a software developer in California.";
 
-  homeTitle.forEach((line) => {
-    lines.push(useHeadingAnimation(line));
-  });
+  const animatedHeading = useHeadingAnimation(homeTitle);
 
   return (
     <Layout>
-      <h1 className="home-title">{lines}</h1>
+      <h1 className="home-title">{animatedHeading}</h1>
       <ProjectCards />
     </Layout>
   );

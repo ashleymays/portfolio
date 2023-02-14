@@ -1,33 +1,67 @@
 /* 
 /////////////////////////////////////////////////////////////////////////////////////////////
 //
-//  Font Family:    HK Grotesk
-//  Font Weight:    Light
+//  Font Family:    Neue Montreal
+//  Font Weight:    Thin
 //
 /////////////////////////////////////////////////////////////////////////////////////////////
 */
 
 @font-face {
-  font-family: "HK Grotesk - Light";
+  font-family: "Neue Montreal - Thin";
   font-weight: normal;
   font-style: normal;
-  src: url("../public/fonts/HKGrotesk-Light.woff") format("woff"),
-    url("../public/fonts/HKGrotesk-Light.otf") format("opentype");
+  src: url("../public/fonts/NeueMontreal-Thin.woff") format("woff"),
+    url("../public/fonts/NeueMontreal-Thin.otf") format("opentype");
 }
 
 /* 
 /////////////////////////////////////////////////////////////////////////////////////////////
 //
-//  Font Family:    HK Grotesk
-//  Font Weight:    Regular
+//  Font Family:    Neue Montreal
+//  Font Weight:    Book
 //
 /////////////////////////////////////////////////////////////////////////////////////////////
 */
 
 @font-face {
-  font-family: "HK Grotesk - Regular";
+  font-family: "Neue Montreal - Book";
   font-weight: normal;
   font-style: normal;
-  src: url("../public/fonts/HKGrotesk-Regular.woff") format("woff"),
-    url("../public/fonts/HKGrotesk-Regular.otf") format("opentype");
+  src: url("../public/fonts/NeueMontreal-Book.woff") format("woff"),
+    url("../public/fonts/NeueMontreal-Book.otf") format("opentype");
+}
+
+/* 
+/////////////////////////////////////////////////////////////////////////////////////////////
+//
+//  Font Family:    Neue Montreal
+//  Font Weight:    Medium
+//
+/////////////////////////////////////////////////////////////////////////////////////////////
+*/
+
+@font-face {
+  font-family: "Neue Montreal - Medium";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../public/fonts/NeueMontreal-Medium.woff") format("woff"),
+    url("../public/fonts/NeueMontreal-Medium.otf") format("opentype");
+}
+
+/* 
+/////////////////////////////////////////////////////////////////////////////////////////////
+//
+//  Font Family:    Neue Montreal
+//  Font Weight:    Bold
+//
+/////////////////////////////////////////////////////////////////////////////////////////////
+*/
+
+@font-face {
+  font-family: "Neue Montreal - Bold";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../public/fonts/NeueMontreal-Bold.woff") format("woff"),
+    url("../public/fonts/NeueMontreal-Bold.otf") format("opentype");
 }
