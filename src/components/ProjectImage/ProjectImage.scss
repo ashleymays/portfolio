@@ -1,7 +1,10 @@
 .project-image-container {
-  margin: 10vh calc(var(--page-spacing) * -1) 0;
+  margin: 10vh calc(var(--page-spacing) * -1);
   width: 100vw;
-  position: relative;
+
+  img {
+    width: 100%;
+  }
 }
 
 .project-image-cover {
@@ -12,7 +15,7 @@
   bottom: 0;
   background: var(--bkg-color);
   z-index: 2;
-  animation: remove-image-cover 3s forwards;
+  height: 0;
 }
 
 @keyframes remove-image-cover {

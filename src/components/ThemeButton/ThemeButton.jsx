@@ -7,7 +7,7 @@ import "./ThemeButton.scss";
 function ThemeButton() {
   const [isNightMode, setIsNightMode] = useState(localStorage.getItem("theme") === "Night");
 
-  const getTheme = () => (isNightMode ? "night" : "day");
+  const getTheme = () => (isNightMode ? "Night" : "Day");
 
   const changeTheme = () => {
     const html = document.querySelector("html");
@@ -15,7 +15,7 @@ function ThemeButton() {
   };
 
   const persistTheme = () => {
-    const theme = isNightMode ? "Night" : "Day";
+    const theme = getTheme();
     localStorage.setItem("theme", theme);
   };
 
@@ -34,7 +34,7 @@ function ThemeButton() {
       onClick={() => setIsNightMode(!isNightMode)}
     >
       {themeIcon}
-      <div id="theme-title">{isNightMode ? "Night" : "Day"}</div>
+      <div id="theme-title">{getTheme()}</div>
     </button>
   );
 }

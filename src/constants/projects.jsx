@@ -10,18 +10,8 @@ const linebreak = (
 
 const projects = [
   {
-    endpoint: `banana-republic`,
-    title: [`Banana `, `Republic`],
-    techStack: `Linux ${middot} PHP ${middot} GraphQL ${middot} SCSS ${middot} REST API`,
-    links: null,
-    copy: {
-      overview: <>A UI clone of the popular clothing website. This is a work in progress.</>,
-    },
-    images: [],
-  },
-  {
-    endpoint: `piano-sim`,
-    title: `PianoSim`,
+    endpoint: `sonata`,
+    title: `Sonata`,
     techStack: `React ${middot} Node ${middot} Express ${middot} Web Audio API ${middot} MediaStream Recording API`,
     links: [
       {

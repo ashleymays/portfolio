@@ -3,20 +3,17 @@ import projects from "../../../constants/projects";
 import "./ProjectCard.scss";
 
 function ProjectCard(props) {
-  // const addPrecedingZero = (index) => String(index + 1).padStart(2, "0");
-  const projectIndex = props.projectIndex;
-  const currentProject = projects[projectIndex];
+  const currentProject = projects[props.projectIndex];
 
   return (
-    <NavLink to={`/work/${currentProject.endpoint}`}>
-      <div className="project-card flex-row flex-align-center">
-        <div className="flex-row flex-align-center flex-justify-space-btwn">
-          <div>
-            <h2>{currentProject.title}</h2>
-          </div>
-        </div>
+    <div className="project-card flex-align-center flex-justify-space-btwn">
+      <div>
+        <NavLink to={`/work/${currentProject.endpoint}`}>
+          <h2>{currentProject.title}</h2>
+          <p>{currentProject.techStack}</p>
+        </NavLink>
       </div>
-    </NavLink>
+    </div>
   );
 }
 
