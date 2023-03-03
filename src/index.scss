@@ -2,9 +2,15 @@
   box-sizing: border-box;
 }
 
-:root {
+:root,
+html[data-theme="Light"] {
   --bkg-color: #fff;
   --text-color: #2e2f2b;
+}
+
+html[data-theme="Dark"] {
+  --bkg-color: #18191b;
+  --text-color: #eaeaea;
 }
 
 html,
