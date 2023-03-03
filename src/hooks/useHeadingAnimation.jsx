@@ -32,8 +32,6 @@ function useHeadingAnimation(title) {
 
   const wordsDivs = putWordsInDivs(words);
 
-  console.log(title);
-
   return <div className="hide-overflow">{wordsDivs}</div>;
 }
 

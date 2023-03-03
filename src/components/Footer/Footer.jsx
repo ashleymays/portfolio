@@ -1,8 +1,7 @@
 function Footer() {
   return (
-    <footer className="flex-row flex-align-center flex-justify-space-btwn">
-      <div>Designed and developed by Ashley Mays.</div>
-      <div>Inspired by the websites of Person 1, Person 2, and Person 3.</div>
+    <footer className="flex-row flex-align-center">
+      Developed by Ashley Mays. Design inspired by Person 1, Person 2, and Person 3.
     </footer>
   );
 }

@@ -21,28 +21,28 @@ function Work() {
     <Layout>
       <h1 className="optional-heading-margin">{currentProjectTitle}</h1>
 
-      <p className="width-50">{currentProject.copy.overview}</p>
-
       <div className="flex-col flex-align-end">
         {currentProject.images[0] && (
           <ProjectImage
             alt={currentProject.images[0].alt}
             src={currentProject.images[0].img}
-            className="case-study-image"
+            className="case-study-image__wide"
           />
         )}
 
-        {currentProject.copy.backgroundAndGoals && (
+        {currentProject.copy.overview && <p className="width-50">{currentProject.copy.overview}</p>}
+
+        {currentProject.copy.problem && (
           <div className="width-50">
-            <h3>Background & Goals</h3>
-            <p>{currentProject.copy.backgroundAndGoals}</p>
+            <h3>Problem</h3>
+            <p>{currentProject.copy.problem}</p>
           </div>
         )}
 
-        {currentProject.copy.thoughtProcess && (
+        {currentProject.copy.solution && (
           <div className="width-50">
-            <h3>Problems & Thought Process</h3>
-            <p>{currentProject.copy.thoughtProcess}</p>
+            <h3>Solution</h3>
+            <p>{currentProject.copy.solution}</p>
           </div>
         )}
 
@@ -50,7 +50,7 @@ function Work() {
           <ProjectImage
             alt={currentProject.images[1].alt}
             src={currentProject.images[1].img}
-            className="case-study-image"
+            className="case-study-image__wide"
           />
         )}
 

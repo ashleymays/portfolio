@@ -6,13 +6,10 @@ function ProjectCard(props) {
   const currentProject = projects[props.projectIndex];
 
   return (
-    <div className="project-card flex-align-center flex-justify-space-btwn">
-      <div>
-        <NavLink to={`/work/${currentProject.endpoint}`}>
-          <h2>{currentProject.title}</h2>
-          <p>{currentProject.techStack}</p>
-        </NavLink>
-      </div>
+    <div className="project-card flex-col">
+      <NavLink to={`/work/${currentProject.endpoint}`}>
+        <h2>{currentProject.title}</h2>
+      </NavLink>
     </div>
   );
 }

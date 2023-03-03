@@ -4,7 +4,7 @@ import "./ProjectCards.scss";
 
 function ProjectCards() {
   return (
-    <div className="project-cards-container">
+    <div className="project-cards-container flex-col">
       {projects.map((project, index) => (
         <div key={project.endpoint}>
           <ProjectCard projectIndex={index} />

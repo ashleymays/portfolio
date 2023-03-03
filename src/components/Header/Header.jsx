@@ -1,5 +1,4 @@
 import { NavLink } from "react-router-dom";
-import ThemeButton from "../ThemeButton/ThemeButton";
 import "./Header.scss";
 
 function Header() {
@@ -10,9 +9,8 @@ function Header() {
         <NavLink to="/">Work</NavLink>
         <NavLink to="/about">About</NavLink>
         <NavLink to="/contact">Contact</NavLink>
-        <NavLink to="/">Resume</NavLink>
       </nav>
-      <ThemeButton />
+      <div />
     </header>
   );
 }
