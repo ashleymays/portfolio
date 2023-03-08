@@ -1,38 +1,18 @@
 const isSpaceCharacter = (char) => char === " ";
 
-const getWordsFromTitle = (title) => {
-  let word = "";
+const putLettersInSpans = (title) => {
   let char = "";
-  const words = [];
+  const spans = [];
   for (let i = 0; i < title.length; ++i) {
-    char = title[i];
-    word += isSpaceCharacter(char) ? "\u00a0" : char;
-    if (isSpaceCharacter(char) || i === title.length - 1) {
-      words.push(word);
-      word = "";
-    }
+    char = isSpaceCharacter(title[i]) ? "\u00a0" : title[i];
+    spans.push(<span className="letter">{char}</span>);
   }
-  return words;
-};
-
-const putWordsInDivs = (words) => {
-  const wordsDivs = [];
-  words.forEach((word, index) => {
-    wordsDivs.push(
-      <span key={index.toString()} className="word">
-        {word}
-      </span>
-    );
-  });
-  return wordsDivs;
+  return spans;
 };
 
 function useHeadingAnimation(title) {
-  const words = getWordsFromTitle(title);
-
-  const wordsDivs = putWordsInDivs(words);
-
-  return <div className="hide-overflow">{wordsDivs}</div>;
+  const spans = putLettersInSpans(title);
+  return <div className="text-animation">{spans}</div>;
 }
 
 export default useHeadingAnimation;

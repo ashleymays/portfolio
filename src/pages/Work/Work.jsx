@@ -1,7 +1,6 @@
-import useHeadingAnimation from "../../hooks/useHeadingAnimation";
-import ProjectImage from "../../components/ProjectImage/ProjectImage";
-import AnchorLinks from "../../components/AnchorLinks/AnchorLinks";
+// import ProjectImage from "../../components/ProjectImage/ProjectImage";
 import Layout from "../../layout/Layout";
+import Divider from "../../components/Divider/Divider";
 import projects from "../../constants/projects";
 import "./Work.scss";
 
@@ -15,58 +14,60 @@ function Work() {
 
   const endpoint = getEndpoint();
   const currentProject = projects.find((project) => project.endpoint === endpoint);
-  const currentProjectTitle = useHeadingAnimation(currentProject.title);
 
   return (
     <Layout>
-      <h1 className="optional-heading-margin">{currentProjectTitle}</h1>
+      <div className="flex-col flex-justify-space-btwn heading-margin">
+        <h1>{currentProject.title}</h1>
+      </div>
 
-      <div className="flex-col flex-align-end">
-        {currentProject.images[0] && (
-          <ProjectImage
-            alt={currentProject.images[0].alt}
-            src={currentProject.images[0].img}
-            className="case-study-image__wide"
-          />
-        )}
+      <div className="case-study__features">
+        <div className="case-study__feature width-100">
+          <Divider />
+          <h5>TECHNOLOGIES</h5>
+          <p>{currentProject.techStack}</p>
+        </div>
 
-        {currentProject.copy.overview && <p className="width-50">{currentProject.copy.overview}</p>}
+        <div className="case-study__feature width-100">
+          <Divider />
+          <h5>URLS</h5>
+          {currentProject.links.map((link) => (
+            <div key={link.href}>
+              <a href={link.href} target="_blank" rel="noreferrer">
+                <p>{link.title}</p>
+              </a>
+              <br />
+            </div>
+          ))}
+        </div>
+      </div>
 
-        {currentProject.copy.problem && (
-          <div className="width-50">
-            <h3>Problem</h3>
-            <p>{currentProject.copy.problem}</p>
-          </div>
-        )}
+      <div className="box" />
+      {/* {currentProject.images[0] && (
+        <ProjectImage
+          alt={currentProject.images[0].alt}
+          src={currentProject.images[0].img}
+          className="case-study-image__wide"
+        />
+      )} */}
 
-        {currentProject.copy.solution && (
-          <div className="width-50">
-            <h3>Solution</h3>
-            <p>{currentProject.copy.solution}</p>
-          </div>
-        )}
-
-        {currentProject.images[1] && (
+      <div className="case-study__texts">
+        <div className="case-study__text">
+          <h3>Problem</h3>
+          <p className="width-50">{currentProject.copy.problem}</p>
+        </div>
+        <div className="case-study__text">
+          <h3>Solution</h3>
+          <p className="width-50">{currentProject.copy.solution}</p>
+        </div>
+      </div>
+      {/* {currentProject.images[1] && (
           <ProjectImage
             alt={currentProject.images[1].alt}
             src={currentProject.images[1].img}
             className="case-study-image__wide"
           />
-        )}
-
-        {currentProject.copy.future && (
-          <div className="width-50">
-            <h3>Future</h3>
-            <p>{currentProject.copy.future}</p>
-          </div>
-        )}
-
-        {currentProject.links && (
-          <div className="width-50 case-study-margins">
-            <AnchorLinks links={currentProject.links} heading="h3" />
-          </div>
-        )}
-      </div>
+        )} */}
     </Layout>
   );
 }

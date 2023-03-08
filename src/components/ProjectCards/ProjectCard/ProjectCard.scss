@@ -1,3 +1,15 @@
 .project-card {
-  margin: 4rem 0;
+  padding: clamp(2rem, 4.75vw, 8rem) 0;
+}
+
+.project-card__overview {
+  margin: 1em 0 0;
+  @media screen and (max-width: 599px) {
+    display: none;
+  }
+}
+
+.work__project-image {
+  opacity: 0;
+  transition-duration: 0.25s;
 }

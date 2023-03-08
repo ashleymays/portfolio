@@ -1,64 +1,30 @@
-const middot = "\u00B7";
-// const linebreak = (
-//   <>
-//     <br />
-//     <br />
-//   </>
-// );
-
 const projects = [
   {
-    endpoint: `recipe-finder`,
-    title: `Other Project`,
-    techStack: `EJS ${middot} Node ${middot} Express ${middot} MongoDB ${middot} AWS ${middot} Heroku ${middot} REST API`,
-    links: [
-      {
-        href: `https://github.com/ashleymays/goodybee`,
-        title: `Source Code`,
-      },
-    ],
+    endpoint: `web-crawler`,
+    title: `Web Crawler`,
+    year: 2023,
+    techStack: null,
+    links: null,
     copy: {
-      overview: (
-        <>
-          A recipe finder that aggregates recipes from across the web in one place. Users can create an account and save
-          their favorite recipes.
-        </>
-      ),
-      problem: (
-        <>
-          There are many recipe and food websites; consequently, there are different recipes spread across different
-          websites, which isn't ideal for the average consumer.
-        </>
-      ),
-      solution: (
-        <>
-          I added a login and registration system so users could easily store their favorite recipes. Additionaly, I
-          structured the website and code blocks with the MVC and object-oriented design patterns respectively for
-          easier maintenance. Lastly, I used an AWS S3 bucket to store profile pictures to avoid bloat in the database
-          and preserve scalability.
-        </>
-      ),
-      future: (
-        <>
-          I'm considering migrating the frontend from EJS to React for easier maintenance, but as a whole, this project
-          is primarily for my own education rather than deployment, so I don't plan on adding any major features soon.
-        </>
-      ),
+      overview: <>Collects and sorts clothing data from 200+ webpages.</>,
+      problem: null,
+      solution: null,
     },
-    images: [],
+    images: [{}],
   },
   {
     endpoint: `piano-keyboard-simulator`,
     title: `Piano Keyboard Simulator`,
-    techStack: `React ${middot} Node ${middot} Express ${middot} Web Audio API ${middot} MediaStream Recording API`,
+    year: 2022,
+    techStack: `React, Node, Express, Web Audio API, MediaStream Recording API`,
     links: [
       {
         href: `https://github.com/ashleymays/piano-sim`,
-        title: `Source Code`,
+        title: `github.com/ashleymays/piano-sim`,
       },
     ],
     copy: {
-      overview: <>Users can play with four different instrument options, audio effects, and recording functionality.</>,
+      overview: <>Play with four instrument options, audio effects, and recording functionality.</>,
       problem: (
         <>
           Some years ago, I searched for online piano keyboards to learn how to play piano. There were only a few
@@ -73,33 +39,22 @@ const projects = [
           optimize the website speed.
         </>
       ),
-      future: (
-        <>
-          I plan to add the following new features soon: the ability to download recordings, more sound effects (e.g.
-          distortion and panning), MIDI playback, and a chord identifier. I'd also like to add a landing page to add
-          credibility.{" "}
-        </>
-      ),
     },
-    images: null,
+    images: [{}],
   },
   {
     endpoint: `recipe-finder`,
     title: `Recipe Finder`,
-    techStack: `EJS ${middot} Node ${middot} Express ${middot} MongoDB ${middot} AWS ${middot} Heroku ${middot} REST API`,
+    year: 2022,
+    techStack: `EJS, Node, Express, MongoDB, AWS, Heroku, REST API`,
     links: [
       {
         href: `https://github.com/ashleymays/goodybee`,
-        title: `Source Code`,
+        title: `github.com/ashleymays/goodybee`,
       },
     ],
     copy: {
-      overview: (
-        <>
-          A recipe finder that aggregates recipes from across the web in one place. Users can create an account and save
-          their favorite recipes.
-        </>
-      ),
+      overview: <>Find and save recipes from across the web in one place.</>,
       problem: (
         <>
           There are many recipe and food websites; consequently, there are different recipes spread across different
@@ -108,61 +63,28 @@ const projects = [
       ),
       solution: (
         <>
-          I added a login and registration system so users could easily store their favorite recipes. Additionaly, I
+          I added a login and registration system so users could easily store their favorite recipes. Additionally, I
           structured the website and code blocks with the MVC and object-oriented design patterns respectively for
           easier maintenance. Lastly, I used an AWS S3 bucket to store profile pictures to avoid bloat in the database
           and preserve scalability.
         </>
       ),
-      future: (
-        <>
-          I'm considering migrating the frontend from EJS to React for easier maintenance, but as a whole, this project
-          is primarily for my own education rather than deployment, so I don't plan on adding any major features soon.
-        </>
-      ),
     },
-    images: [],
+    images: [{}],
   },
-  {
-    endpoint: `recipe-finder`,
-    title: `Other Project`,
-    techStack: `EJS ${middot} Node ${middot} Express ${middot} MongoDB ${middot} AWS ${middot} Heroku ${middot} REST API`,
-    links: [
-      {
-        href: `https://github.com/ashleymays/goodybee`,
-        title: `Source Code`,
-      },
-    ],
-    copy: {
-      overview: (
-        <>
-          A recipe finder that aggregates recipes from across the web in one place. Users can create an account and save
-          their favorite recipes.
-        </>
-      ),
-      problem: (
-        <>
-          There are many recipe and food websites; consequently, there are different recipes spread across different
-          websites, which isn't ideal for the average consumer.
-        </>
-      ),
-      solution: (
-        <>
-          I added a login and registration system so users could easily store their favorite recipes. Additionaly, I
-          structured the website and code blocks with the MVC and object-oriented design patterns respectively for
-          easier maintenance. Lastly, I used an AWS S3 bucket to store profile pictures to avoid bloat in the database
-          and preserve scalability.
-        </>
-      ),
-      future: (
-        <>
-          I'm considering migrating the frontend from EJS to React for easier maintenance, but as a whole, this project
-          is primarily for my own education rather than deployment, so I don't plan on adding any major features soon.
-        </>
-      ),
-    },
-    images: [],
-  },
+  // {
+  //   endpoint: `other-project`,
+  //   title: `Other Project`,
+  //   year: 2023,
+  //   techStack: null,
+  //   links: null,
+  //   copy: {
+  //     overview: null,
+  //     problem: null,
+  //     solution: null,
+  //   },
+  //   images: [{}],
+  // },
 ];
 
 export default projects;

@@ -1,8 +1,21 @@
 header {
   * {
-    text-transform: uppercase;
+    font-weight: 400 !important;
+    margin-bottom: 0.75em;
+  }
+}
+
+nav {
+  width: 9%;
+}
+
+@media screen and (max-width: 1079px) {
+  header,
+  nav {
+    align-items: flex-start !important;
   }
   nav {
-    width: 16%;
+    flex-flow: column !important;
+    align-items: flex-end !important;
   }
 }

@@ -1,3 +1,23 @@
-.home-title {
-  font-size: 12rem;
+.home__title {
+  // font-size: 11.5rem
+  font-size: clamp(3.5rem, 12vw, 20rem);
+  margin: 11% 0 15%;
+}
+
+.home__title__second-line {
+  @media screen and (max-width: 767px) {
+    align-items: initial !important;
+    justify-content: initial !important;
+    flex-flow: column !important;
+  }
+}
+
+.home__subtitle {
+  width: 20%;
+  margin: 2em 0 0 2em;
+
+  @media screen and (max-width: 767px) {
+    width: 100%;
+    margin: 2em 0 0;
+  }
 }

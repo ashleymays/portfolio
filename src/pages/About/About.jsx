@@ -1,3 +1,4 @@
+import Contact from "../../components/Contact/Contact";
 import Layout from "../../layout/Layout";
 import about from "../../constants/about";
 import "./About.scss";
@@ -5,18 +6,18 @@ import "./About.scss";
 function About() {
   return (
     <Layout>
-      <div className="flex-row">
-        <div className="about-text">
-          <h4>{about.introduction}</h4>
-          <p>{about.description}</p>
-          <p>Some tools I use:</p>
-          <ul className="grid">
-            {about.techStack.map((tool) => (
-              <li key={tool}>{tool}</li>
-            ))}
-          </ul>
+      <div className="about">
+        <h2>{about.heading}</h2>
+        <p className="about__text">{about.introduction}</p>
+        <div className="about__text">
+          <h3>My Background</h3>
+          <p>{about.background}</p>
         </div>
+        <a href={about.resumeLink} target="_blank" rel="noreferrer">
+          <h4>My Resume (48 kB)</h4>
+        </a>
       </div>
+      <Contact />
     </Layout>
   );
 }

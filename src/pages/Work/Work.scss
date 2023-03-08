@@ -1,15 +1,52 @@
-@import "../../layout/Layout.scss";
-
 .width-50 {
   width: 50%;
+
+  @media screen and (max-width: 767px) {
+    width: auto;
+  }
 }
 
 .case-study-image__wide {
-  width: 100vw;
-  height: 100%;
-  margin: 0 calc(var(--page-spacing) * -1);
+  width: 100%;
+  height: auto;
+  margin: 10% 0 5%;
 }
 
-.case-study-margins {
-  margin: 0 0 5em;
+.heading-margin {
+  margin-top: 11vw;
+}
+
+.box {
+  width: 100%;
+  height: 40vw;
+  background: #fff;
+  opacity: 0.2;
+  margin: 10% 0 5%;
+}
+
+.case-study__features {
+  width: 55%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  column-gap: 5%;
+  margin: 5.5% 0 0;
+
+  @media screen and (max-width: 767px) {
+    width: 100%;
+    grid-template-columns: 100%;
+    row-gap: 15%;
+  }
+}
+
+.case-study__texts {
+  margin: 0 0 10%;
+}
+
+.case-study__text {
+  margin: 6% 0;
+}
+
+.next-project {
+  margin: 10% 0;
+  width: max-content;
 }

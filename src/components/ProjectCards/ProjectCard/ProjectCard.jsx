@@ -6,11 +6,12 @@ function ProjectCard(props) {
   const currentProject = projects[props.projectIndex];
 
   return (
-    <div className="project-card flex-col">
-      <NavLink to={`/work/${currentProject.endpoint}`}>
+    <NavLink to={`/work/${currentProject.endpoint}`}>
+      <div className="project-card flex-col">
         <h2>{currentProject.title}</h2>
-      </NavLink>
-    </div>
+        <p className="project-card__overview">{currentProject.copy.overview}</p>
+      </div>
+    </NavLink>
   );
 }
 

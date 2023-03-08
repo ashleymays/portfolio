@@ -1,8 +1,17 @@
-.about-text {
-  margin: 5rem 25% 7.5rem 7.5rem;
+.about {
+  margin: 7% 0 0;
   width: 65%;
+
+  @media screen and (max-width: 599px) {
+    width: 100%;
+  }
 }
 
-.about-portrait {
-  width: 40vw !important;
+.about__text {
+  margin: 7% 0;
+  width: 65%;
+
+  @media screen and (max-width: 599px) {
+    width: 100%;
+  }
 }

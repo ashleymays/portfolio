@@ -1,5 +1,5 @@
 main {
-  --page-spacing: 2rem;
-  padding: 0 var(--page-spacing);
+  --page-margin: 3vw;
+  padding: 0 var(--page-margin);
   min-height: 100vh;
 }
