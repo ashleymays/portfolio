@@ -1,61 +1,27 @@
-/*
 import { useEffect } from "react";
 
 const isSpaceCharacter = (char) => char === " ";
 
-const putLettersInSpans = (title) => {
+const putLettersInDivs = (word) => {
   let char = "";
-  const spans = [];
-  for (let i = 0; i < title.length; ++i) {
-    char = isSpaceCharacter(title[i]) ? "\u00a0" : title[i];
-    spans.push(<div className="letter">{char}</div>);
-  }
-  return spans;
-};
-
-function useHeadingAnimation(title) {
-  const spans = putLettersInSpans(title);
-
-  useEffect(() => {
-    const lines = document.querySelectorAll(".text-animation");
-    lines.forEach((line) => {
-      const letters = line.querySelectorAll("div");
-      letters.forEach((letter, index) => {
-        letter.style.setProperty("--anim", index + 1);
-      });
-    });
-  });
-
-  return <div className="text-animation flex-row">{spans}</div>;
-}
-
-export default useHeadingAnimation;
-*/
-
-import { useEffect } from "react";
-
-const isSpaceCharacter = (char) => char === " ";
-
-const putLettersInSpans = (word) => {
-  let char = "";
-  const spans = [];
+  const letters = [];
   for (let i = 0; i < word.length; ++i) {
     char = isSpaceCharacter(word[i]) ? "\u00a0" : word[i];
-    spans.push(
-      <span key={i.toString()} className="letter">
+    letters.push(
+      <div key={i.toString()} className="letter">
         {char}
-      </span>
+      </div>
     );
   }
-  return spans;
+  return letters;
 };
 
 const putWordsInSpans = (words) => {
   const wordsSpans = [];
   words.forEach((word, index) => {
     wordsSpans.push(
-      <span key={index.toString()} className="text-animation">
-        {putLettersInSpans(word)}
+      <span key={index.toString()} className="text-animation flex-row">
+        {putLettersInDivs(word)}
       </span>
     );
   });
@@ -78,18 +44,18 @@ const getWordsFromTitle = (title) => {
 };
 
 function useHeadingAnimation(title) {
-  const words = getWordsFromTitle(title);
+  let words = getWordsFromTitle(title);
   const wordsSpans = putWordsInSpans(words);
 
   useEffect(() => {
-    const lines = document.querySelectorAll(".text-animation");
-    lines.forEach((line) => {
-      const letters = line.querySelectorAll(".letter");
+    words = document.querySelectorAll(".text-animation");
+    words.forEach((word) => {
+      const letters = word.querySelectorAll(".letter");
       letters.forEach((letter, index) => {
         letter.style.setProperty("--anim", index + 1);
       });
     });
-  });
+  }, []);
 
   return <div className="flex-row flex-wrap">{wordsSpans}</div>;
 }
