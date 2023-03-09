@@ -2,17 +2,16 @@ import ProjectCards from "../../components/ProjectCards/ProjectCards";
 import Divider from "../../components/Divider/Divider";
 import Layout from "../../layout/Layout";
 import Contact from "../../components/Contact/Contact";
-// import useHeadingAnimation from "../../hooks/useHeadingAnimation";
+import useHeadingAnimation from "../../hooks/useHeadingAnimation";
 import "./Home.scss";
 
 function Home() {
   return (
     <Layout>
       <h1 className="home__title">
-        <span>software</span>
-        <br />
+        <span>{useHeadingAnimation("software")}</span>
         <span className="home__title__second-line flex-row flex-align-center">
-          developer
+          {useHeadingAnimation("developer")}
           <p className="home__subtitle">building interactive digital experiences and enjoying every minute of it.</p>
         </span>
       </h1>

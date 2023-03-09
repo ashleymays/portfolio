@@ -147,6 +147,10 @@ a {
   justify-content: center;
 }
 
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
 .width-100 {
   width: 100%;
 }
@@ -156,18 +160,22 @@ a {
 }
 
 .text-animation {
-  overflow: hidden;
-  height: 1em;
+  overflow-y: hidden;
+  height: 1.125em;
+  // border: 2px solid red;
 
   .letter {
-    margin-top: 0.75em;
+    padding-top: 2em;
     animation: animate-text 0.5s forwards;
+    animation-delay: calc(var(--anim) * 0.05s);
+    animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+    // border: 2px solid blue;
   }
 }
 
 @keyframes animate-text {
   from {
-    padding-top: 0.75em;
+    padding-top: 2em;
   }
   to {
     padding-top: 0;

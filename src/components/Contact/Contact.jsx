@@ -7,7 +7,7 @@ function Contact() {
       <h3>Let's make something great together.</h3>
       <ul className="anchor-link-container">
         {contactLinks.map((link) => (
-          <li>
+          <li key={link.href}>
             <a href={link.href} target="_blank" rel="noreferrer">
               {link.title}
             </a>
