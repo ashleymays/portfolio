@@ -1,4 +1,4 @@
-// import ProjectImage from "../../components/ProjectImage/ProjectImage";
+import ProjectImage from "../../components/ProjectImage/ProjectImage";
 import Layout from "../../layout/Layout";
 import Divider from "../../components/Divider/Divider";
 import projects from "../../constants/projects";
@@ -42,14 +42,9 @@ function Work() {
         </div>
       </div>
 
-      <div className="box" />
-      {/* {currentProject.images[0] && (
-        <ProjectImage
-          alt={currentProject.images[0].alt}
-          src={currentProject.images[0].img}
-          className="case-study-image__wide"
-        />
-      )} */}
+      {currentProject.images[0] && (
+        <ProjectImage alt="" src={currentProject.images[0]} className="case-study-image__wide" />
+      )}
 
       <div className="case-study__texts">
         <div className="case-study__text">

@@ -21,27 +21,13 @@ const about = {
     <>
       Looking back, I've always had an interest in engineering. As a kid, I dreamt about building cars and my very own
       Iron Man suit, but I didn't considered it a career path until college when I took a C++ class. It was the perfect
-      combination of logic and art; exactly what I wanted. After that I found every excuse to program something.
+      combination of logic and art; exactly what I wanted.
       {linebreak}
       In 2021 I decided to pursue software development as a career. I learned web development because it was so
       different from what I'd done at the time (C++ applications). Now I'm looking to join a great company as a junior
       software developer so that someday I can fund my own Iron Man suit.
     </>
   ),
-  skills: [
-    `HTML5`,
-    `CSS3`,
-    `JavaScript (ES6)`,
-    `C++`,
-    `React.js`,
-    `Node.js`,
-    `Express.js`,
-    `MongoDB`,
-    `MySQL`,
-    `Linux`,
-    `Windows`,
-    `Git`,
-  ],
   resumeLink: `https://drive.google.com/file/d/1icgi3FFcJN0g3JLDpmU-Z9u3vEJPQhtP/view?usp=sharing`,
 };
 

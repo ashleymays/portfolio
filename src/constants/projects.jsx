@@ -1,21 +1,9 @@
+import imageFiles from "./imageFiles";
+
 const projects = [
-  {
-    endpoint: `web-crawler`,
-    title: `Web Crawler`,
-    year: 2023,
-    techStack: null,
-    links: null,
-    copy: {
-      overview: <>Collects and sorts clothing data from 200+ webpages.</>,
-      problem: null,
-      solution: null,
-    },
-    images: [{}],
-  },
   {
     endpoint: `piano-keyboard-simulator`,
     title: `Piano Keyboard Simulator`,
-    year: 2022,
     techStack: `React, Node, Express, Web Audio API, MediaStream Recording API`,
     links: [
       {
@@ -40,12 +28,11 @@ const projects = [
         </>
       ),
     },
-    images: [{}],
+    images: imageFiles.pianoKeyBoardSimulator,
   },
   {
     endpoint: `recipe-finder`,
     title: `Recipe Finder`,
-    year: 2022,
     techStack: `EJS, Node, Express, MongoDB, AWS, Heroku, REST API`,
     links: [
       {
@@ -70,7 +57,7 @@ const projects = [
         </>
       ),
     },
-    images: [{}],
+    images: imageFiles.recipeFinder,
   },
   // {
   //   endpoint: `other-project`,
@@ -88,3 +75,62 @@ const projects = [
 ];
 
 export default projects;
+
+// import scrapy
+// from scrapy_playwright.page import PageMethod
+// import urllib.parse
+// import re
+
+// class CategorySpider(scrapy.Spider):
+//     name = 'category_spider'
+
+//     def start_requests(self):
+//         url = 'https://bananarepublic.gap.com/browse/category.do?cid=67595'
+//         yield scrapy.Request(url, meta=dict(
+//                                     playwright=True,
+//                                     playwright_include_page=True,
+//                                     playwright_page_methods=[
+//                                         PageMethod('wait_for_selector', '.product-card'),
+//                                         PageMethod("evaluate", "window.scrollBy(0, document.body.scrollHeight)"),
+//                                         PageMethod('wait_for_selector', '.category-page-11ltxe6:nth-child(7)'),
+//                                         PageMethod('wait_for_timeout', 1000)
+//                                        ]
+//                                     )
+//                                     )
+
+//     async def parse(self, response):
+//         page = response.meta["playwright_page"]
+//         await page.close()
+//         product_urls = response.css('.product-card > div > a::attr("href")').getall()
+//         for url in product_urls:
+//             yield scrapy.Request(url, meta=dict(
+//                 playwright = True,
+//                 playwright_include_page = True,
+//                 playwright_page_methods = [
+//                     PageMethod('wait_for_selector', '#product-page'),
+//                     PageMethod('click', selector=".pdp-drawer-trigger:last-child"),
+//                     PageMethod('wait_for_timeout', 750),
+//                     PageMethod('click', selector='#product-info-tabs-button--2')
+//                 ],
+//                 errback=self.errback,
+//             ), callback=self.parseProductPages)
+//     async def parseProductPages(self, response):
+//         inseams_string = response.css('.tab-panel--active li:nth-child(3)::text').get()
+//         inseams = [int(inseam) for inseam in re.findall('\d+', inseams_string)]
+//         desired_inseams = list(filter(lambda inseam : inseam >= 35, inseams))
+
+//         if len(desired_inseams) > 0:
+//             scraped_info = {
+//                 'url': response.url,
+//                 'name': response.css('#buy-box h1::text').get(),
+//                 'price': response.css('.pdp-pricing__selected::text').get(),
+//                 'image': urllib.parse.urljoin(response.url, response.css('#product img::attr("src")').get()),
+//                 'inseams': desired_inseams,
+//                 'size-categories': response.css('.pdp-variant__label::text').getall()
+//             }
+
+//             yield scraped_info
+
+//     async def errback(self, failure):
+//         page = failure.request.meta["playwright_page"]
+//         await page.close()

@@ -44,28 +44,24 @@ li {
 
 header,
 footer {
-  // font-size: 1rem;
   font-size: clamp(0.875rem, 1.05vw, 3.75rem);
   padding: 5.5vmin 0;
 }
 
 h1 {
-  // font-size: 7.6rem;
   font-size: clamp(4rem, 9vw, 16rem);
-  line-height: 110%;
+  line-height: 105%;
   margin: 0;
   padding: 0;
 }
 
 h2 {
-  // font-size: 3.375rem;
   font-size: clamp(1.75rem, 3.5125vw, 10rem);
   line-height: 130%;
   margin: 0;
 }
 
 h3 {
-  // font-size: 2.25rem;
   font-size: clamp(1.25rem, 2.35vw, 8rem);
   line-height: 145%;
   margin: 0.5em 0;
@@ -73,20 +69,17 @@ h3 {
 
 h4,
 li {
-  // font-size: 1.5rem;
   font-size: clamp(1.125rem, 1.55vw, 5.5rem);
   line-height: 160%;
 }
 
 h5 {
-  // font-size: 0.75rem;
   font-size: clamp(0.625rem, 0.8vw, 2rem);
   line-height: 165%;
 }
 
 p {
-  // font-size: 1.125rem;
-  font-size: clamp(0.875rem, 1.175vw, 4rem);
+  font-size: clamp(0.825rem, 1.175vw, 4rem);
   line-height: 180%;
   margin: 0.5em 0 0;
 }
@@ -168,7 +161,7 @@ a {
 
   .letter {
     margin-top: 0.75em;
-    // animation: animate-text 0.5s forwards;
+    animation: animate-text 0.5s forwards;
   }
 }
 
