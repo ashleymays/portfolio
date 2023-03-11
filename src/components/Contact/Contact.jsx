@@ -4,7 +4,7 @@ import "./Contact.scss";
 function Contact() {
   return (
     <div className="contact flex-row flex-align-center flex-justify-space-btwn">
-      <h3>Let's make something great together.</h3>
+      <h2>Let's make something great together :)</h2>
       <ul className="anchor-link-container">
         {contactLinks.map((link) => (
           <li key={link.href}>

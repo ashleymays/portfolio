@@ -3,8 +3,10 @@
 }
 
 :root {
-  --bkg-color: #1e2021;
-  --text-color: #edeceb;
+  // --bkg-color: #1e2021;
+  // --text-color: #edeceb;
+  --bkg-color: #fafafa;
+  --text-color: #353535;
 }
 
 html,
@@ -44,14 +46,14 @@ li {
 
 header,
 footer {
-  font-size: clamp(0.875rem, 1.05vw, 3.75rem);
-  padding: 5.5vmin 0;
+  font-size: clamp(0.8rem, 1.05vw, 3.75rem);
+  padding: 4.5vmin 0;
 }
 
 h1 {
   font-size: clamp(4rem, 9vw, 16rem);
   line-height: 105%;
-  margin: 0;
+  margin: 0 0 0.025em;
   padding: 0;
 }
 
@@ -64,7 +66,7 @@ h2 {
 h3 {
   font-size: clamp(1.25rem, 2.35vw, 8rem);
   line-height: 145%;
-  margin: 0.5em 0;
+  margin: 2.5em 0 1em;
 }
 
 h4,
@@ -79,7 +81,7 @@ h5 {
 }
 
 p {
-  font-size: clamp(0.825rem, 1.175vw, 4rem);
+  font-size: clamp(0.825rem, 1.1vw, 4rem);
   line-height: 180%;
   margin: 0.5em 0 0;
 }
@@ -117,7 +119,7 @@ a {
 
 .anchor-link-container {
   &:hover a {
-    opacity: 0.1;
+    opacity: 0.2;
   }
 }
 
@@ -159,23 +161,11 @@ a {
   margin: 1em 0 0.3em;
 }
 
-.text-animation {
-  overflow: hidden;
-  height: 1.125em;
+// .text-animation {
+//   overflow: hidden;
+//   height: 1.125em;
 
-  .letter {
-    padding-top: 2em;
-    animation: animate-text 0.5s forwards;
-    animation-delay: calc(var(--anim) * 0.05s);
-    animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
-  }
-}
-
-@keyframes animate-text {
-  from {
-    padding-top: 2em;
-  }
-  to {
-    padding-top: 0;
-  }
-}
+//   .letter {
+//     padding-top: 2em;
+//   }
+// }

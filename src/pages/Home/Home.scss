@@ -1,23 +1,22 @@
 .home__title {
   font-size: clamp(3.5rem, 12vw, 20rem);
-  // margin: 11% 0 18%;
-  margin: 11vmax 0 15vmax;
+  margin: 11vmax 0;
+  overflow: hidden;
 }
 
 .home__title__second-line {
-  @media screen and (max-width: 767px) {
-    align-items: initial !important;
-    justify-content: initial !important;
+  @media screen and (max-width: 599px) {
     flex-flow: column !important;
+    align-items: flex-start !important;
   }
 }
 
 .home__subtitle {
-  width: 20%;
-  margin: 2em 0 0 2em;
+  width: 17.5%;
+  margin: 2.5em 0 0 1.5em;
 
-  @media screen and (max-width: 767px) {
-    width: 100%;
-    margin: 2em 0 0;
+  @media screen and (max-width: 599px) {
+    width: 65%;
+    margin-left: 0;
   }
 }

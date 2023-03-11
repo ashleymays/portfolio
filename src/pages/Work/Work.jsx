@@ -1,7 +1,6 @@
 import ProjectImage from "../../components/ProjectImage/ProjectImage";
 import Layout from "../../layout/Layout";
 import Divider from "../../components/Divider/Divider";
-import useHeadingAnimation from "../../hooks/useHeadingAnimation";
 import projects from "../../constants/projects";
 import "./Work.scss";
 
@@ -19,7 +18,7 @@ function Work() {
   return (
     <Layout>
       <div className="flex-col flex-justify-space-btwn heading-margin">
-        <h1>{useHeadingAnimation(currentProject.title)}</h1>
+        <h1>{currentProject.title}</h1>
       </div>
 
       <div className="case-study__features">

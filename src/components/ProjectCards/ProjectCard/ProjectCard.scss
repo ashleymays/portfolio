@@ -1,9 +1,10 @@
 .project-card {
-  padding: clamp(2rem, 4.825vw, 8rem) 0;
+  padding: clamp(1.75rem, 4vw, 6.5rem) 0;
 }
 
 .project-card__overview {
   margin: 1em 0 0;
+  opacity: 0.65;
   @media screen and (max-width: 599px) {
     display: none;
   }

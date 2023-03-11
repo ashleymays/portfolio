@@ -1,8 +1,13 @@
+import Divider from "../Divider/Divider";
+
 function Footer() {
   return (
-    <footer className="flex-row flex-align-center">
-      Developed by Ashley Mays. Design inspired by Person 1, Person 2, and Person 3.
-    </footer>
+    <>
+      <Divider />
+      <footer className="flex-col flex-align-end flex-justify-center">
+        Developed by Ashley Mays. Design inspired by Person 1, Person 2, and Person 3.
+      </footer>
+    </>
   );
 }
 
