@@ -25,7 +25,7 @@ const projects = [
             src: PortfolioImage
         },
         links: {
-            github: 'https://github.com/ashleymays/ashleymays.github.io'
+            github: 'https://github.com/ashleymays/portfolio'
         }
     },
     {
