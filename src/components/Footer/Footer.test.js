@@ -20,7 +20,7 @@ function testFooterSection() {
 
         expect(footer).toBeVisible();
         expect(footer).toBeInTheDocument();
-        expect(footer).toHaveTextContent(/Copyright/);
+        expect(footer).toHaveTextContent(/Design/);
 
         const links = footer.querySelectorAll('a');
         checkLinks(links);

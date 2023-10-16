@@ -1,7 +1,14 @@
 @import '../../assets/styles/variables.scss';
+@import '../../assets/styles/classes.scss';
+
+.footer-wrapper {
+    @extend .flex-column;
+    @extend .align-items-center;
+}
 
 footer {
     font-size: $font-size-base;
     text-align: center;
-    padding: 2.5% 0;
+    padding: 9% 0;
+    width: min(70rem, 85%);
 }
