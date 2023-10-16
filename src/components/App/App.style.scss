@@ -3,10 +3,9 @@
 
 main {
     padding-top: clamp(13%, 14.5rem, 36%);
+    width: clamp(40%, 55rem, 92%);
     margin: auto;
-    overflow: hidden;
     @extend .flex-column;
-    @extend .align-items-center;
 }
 
 .main__heading {

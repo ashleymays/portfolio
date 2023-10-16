@@ -7,3 +7,8 @@
 .align-items-center {
     align-items: center;
 }
+
+.center-wrapper {
+    @extend .flex-column;
+    @extend .align-items-center;
+}

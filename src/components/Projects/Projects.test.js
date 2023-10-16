@@ -1,6 +1,7 @@
 import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
 import Projects from './Projects';
+import projectsData from './Projects.data';
 
 function checkSubtitles(subtitles) {
     const NUMBER_OF_SUBTITLES = 2;
@@ -47,7 +48,6 @@ function checkImageWrapper(imageWrapper) {
 function checkProject(project) {
     expect(project).toBeVisible();
     expect(project).toBeInTheDocument();
-    expect(project).toHaveClass('project');
 
     const imageWrapper = project.querySelector('.project__image-wrapper');
     const image = project.querySelector('.project__image');
@@ -60,11 +60,9 @@ function checkProject(project) {
     checkLink(link);
 }
 
-function checkProjectsSection(projectsSection) {
-    expect(projectsSection).toBeVisible();
-    expect(projectsSection).toBeInTheDocument();
-
-    const projects = projectsSection.querySelectorAll('.project');
+function checkProjects(projects) {
+    const NUMBER_OF_PROJECTS = projectsData.length;
+    expect(projects.length).toBe(NUMBER_OF_PROJECTS);
 
     projects.forEach((project) => {
         checkProject(project);
@@ -76,9 +74,9 @@ function testProjects() {
         render(<Projects />);
 
         const generics = screen.getAllByRole('generic');
-        const projectsSection = generics[0].querySelector('section');
+        const projects = generics[0].querySelectorAll('.project');
 
-        checkProjectsSection(projectsSection);
+        checkProjects(projects);
     });
 }
 

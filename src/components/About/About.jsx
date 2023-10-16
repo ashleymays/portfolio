@@ -1,6 +1,6 @@
 function About() {
     return (
-        <section>
+        <>
             <p>
                 Cool, you found my website. Let me introduce myself, then (don&apos;t worry I’ll
                 keep it short I know you’re busy).
@@ -19,7 +19,7 @@ function About() {
                 of free time in 2020). By mid-2022, I went all-in and went after a tech career. And
                 now here we are.
             </p>
-        </section>
+        </>
     );
 }
 

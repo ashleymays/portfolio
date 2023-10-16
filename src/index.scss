@@ -46,18 +46,9 @@ footer {
 }
 
 a {
-    text-decoration: none;
-}
-
-section {
-    width: clamp(40%, 55rem, 92%);
-    margin: auto;
-    @extend .flex-column;
-}
-
-a {
     color: $accent;
     transition-duration: 250ms;
+    text-decoration: none;
 
     &:hover {
         color: $accent-75;
