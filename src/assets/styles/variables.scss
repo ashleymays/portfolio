@@ -1,6 +1,16 @@
 // Font Sizes
 $font-size-lg: clamp(2.57rem, 0.77vw + 2.35rem, 3.06rem);
+$font-size-md: clamp(2.25rem, 0.58vw + 2.06rem, 2.68rem);
 $font-size-base: clamp(1.45rem, 0.34vw + 1.33rem, 1.73rem);
+
+// --font-size-sm: clamp(1.03rem, 0.26vw + 0.94rem, 1.22rem);
+// --font-size-base: clamp(1.33rem, 0.34vw + 1.22rem, 1.58rem);
+// --font-size-md: clamp(1.73rem, 0.44vw + 1.59rem, 2.06rem);
+// --font-size-lg: 
+// --font-size-xl: clamp(2.93rem, 0.75vw + 2.68rem, 3.48rem);
+// --font-size-xxl: clamp(3.81rem, 0.97vw + 3.48rem, 4.52rem);
+// --font-size-xxxl: clamp(4.95rem, 1.27vw + 4.53rem, 5.88rem);
+
 
 // Fonts
 $font-main: 'Inter', Arial, Helvetica, sans-serif;

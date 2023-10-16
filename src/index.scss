@@ -21,9 +21,20 @@ body {
 }
 
 h1,
-h2 {
-    font: 500 $font-size-lg $font-heading;
+h2,
+h3 {
+    font-family: $font-heading;
     color: $black;
+    font-weight: 500;
+}
+
+h1,
+h2 {
+    font-size: $font-size-lg
+}
+
+h3 {
+    font-size: $font-size-md;
 }
 
 p,
