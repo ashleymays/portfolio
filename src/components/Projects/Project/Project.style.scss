@@ -1,0 +1,28 @@
+@import '../../../assets/styles/classes.scss';
+@import '../../../assets/styles/variables.scss';
+
+.project {
+    padding: 6.5% 0;
+}
+
+.project-details {
+    @extend .flex-column;
+
+    & > * {
+        margin: 2% 0;
+    }
+}
+
+.project-details__subtitle {
+    color: $black;
+}
+
+.project__image-wrapper {
+    @extend .flex-column;
+    @extend .align-items-center;
+}
+
+.project__image {
+    width: max(100%, 70vw);
+    height: auto;
+}

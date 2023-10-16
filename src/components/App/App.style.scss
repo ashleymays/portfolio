@@ -1,0 +1,14 @@
+@import '../../assets/styles/variables.scss';
+@import '../../assets/styles/classes.scss';
+
+main {
+    padding-top: clamp(13%, 14.5rem, 36%);
+    margin: auto;
+    overflow: hidden;
+    @extend .flex-column;
+    @extend .align-items-center;
+}
+
+.main__heading {
+    padding-bottom: 2rem;
+}

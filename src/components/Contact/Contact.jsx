@@ -1,21 +1,10 @@
-import contactLinks from "../../constants/contactLinks";
-import "./Contact.scss";
-
 function Contact() {
-  return (
-    <div className="contact flex-row flex-align-center flex-justify-space-btwn">
-      <h2>Let's make something great together :)</h2>
-      <ul className="anchor-link-container">
-        {contactLinks.map((link) => (
-          <li key={link.href}>
-            <a href={link.href} target="_blank" rel="noreferrer">
-              {link.title}
-            </a>
-          </li>
-        ))}
-      </ul>
-    </div>
-  );
+    return (
+        <h2 className="contact__heading">
+            If you want to chat, you can email me at{' '}
+            <a href="mailto:ashleymays091@gmail.com">ashleymays091@gmail.com.</a>
+        </h2>
+    );
 }
 
 export default Contact;

@@ -1,0 +1,17 @@
+// Font Sizes
+$font-size-lg: clamp(2.57rem, 0.77vw + 2.35rem, 3.06rem);
+$font-size-base: clamp(1.33rem, 0.34vw + 1.22rem, 1.58rem);
+$font-size-sm: clamp(1.12rem, 0.26vw + 1.02rem, 1.33rem);
+
+// Fonts
+$font-main: 'Inter', Arial, Helvetica, sans-serif;
+$font-heading: 'Vollkorn', serif;
+
+// Colors
+$black: rgba(10, 10, 10, 100%);
+$black-70: rgba(10, 10, 10, 70%);
+
+$background: rgba(250, 250, 250, 100%);
+
+$accent: rgb(46, 97, 113, 100%);
+$accent-75: rgba(46, 97, 113, 75%);
