@@ -20,7 +20,7 @@ const projects = [
         title: 'Portfolio',
         techStack: 'React, SCSS/SASS, Jest, Figma',
         description:
-            "The site you're looking at. I made this with blood, sweat, and tears. Also with some React and SCSS. It's also the first project I wrote UI tests for. Designed it with Figma.",
+            "The site you're looking at. I made this with blood, sweat, and tears. Also with React and SCSS. It's also the first project I wrote UI tests for. Designed with Figma.",
         image: {
             alt: 'Portfolio',
             src: PortfolioImage
