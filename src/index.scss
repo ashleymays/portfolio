@@ -18,28 +18,26 @@ html {
 
 body {
     background: $background;
+    font-family: $font-main;
 }
 
 h1,
 h2,
 h3 {
-    font-family: $font-heading;
     color: $black;
     font-weight: 500;
 }
 
 h1,
-h2 {
-    font-size: $font-size-lg
-}
-
-h3 {
-    font-size: $font-size-md;
+h2,
+h3,
+p, 
+footer {
+    font-size: $font-size-base;
 }
 
 p,
 footer {
-    font: 400 $font-size-base $font-main;
     line-height: 1.8em;
     color: $black-70;
     margin: 1.5em 0;
@@ -51,7 +49,7 @@ a {
     text-decoration: none;
 
     &:hover {
-        color: $accent-75;
+        color: $accent-60;
     }
 }
 
