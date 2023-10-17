@@ -11,8 +11,8 @@ function Footer() {
                     Darius Foroux
                 </a>
                 , and{' '}
-                <a target="_blank" rel="noreferrer" href="https://andrewcouldwell.com">
-                    Andrew Couldwell.
+                <a target="_blank" rel="noreferrer" href="https://slrncl.com/">
+                    Nicolas Solerieu.
                 </a>
             </footer>
         </section>

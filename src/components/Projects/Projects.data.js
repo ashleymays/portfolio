@@ -1,4 +1,5 @@
 import WorkFlowImage from '../../assets/images/workflow.svg';
+import GoodybeeImage from '../../assets/images/goodybee.svg';
 import PortfolioImage from '../../assets/images/portfolio.svg';
 
 const projects = [
@@ -34,8 +35,8 @@ const projects = [
         description:
             "Find and save recipes from all over the web. This was my first full stack app, so needless to say I learned a lot while making it. I use the Edamam Recipe API to grab recipes. I also added a login system so users can save their favorite recipes (unless it's Hawaiian pizza, then they're put on a list).",
         image: {
-            alt: '',
-            src: ''
+            alt: 'Goodybee',
+            src: GoodybeeImage
         },
         links: {
             github: 'https://github.com/ashleymays/goodybee'

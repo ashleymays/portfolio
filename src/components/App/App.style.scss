@@ -1,13 +1,8 @@
-@import '../../assets/styles/variables.scss';
-@import '../../assets/styles/classes.scss';
-
 main {
-    padding-top: clamp(12%, 13rem, 34%);
-    width: clamp(40%, 55rem, 92%);
+    width: clamp(35%, 52.5rem, 92%);
     margin: auto;
-    @extend .flex-column;
 }
 
 .main__heading {
-    padding-bottom: 2.25rem;
+    padding: clamp(17.5%, 17.5rem, 42.5%) 0 min(15rem, 12.5%);
 }

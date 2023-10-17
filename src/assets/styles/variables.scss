@@ -1,17 +1,14 @@
 // Font Sizes
-$font-size-lg: clamp(2.42rem, 0.75vw + 2.22rem, 2.88rem);
-$font-size-md: clamp(2.25rem, 0.58vw + 2.06rem, 2.68rem);
-$font-size-base: clamp(1.28rem, 0.34vw + 1.17rem, 1.52rem);
+$font-size-base: clamp(1.3rem, 0.44vw + 1.19rem, 1.54rem);
 
 // Fonts
-$font-main: 'Inter', Arial, Helvetica, sans-serif;
-$font-heading: 'Vollkorn', serif;
+$font-main: 'Hind Siliguri', Arial, Helvetica, sans-serif;
 
 // Colors
 $black: rgba(10, 10, 10, 100%);
 $black-70: rgba(10, 10, 10, 70%);
 
-$background: rgba(250, 250, 250, 100%);
+$background: rgba(255, 255, 255, 100%);
 
-$accent: rgba(46, 97, 113, 100%);
-$accent-75: rgba(46, 97, 113, 75%);
+$accent: rgba(56, 80, 240, 100%);
+$accent-60: rgba(56, 80, 240, 60%);

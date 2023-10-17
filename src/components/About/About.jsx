@@ -2,22 +2,22 @@ function About() {
     return (
         <>
             <p>
-                Cool, you found my website. Let me introduce myself, then (don&apos;t worry I’ll
-                keep it short I know you’re busy).
+                Cool, you found my website. Glad you&apos;re here. Let me introduce myself, then
+                (don&apos;t worry I&apos;ll keep it short I know you&apos;re busy).
             </p>
             <p>
                 My name is <s className="strikethrough">Ashlee</s>{' '}
-                <s className="strikethrough">Ashleigh</s> Ashley, and I’m a programmer. I mostly
-                work on websites, but I’m open to new things. I work as an application support
-                engineer and make side projects in my free time.
+                <s className="strikethrough">Ashleigh</s> Ashley, and I&apos;m a programmer. Web
+                developer, to be specific. Basically I spend a lot of my time online with headphones
+                on.
             </p>
-            <p>Here&apos;s the rest of it if you&apos;re really curious:</p>
+            <p>Here&apos;s more on my background, if you&apos;re interested:</p>
             <p>
-                I started programming in early 2020 for a college class. At first it was just for my
-                degree, but I actually really liked the class. So I took another programming class
-                later on that year. That was when I started programming in my free time (I had a lot
-                of free time in 2020). By mid-2022, I went all-in and went after a tech career. And
-                now here we are.
+                I started programming in college (and before you ask, no I don&apos;t have a CS
+                degree, only a math degree that collects dust in my closet). It was just a degree
+                requirement at first, but I was really into it by the end of the class. A few years
+                of hobby projects, and eventually I got a career in tech. Now I&apos;m an
+                application support engineer solving interesting problems every day.
             </p>
         </>
     );

@@ -6,10 +6,7 @@ import Footer from '../Footer';
 function App() {
     return (
         <main>
-            <h1 className="main__heading">
-                Ashley Mays. Web developer. <br />
-                Extroverted introvert.
-            </h1>
+            <h1 className="main__heading">Ashley Mays. Web developer. Extroverted introvert.</h1>
             <About />
             <Projects />
             <Contact />
