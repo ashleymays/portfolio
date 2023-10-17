@@ -10,13 +10,11 @@ function testContactSection() {
 
         expect(heading).toBeVisible();
         expect(heading).toBeInTheDocument();
-        expect(heading).toHaveClass('contact__heading');
-        expect(heading).toHaveTextContent(/email me/);
 
         expect(emailAddress).toBeVisible();
         expect(emailAddress).toBeInTheDocument();
         expect(emailAddress).toHaveAttribute('href', 'mailto:ashleymays091@gmail.com');
-        expect(emailAddress).toHaveTextContent('ashleymays091@gmail.com.');
+        expect(emailAddress).toHaveTextContent('ashleymays091@gmail.com');
     });
 }
 

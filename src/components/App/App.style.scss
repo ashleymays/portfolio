@@ -2,12 +2,12 @@
 @import '../../assets/styles/classes.scss';
 
 main {
-    padding-top: clamp(13%, 14.5rem, 36%);
+    padding-top: clamp(12%, 13rem, 34%);
     width: clamp(40%, 55rem, 92%);
     margin: auto;
     @extend .flex-column;
 }
 
 .main__heading {
-    padding-bottom: 2rem;
+    padding-bottom: 2.25rem;
 }

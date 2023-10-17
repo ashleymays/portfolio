@@ -19,7 +19,7 @@ const projects = [
         title: 'Portfolio',
         techStack: 'React, SCSS/SASS, Jest, Figma',
         description:
-            "Had to include this website. I made this with blood, sweat, and tears. Also with a bit of React and SCSS. It's also the first project I wrote UI tests for. Designed it with Figma.",
+            "The site you're looking at. I made this with blood, sweat, and tears. Also with some React and SCSS. It's also the first project I wrote UI tests for. Designed it with Figma.",
         image: {
             alt: 'Portfolio',
             src: PortfolioImage
@@ -32,7 +32,7 @@ const projects = [
         title: 'Goodybee',
         techStack: 'EJS, CSS, JavaScript, Node, Express, AWS, Heroku, REST API',
         description:
-            'Find and save recipes from all over the web. This was my first full stack app, so needless to say I learned a lot while making it. I use the Edamam Recipe API to grab recipes on the server-side, then I send them client-side to show them to the user. I also added a login system so users can save their favorite recipes!',
+            "Find and save recipes from all over the web. This was my first full stack app, so needless to say I learned a lot while making it. I use the Edamam Recipe API to grab recipes. I also added a login system so users can save their favorite recipes (unless it's Hawaiian pizza, then they're put on a list).",
         image: {
             alt: '',
             src: ''
