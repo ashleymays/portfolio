@@ -10,9 +10,13 @@ function Footer() {
                 <a target="_blank" rel="noreferrer" href="https://dariusforoux.com">
                     Darius Foroux
                 </a>
+                ,{' '}
+                <a target="_blank" rel="noreferrer" href="https://slrncl.com">
+                    Nicolas Solerieu
+                </a>
                 , and{' '}
-                <a target="_blank" rel="noreferrer" href="https://slrncl.com/">
-                    Nicolas Solerieu.
+                <a target="_blank" rel="noreferrer" href="https://brianlovin.com">
+                    Brian Lovin.
                 </a>
             </footer>
         </section>
