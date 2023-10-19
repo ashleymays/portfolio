@@ -2,7 +2,7 @@ function Project({ title, techStack, description, image, links }) {
     return (
         <div className="project">
             <div className="project__image-wrapper">
-                <img className="project__image" alt={image.alt} src={image.src} />
+                <img className="project__image" alt={image.alt} src={image.src} loading="lazy" />
             </div>
             <h2>
                 <a target="_blank" rel="noreferrer" href={links.github}>
