@@ -3,7 +3,7 @@ import projects from './Projects.data';
 
 function Projects() {
     const projectItems = projects.map((project) => <Project key={project.title} {...project} />);
-    return <>{projectItems}</>;
+    return <section className="projects">{projectItems}</section>;
 }
 
 export default Projects;

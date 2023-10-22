@@ -6,7 +6,7 @@ function Contact() {
                 If you want to get in touch with me, you can email me at{' '}
                 <a href="mailto:ashleymays091@gmail.com">ashleymays091@gmail.com</a>. Or you can
                 check out my <a href="https://github.com/ashleymays">Github</a> to see what I&apos;m
-                working on. Anyways, thanks for reading and I&apos;ll (hopefully) talk to you soon.
+                working on. Either way, thanks for reading and I&apos;ll (maybe) talk to you soon.
             </p>
             <p>
                 Design inspired by the websites of{' '}

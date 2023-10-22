@@ -5,10 +5,10 @@ const paragraph2 =
 
 function About() {
     return (
-        <section className="about">
+        <>
             <p className="about-paragraph">{paragraph1}</p>
             <p className="about-paragraph">{paragraph2}</p>
-        </section>
+        </>
     );
 }
 
