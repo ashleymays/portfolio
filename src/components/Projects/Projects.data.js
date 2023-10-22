@@ -1,5 +1,5 @@
-import WorkFlowImage from '../../assets/images/workflow.png';
-import GoodybeeImage from '../../assets/images/goodybee.png';
+import WorkFlowImage from '../../assets/images/workflow.webp';
+import GoodybeeImage from '../../assets/images/goodybee.webp';
 
 const projects = [
     {
@@ -13,8 +13,7 @@ const projects = [
         },
         links: {
             github: 'https://github.com/ashleymays'
-        },
-        lazyLoad: false
+        }
     },
     {
         title: 'Goodybee',
@@ -27,8 +26,7 @@ const projects = [
         },
         links: {
             github: 'https://github.com/ashleymays/goodybee'
-        },
-        lazyLoad: true
+        }
     }
 ];
 
