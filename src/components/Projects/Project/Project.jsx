@@ -1,7 +1,7 @@
-function Project({ title, techStack, description, image, links }) {
+function Project({ title, techStack, description, image, links, lazyLoad }) {
     return (
         <div className="project">
-            <img className="project__image" alt={image.alt} src={image.src} />
+            <img className="project__image" alt={image.alt} src={image.src} loading={lazyLoad} />
 
             <div>
                 <a className="project-link" target="_blank" rel="noreferrer" href={links.github}>
