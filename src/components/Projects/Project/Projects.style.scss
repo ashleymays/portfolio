@@ -1,0 +1,21 @@
+@import '../../../assets/styles/variables.scss';
+
+.project {
+    padding: 10% 0;
+}
+
+.project-details {
+    margin: 10% 0;
+
+    & > p {
+        font-size: $font-size-sm;
+        letter-spacing: 0.01em;
+        margin: 2.5em 0;
+    }
+}
+
+.project__image {
+    width: 100%;
+    height: auto;
+    border-radius: 0.75rem;
+}

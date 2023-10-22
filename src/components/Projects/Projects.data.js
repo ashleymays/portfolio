@@ -1,6 +1,5 @@
 import WorkFlowImage from '../../assets/images/workflow.svg';
 import GoodybeeImage from '../../assets/images/goodybee.svg';
-import PortfolioImage from '../../assets/images/portfolio.svg';
 
 const projects = [
     {
@@ -14,19 +13,6 @@ const projects = [
         },
         links: {
             github: 'https://github.com/ashleymays'
-        }
-    },
-    {
-        title: 'Portfolio',
-        techStack: 'React, SCSS/SASS, Jest, Figma',
-        description:
-            "The site you're looking at. I went with a minimalist design, partly because I don't understand color theory and partly because I wanted it to feel uncluttered.",
-        image: {
-            alt: 'Portfolio',
-            src: PortfolioImage
-        },
-        links: {
-            github: 'https://github.com/ashleymays/portfolio'
         }
     },
     {
