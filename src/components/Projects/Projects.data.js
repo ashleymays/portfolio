@@ -13,7 +13,8 @@ const projects = [
         },
         links: {
             github: 'https://github.com/ashleymays'
-        }
+        },
+        lazyLoad: false
     },
     {
         title: 'Goodybee',
@@ -26,7 +27,8 @@ const projects = [
         },
         links: {
             github: 'https://github.com/ashleymays/goodybee'
-        }
+        },
+        lazyLoad: true
     }
 ];
 
