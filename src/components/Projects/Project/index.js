@@ -1,4 +1,4 @@
-import './Project.style.scss';
+import './Projects.style.scss';
 
 export { default } from './Project';
 export * from './Project';

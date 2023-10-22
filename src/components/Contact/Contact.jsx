@@ -1,15 +1,27 @@
 function Contact() {
     return (
         <section className="contact">
-            <h3>Let&apos;s grab a coffee :)</h3>
+            <div className="line" />
             <p>
-                I&apos;m not a huge fan of social media (except Youtube, if that counts). If
-                you&apos;d like to get in touch with me, you can email me at{' '}
+                If you want to get in touch with me, you can email me at{' '}
                 <a href="mailto:ashleymays091@gmail.com">ashleymays091@gmail.com</a>. Or you can
                 check out my <a href="https://github.com/ashleymays">Github</a> to see what I&apos;m
-                up to.
+                working on. Anyways, thanks for reading and I&apos;ll (hopefully) talk to you soon.
             </p>
-            <p>Anyways, thanks for reading and I&apos;ll (hopefully) talk to you soon.</p>
+            <p>
+                Design inspired by the websites of{' '}
+                <a target="_blank" rel="noreferrer" href="https://slrncl.com">
+                    Nicolas Solerieu
+                </a>
+                ,{' '}
+                <a target="_blank" rel="noreferrer" href="https://manuelmoreale.com">
+                    Manuel Moreale
+                </a>
+                , and{' '}
+                <a target="_blank" rel="noreferrer" href="https://brianlovin.com">
+                    Brian Lovin.
+                </a>
+            </p>
         </section>
     );
 }

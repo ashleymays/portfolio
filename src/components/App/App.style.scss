@@ -1,8 +1,8 @@
 main {
-    width: clamp(37.5%, 53rem, 90%);
-    margin: auto;
+    width: clamp(40%, 54rem, 90%);
+    margin: clamp(13.5%, 14rem, 37.5%) auto 0;
 }
 
 .main__heading {
-    padding: clamp(15%, 15rem, 37.5%) 0 min(7.5rem, 7.5%);
+    margin: 0 0 min(10rem, 10%);
 }

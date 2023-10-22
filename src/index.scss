@@ -19,6 +19,7 @@ html {
 body {
     background: $background;
     font-family: $font-main;
+    font-weight: 400;
 }
 
 h1,
@@ -29,31 +30,26 @@ h3 {
 }
 
 h1,
-h2,
+h2 {
+    font-size: $font-size-md;
+}
+
 h3,
-p, 
 footer {
     font-size: $font-size-base;
 }
 
 p,
 footer {
-    line-height: 1.8em;
+    line-height: 1.9em;
     color: $black-70;
-    margin: 1.5em 0;
 }
 
 a {
-    color: $accent;
-    transition-duration: 175ms;
+    color: $black;
     text-decoration: none;
 
     &:hover {
-        color: $accent-60;
+        text-decoration: underline;
     }
-}
-
-::selection {
-    color: $background;
-    background-color: $accent;
 }

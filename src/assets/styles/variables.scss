@@ -1,5 +1,7 @@
 // Font Sizes
+$font-size-sm: clamp(1.33rem, 0.34vw + 1.13rem, 1.46rem);
 $font-size-base: clamp(1.52rem, 0.3vw + 1.23rem, 1.7rem);
+$font-size-md: clamp(1.69rem, 0.58vw + 1.55rem, 2.01rem);
 
 // Fonts
 $font-main: 'Segoe UI', Arial, Helvetica, sans-serif;
@@ -7,8 +9,6 @@ $font-main: 'Segoe UI', Arial, Helvetica, sans-serif;
 // Colors
 $black: rgba(10, 10, 10, 100%);
 $black-70: rgba(10, 10, 10, 70%);
+$black-10: rgba(10, 10, 10, 10%);
 
 $background: rgba(255, 255, 255, 100%);
-
-$accent: rgba(63,124,172, 100%);
-$accent-60: rgba(63,124,172, 60%);
