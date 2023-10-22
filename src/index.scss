@@ -19,30 +19,27 @@ html {
 body {
     background: $background;
     font-family: $font-main;
-    font-weight: 400;
-}
-
-h1,
-h2,
-h3 {
-    color: $black;
-    font-weight: 500;
 }
 
 h1,
 h2 {
+    color: $black;
+    font-weight: 500;
+}
+
+h1 {
     font-size: $font-size-md;
 }
 
-h3,
-footer {
+h2 {
     font-size: $font-size-base;
 }
 
-p,
-footer {
-    line-height: 1.9em;
+p {
+    font-size: $font-size-sm;
+    font-weight: 400;
     color: $black-70;
+    line-height: 1.9em;
 }
 
 a {

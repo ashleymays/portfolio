@@ -4,8 +4,8 @@ function Project({ title, techStack, description, image, links }) {
             <img className="project__image" alt={image.alt} src={image.src} loading="lazy" />
 
             <div className="project-details">
-                <a target="_blank" rel="noreferrer" href={links.github}>
-                    <h3>{title} &#8599;</h3>
+                <a className="project-link" target="_blank" rel="noreferrer" href={links.github}>
+                    <h2>{title} &#8599;</h2>
                 </a>
                 <p>{description}</p>
                 <p>Made with: {techStack}</p>
