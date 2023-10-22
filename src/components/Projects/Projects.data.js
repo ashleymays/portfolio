@@ -1,12 +1,12 @@
-import WorkFlowImage from '../../assets/images/workflow.svg';
-import GoodybeeImage from '../../assets/images/goodybee.svg';
+import WorkFlowImage from '../../assets/images/workflow.png';
+import GoodybeeImage from '../../assets/images/goodybee.png';
 
 const projects = [
     {
         title: 'Workflow',
         techStack: 'React, Firebase, SCSS/SASS, Node, Express, Jest, Figma',
         description:
-            "A task management system that lets users create custom milestones for each task. I got the idea when I was at work. I needed a way to be able to keep track of my todos, but I couldn't find an app that had everything I was looking for. Jira's too complex, and a regular todo list is too simple. So I came up with this. Work in progress.",
+            "A task management system that lets users create custom milestones for each task. I got the idea when I was at work. I needed a really simple way to be able to keep track of my todos, but I couldn't find an app that had everything I was looking for. Jira's too much, and a regular todo list is too simple. So I'm making this now. Work in progress.",
         image: {
             alt: 'Workflow',
             src: WorkFlowImage

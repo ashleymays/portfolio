@@ -2,7 +2,7 @@ import About from '../About';
 import Projects from '../Projects';
 import Contact from '../Contact';
 
-const heading = 'Ashley Mays. Web Developer.';
+const heading = "Hi I'm Ashley — web developer, support engineer, and amateur weightlifter.";
 
 function App() {
     return (
