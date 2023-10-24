@@ -9,7 +9,7 @@
   --font-size-md: clamp(1.63rem, 0.44vw + 1.49rem, 1.94rem);
   --font-size-lg: clamp(2.25rem, 0.58vw + 2.06rem, 2.68rem);
 
-  --font-main: "Segoe UI", Arial, Helvetica, sans-serif;
+  --font-main: "Segoe UI", Helvetica, sans-serif;
 
   --text-color: rgba(15, 15, 15, 100%);
   --text-color-70: rgba(15, 15, 15, 70%);
