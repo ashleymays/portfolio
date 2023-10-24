@@ -7,14 +7,14 @@
 
   --font-size-sm: clamp(1.35rem, 0.34vw + 1.1rem, 1.46rem);
   --font-size-base: clamp(1.52rem, 0.3vw + 1.23rem, 1.7rem);
-  --font-size-md: clamp(1.72rem, 0.58vw + 1.57rem, 2.04rem);
+  --font-size-md: clamp(1.63rem, 0.44vw + 1.49rem, 1.94rem);
   --font-size-lg: clamp(2.25rem, 0.58vw + 2.06rem, 2.68rem);
 
   --font-main: "Segoe UI", Arial, Helvetica, sans-serif;
 
-  --text-color: rgba(10, 10, 10, 100%);
-  --text-color-70: rgba(10, 10, 10, 70%);
-  --line-color: rgba(10, 10, 10, 10%);
+  --text-color: rgba(15, 15, 15, 100%);
+  --text-color-70: rgba(15, 15, 15, 70%);
+  --line-color: rgba(15, 15, 15, 7.5%);
 
   --page-background: rgba(255, 255, 255, 100%);
   --image-background: rgba(238, 238, 238, 100%);
@@ -138,7 +138,7 @@ footer {
   :root {
     --text-color: rgba(235, 235, 235, 100%);
     --text-color-70: rgba(235, 235, 235, 70%);
-    --line-color: rgba(235, 235, 235, 5%);
+    --line-color: rgba(235, 235, 235, 7.5%);
 
     --page-background: rgba(15, 15, 15, 100%);
     --image-background: rgba(28, 28, 28, 100%);
