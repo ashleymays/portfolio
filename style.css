@@ -7,7 +7,8 @@
 
   --font-size-sm: clamp(1.35rem, 0.34vw + 1.1rem, 1.46rem);
   --font-size-base: clamp(1.52rem, 0.3vw + 1.23rem, 1.7rem);
-  --font-size-md: clamp(2.25rem, 0.58vw + 2.06rem, 2.68rem);
+  --font-size-md: clamp(1.72rem, 0.58vw + 1.57rem, 2.04rem);
+  --font-size-lg: clamp(2.25rem, 0.58vw + 2.06rem, 2.68rem);
 
   --font-main: "Segoe UI", Arial, Helvetica, sans-serif;
 
@@ -43,13 +44,14 @@ h2 {
 }
 
 h1 {
-  font-size: var(--font-size-md);
+  font-size: var(--font-size-lg);
 }
 
 h2 {
-  font-size: var(--font-size-base);
+  font-size: var(--font-size-md);
 }
 
+footer,
 p {
   font-size: var(--font-size-sm);
   font-weight: 400;
@@ -62,19 +64,18 @@ a {
   text-decoration: none;
 }
 
+.large-paragraph {
+  font-size: var(--font-size-base);
+}
+
 /* Main */
 main {
-  width: clamp(30%, 53rem, 90%);
+  width: clamp(30%, 50rem, 90%);
   margin: clamp(10.5%, 13.5rem, 32.5%) auto 0;
 }
 
 .main__heading {
   margin: 0 0 min(10rem, 10%);
-}
-
-/* About */
-.about-paragraph {
-  font-size: var(--font-size-base);
 }
 
 /* Projects */
@@ -113,7 +114,7 @@ main {
 
 /* Contact */
 .contact {
-  padding: 4% 0 12.5%;
+  margin: 35% 0;
 }
 
 .line {
@@ -125,6 +126,11 @@ main {
 
 .contact-link {
   text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  padding: 4% 0 12.5%;
 }
 
 /* Configure Dark Mode Color Scheme */
