@@ -135,7 +135,7 @@ main {
     --text-color-70: rgba(235, 235, 235, 70%);
     --line-color: rgba(235, 235, 235, 10%);
 
-    --page-background: rgba(20, 20, 20, 100%);
-    --image-background: rgba(32, 32, 32, 100%);
+    --page-background: rgba(15, 15, 15, 100%);
+    --image-background: rgba(28, 28, 28, 100%);
   }
 }
