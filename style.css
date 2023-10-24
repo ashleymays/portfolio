@@ -5,9 +5,9 @@
 :root {
   color-scheme: dark light;
 
-  --font-size-base: clamp(1.35rem, 0.34vw + 1.325rem, 1.6rem);
+  --font-size-base: clamp(1.42rem, 0.34vw + 1.3rem, 1.7rem);
   --font-size-md: clamp(1.63rem, 0.44vw + 1.49rem, 1.94rem);
-  --font-size-lg: clamp(2.25rem, 0.58vw + 2.06rem, 2.68rem);
+  --font-size-lg: clamp(2.3rem, 0.75vw + 2.1rem, 2.73rem);
 
   --font-main: "Segoe UI", Helvetica, sans-serif;
 
@@ -55,7 +55,7 @@ p {
   font-size: var(--font-size-base);
   font-weight: 400;
   color: var(--text-color-70);
-  line-height: 1.9em;
+  line-height: 1.8em;
 }
 
 a {
@@ -65,7 +65,7 @@ a {
 
 /* Main */
 main {
-  width: clamp(30%, 50rem, 90%);
+  width: clamp(30%, 51rem, 90%);
   margin: clamp(10.5%, 13.5rem, 32.5%) auto 0;
 }
 
