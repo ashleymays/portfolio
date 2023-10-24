@@ -65,7 +65,7 @@ a {
 /* Main */
 main {
   width: clamp(30%, 53rem, 90%);
-  margin: clamp(11.5%, 13.5rem, 32.5%) auto 0;
+  margin: clamp(10.5%, 13.5rem, 32.5%) auto 0;
 }
 
 .main__heading {
@@ -78,7 +78,6 @@ main {
 }
 
 /* Projects */
-
 .project {
   margin: 30% 0;
 }
@@ -136,6 +135,6 @@ main {
     --line-color: rgba(235, 235, 235, 10%);
 
     --page-background: rgba(15, 15, 15, 100%);
-    --image-background: rgba(28, 28, 28, 100%);
+    --image-background: rgba(25, 25, 25, 100%);
   }
 }
