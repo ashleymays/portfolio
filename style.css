@@ -5,7 +5,7 @@
 :root {
   color-scheme: dark light;
 
-  --font-size-base: clamp(1.42rem, 0.34vw + 1.3rem, 1.7rem);
+  --font-size-base: clamp(1.39rem, 0.44vw + 1.27rem, 1.65rem);
   --font-size-md: clamp(1.63rem, 0.44vw + 1.49rem, 1.94rem);
   --font-size-lg: clamp(2.3rem, 0.75vw + 2.1rem, 2.73rem);
 
@@ -65,7 +65,7 @@ a {
 
 /* Main */
 main {
-  width: clamp(30%, 51rem, 90%);
+  width: clamp(30%, 50rem, 90%);
   margin: clamp(10.5%, 13.5rem, 32.5%) auto 0;
 }
 
