@@ -66,7 +66,7 @@ a {
 /* Main */
 main {
   width: clamp(25%, 45rem, 90%);
-  margin: clamp(15%, 13.5rem, 35%) auto 0;
+  margin: clamp(10.75%, 13.5rem, 35%) auto 0;
 }
 
 .main__heading {
