@@ -3,7 +3,7 @@
 }
 
 :root {
-  color-scheme: dark light;
+  color-scheme: light dark;
 
   --font-size-base: clamp(1.5rem, 0.43vw + 1.22rem, 1.58rem);
   --font-size-md: clamp(1.52rem, 0.43vw + 1.42rem, 1.85rem);
