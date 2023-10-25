@@ -5,9 +5,9 @@
 :root {
   color-scheme: dark light;
 
-  --font-size-base: clamp(1.33rem, 0.43vw + 1.22rem, 1.58rem);
+  --font-size-base: clamp(1.5rem, 0.43vw + 1.22rem, 1.58rem);
   --font-size-md: clamp(1.6rem, 0.43vw + 1.46rem, 1.9rem);
-  --font-size-lg: clamp(2.27rem, 0.53vw + 2.08rem, 2.7rem);
+  --font-size-lg: clamp(2.27rem, 0.53vw + 2.08rem, 2.9rem);
 
   --font-main: "Segoe UI", Helvetica, sans-serif;
 
