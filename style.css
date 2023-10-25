@@ -5,18 +5,18 @@
 :root {
   color-scheme: dark light;
 
-  --font-size-base: clamp(1.39rem, 0.44vw + 1.27rem, 1.65rem);
-  --font-size-md: clamp(1.63rem, 0.44vw + 1.49rem, 1.94rem);
-  --font-size-lg: clamp(2.3rem, 0.75vw + 2.1rem, 2.73rem);
+  --font-size-base: clamp(1.33rem, 0.43vw + 1.22rem, 1.58rem);
+  --font-size-md: clamp(1.6rem, 0.43vw + 1.46rem, 1.9rem);
+  --font-size-lg: clamp(2.27rem, 0.53vw + 2.08rem, 2.7rem);
 
   --font-main: "Segoe UI", Helvetica, sans-serif;
 
-  --text-color: rgba(15, 15, 15, 100%);
-  --text-color-70: rgba(15, 15, 15, 70%);
-  --line-color: rgba(15, 15, 15, 15%);
+  --text-color: rgba(17, 17, 17, 100%);
+  --text-color-70: rgba(17, 17, 17, 70%);
+  --line-color: rgba(17, 17, 17, 15%);
 
   --page-background: rgba(255, 255, 255, 100%);
-  --image-background: rgba(240, 240, 240, 100%);
+  --image-background: rgba(242, 242, 242, 100%);
 }
 
 html,
@@ -65,7 +65,7 @@ a {
 
 /* Main */
 main {
-  width: clamp(30%, 50rem, 90%);
+  width: clamp(25%, 45rem, 90%);
   margin: clamp(10.5%, 13.5rem, 32.5%) auto 0;
 }
 
@@ -86,7 +86,7 @@ main {
 .project__image-wrapper {
   width: 100%;
   margin: auto;
-  padding: 7.5% 0;
+  padding: 11% 0;
   background: var(--image-background);
   display: flex;
   align-items: center;
@@ -94,7 +94,7 @@ main {
 }
 
 .project__image {
-  width: 85%;
+  width: 77.5%;
   height: auto;
 }
 
@@ -116,7 +116,7 @@ main {
   width: 100%;
   height: 0.1rem;
   background: var(--line-color);
-  margin: 8.5% 0;
+  /* margin: 8.5% 0; */
 }
 
 .contact-link {
@@ -125,7 +125,7 @@ main {
 
 /* Footer */
 footer {
-  padding: 4% 0 12.5%;
+  padding: 15% 0;
 }
 
 /* Configure Dark Mode Color Scheme */
@@ -135,7 +135,7 @@ footer {
     --text-color-70: rgba(235, 235, 235, 70%);
     --line-color: rgba(235, 235, 235, 10%);
 
-    --page-background: rgba(20, 20, 20, 100%);
-    --image-background: rgba(28, 28, 28, 100%);
+    --page-background: rgba(16, 17, 18, 100%);
+    --image-background: rgba(20, 21, 21, 100%);
   }
 }
