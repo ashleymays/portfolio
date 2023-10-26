@@ -43,6 +43,7 @@ h2 {
 
 h1 {
   font-size: var(--font-size-lg);
+  margin: clamp(12.5%, 15rem, 29%) 0 min(10rem, 10%);
 }
 
 h2 {
@@ -60,11 +61,6 @@ p {
 main {
   width: clamp(30%, 53rem, 90%);
   margin: auto;
-  padding: clamp(10%, 13rem, 27.5%) 0 0;
-}
-
-.main__heading {
-  margin: 0 0 min(10rem, 10%);
 }
 
 /* Projects */
