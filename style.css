@@ -38,12 +38,12 @@ h1,
 h2 {
   color: var(--text-color);
   font-weight: 500;
-  line-height: 1.625em;
+  line-height: 1.575em;
 }
 
 h1 {
   font-size: var(--font-size-lg);
-  margin: clamp(12.5%, 15rem, 29%) 0 min(10rem, 10%);
+  margin: clamp(13%, 15rem, 30%) 0 min(12.5rem, 12.5%);
 }
 
 h2 {
