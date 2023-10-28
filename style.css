@@ -14,19 +14,18 @@
   --text-color: rgba(50, 50, 50, 100%);
   --text-color-70: rgba(50, 50, 50, 70%);
   --line-color: rgba(35, 35, 35, 15%);
-
   --page-background: rgba(252, 252, 252, 100%);
   --image-background: rgba(245, 245, 245, 100%);
 }
 
 html,
 body {
-  margin: 0;
   width: 100%;
 }
 
 html {
   font-size: 10px;
+  margin: 0;
 }
 
 body {
@@ -37,8 +36,13 @@ body {
 }
 
 h1,
-h2 {
+h2,
+a {
   color: var(--text-color);
+}
+
+h1,
+h2 {
   font-weight: 500;
   line-height: 1.575em;
 }
@@ -103,10 +107,6 @@ p {
   margin: 10% 0;
 }
 
-.contact-link {
-  color: var(--text-color);
-}
-
 /* Footer */
 footer {
   padding: 0 0 15%;
@@ -118,7 +118,6 @@ footer {
     --text-color: rgba(232, 230, 227, 100%);
     --text-color-70: rgba(232, 230, 227, 70%);
     --line-color: rgba(230, 230, 230, 10%);
-
     --page-background: rgba(27, 29, 30, 100%);
     --image-background: rgba(30, 32, 33, 100%);
   }
