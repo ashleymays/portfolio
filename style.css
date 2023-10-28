@@ -32,6 +32,8 @@ html {
 body {
   background: var(--page-background);
   font-family: var(--font-main);
+  width: clamp(30%, 53rem, 90%);
+  margin: auto;
 }
 
 h1,
@@ -55,12 +57,6 @@ p {
   font-size: var(--font-size-base);
   color: var(--text-color-70);
   line-height: 1.8em;
-}
-
-/* Main */
-main {
-  width: clamp(30%, 53rem, 90%);
-  margin: auto;
 }
 
 /* Projects */
