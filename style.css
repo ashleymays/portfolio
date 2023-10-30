@@ -3,8 +3,6 @@
 }
 
 :root {
-  color-scheme: dark light;
-
   --font-size-base: clamp(1.52rem, 0.34vw + 1.22rem, 1.58rem);
   --font-size-md: clamp(1.75rem, 0.44vw + 1.55rem, 2.02rem);
   --font-size-lg: clamp(2.87rem, 0.75vw + 2.62rem, 3.41rem);
@@ -31,7 +29,7 @@ html {
 body {
   background: var(--page-background);
   font-family: var(--font-main);
-  width: clamp(30%, 53rem, 90%);
+  width: clamp(30%, 51rem, 90%);
   margin: auto;
 }
 
@@ -44,12 +42,12 @@ a {
 h1,
 h2 {
   font-weight: 500;
-  line-height: 1.575em;
+  line-height: 1.45em;
 }
 
 h1 {
   font-size: var(--font-size-lg);
-  margin: clamp(13%, 15rem, 30%) 0 min(12.5rem, 12.5%);
+  margin: clamp(12.5%, 12.5rem, 30%) 0 min(12.5rem, 12.5%);
 }
 
 h2 {
@@ -65,7 +63,7 @@ p {
 
 /* Projects */
 .project {
-  margin: 30% 0;
+  margin: 32.5% 0;
 }
 
 .project__image-wrapper,
