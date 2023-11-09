@@ -1,173 +1,195 @@
 <!DOCTYPE html>
 <html lang="en-US">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="./images/favicon.ico" />
-    <title>Ashley Mays</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="Hey, I'm Ashley. I’m a programmer — web developer, to be specific. For work, I'm an application support engineer at Siemens where I work on SaaS solutions for lots of different companies."
-    />
-    <meta name="color-scheme" content="light dark" />
-    <meta property="og:title" content="Ashley Mays" />
-    <meta
-      property="og:description"
-      content="Hey, I'm Ashley. I’m a programmer — web developer, to be specific. For work, I'm an application support engineer at Siemens where I work on SaaS solutions for lots of different companies."
-    />
-    <meta property="og:url" content="https://ashleymays.dev" />
-    <meta property="og:type" content="website" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="./style.css" />
-  </head>
-  <body>
-    <section class="full-page">
-      <h1 class="full-page__heading">
-        Hi I'm Ashley — web developer and amateur weightlifter.
-      </h1>
-      <p class="full-page__body">
-        I'm an application support engineer (for work) and developer (for play).
-        Outside of tech stuff, I lift weights and drive around to unseen places.
-        Or at least places I haven't seen.
-      </p>
-      <p class="full-page__body">
-        I use this space to show my personal projects. Feel free to read more
-        about them below.
-      </p>
-    </section>
-    <section class="projects">
-      <article class="project">
-        <a
-          class="project__image-wrapper"
-          target="_blank"
-          href="https://github.com/ashleymays/workflow"
-        >
-          <img
-            class="project__image"
-            alt="Workflow"
-            src="./images/workflow.webp"
-          />
-        </a>
-        <div>
-          <h2 class="project__heading">Workflow.</h2>
-          <p class="project__body">
-            A simple project management system that lets users create custom
-            milestones for each task. My goal is to make project management
-            easier for solo devs and small teams. Work in progress.
-          </p>
-          <p class="project__body">
-            React, Firebase, SCSS/SASS, Node, Express, Jest, Figma
-          </p>
-        </div>
-      </article>
-      <article class="project">
-        <a
-          class="project__image-wrapper"
-          target="_blank"
-          href="https://github.com/ashleymays/portfolio"
-        >
-          <img
-            class="project__image"
-            alt="Portfolio"
-            src="./images/portfolio.webp"
-          />
-        </a>
-        <div>
-          <h2 class="project__heading">Portfolio.</h2>
-          <p class="project__body">
-            Hey, that's the name of the website (IYKYK). I wanted it to feel
-            uncluttered, so I went for a minimalist style. Originally I built it
-            with React and SCSS, but honestly this website doesn't need all of
-            that. Design inspired by the websites of
-            <a class="neat-link" target="_blank" href="https://slrncl.com">
-              Nicolas Solerieu</a
-            >,
+  <!--
+      ___           ___                 
+     /\  \         /\__\                
+     \:\  \       /:/ _/_         ___   
+      \:\  \     /:/ /\__\       /|  |  
+  ___ /::\  \   /:/ /:/ _/_     |:|  |  
+ /\  /:/\:\__\ /:/_/:/ /\__\    |:|  |  
+ \:\/:/  \/__/ \:\/:/ /:/  /  __|:|__|  
+  \::/__/       \::/_/:/  /  /::::\  \  
+   \:\  \        \:\/:/  /   ~~~~\:\  \ 
+    \:\__\        \::/  /         \:\__\
+     \/__/         \/__/           \/__/
+
+     Thanks for checking out my website! 
+     If you want to make something new with it, please don't forget to give credit.
+     Or, if you have advice on cleaning up my code, you can tell me about it either in Github issues or by emailing me at ashleymays091@gmail.com.
+     Thanks again :)
+  -->
+    <head>
+        <meta charset="utf-8" />
+        <link rel="icon" href="./images/favicon.ico" />
+        <title>Ashley Mays</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+            name="description"
+            content="Hey, I'm Ashley. I’m a programmer — web developer, to be specific. For work, I'm an application support engineer at Siemens where I work on SaaS solutions for lots of different companies."
+            />
+        <meta name="color-scheme" content="light dark" />
+        <meta property="og:title" content="Ashley Mays" />
+        <meta
+            property="og:description"
+            content="Hey, I'm Ashley. I’m a programmer — web developer, to be specific. For work, I'm an application support engineer at Siemens where I work on SaaS solutions for lots of different companies."
+            />
+        <meta property="og:url" content="https://ashleymays.dev" />
+        <meta property="og:type" content="website" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400&display=swap"
+            rel="stylesheet"
+            />
+        <link rel="stylesheet" type="text/css" href="./style.css" />
+    </head>
+    <body>
+        <section class="full-page">
+            <h1 class="full-page__heading">
+                Hi I'm Ashley — web developer and amateur weightlifter.
+            </h1>
+            <p class="full-page__body">
+                I'm an application support engineer (for work) and developer (for play).
+                Outside of tech stuff, I lift weights and drive around to unseen places.
+                Or at least places I haven't seen.
+            </p>
+            <p class="full-page__body">
+                I use this space to show my personal projects. Feel free to read more
+                about them below.
+            </p>
+        </section>
+        <section class="projects">
+            <article class="project">
+                <a
+                    class="project__image-wrapper"
+                    target="_blank"
+                    href="https://github.com/ashleymays/workflow"
+                    >
+                <img
+                    class="project__image"
+                    alt="Workflow"
+                    src="./images/workflow.webp"
+                    />
+                </a>
+                <div>
+                    <h2 class="project__heading">Workflow.</h2>
+                    <p class="project__body">
+                        A simple project management system that lets users create custom
+                        milestones for each task. My goal is to make project management
+                        easier for solo devs and small teams. Work in progress.
+                    </p>
+                    <p class="project__body">
+                        React, Firebase, SCSS/SASS, Node, Express, Jest, Figma
+                    </p>
+                </div>
+            </article>
+            <article class="project">
+                <a
+                    class="project__image-wrapper"
+                    target="_blank"
+                    href="https://github.com/ashleymays/portfolio"
+                    >
+                <img
+                    class="project__image"
+                    alt="Portfolio"
+                    src="./images/portfolio.webp"
+                    />
+                </a>
+                <div>
+                    <h2 class="project__heading">Portfolio.</h2>
+                    <p class="project__body">
+                        Hey, that's the name of the website (IYKYK). I wanted it to feel
+                        uncluttered, so I went for a minimalist style. Originally I built it
+                        with React and SCSS, but honestly this website doesn't need all of
+                        that. Design inspired by the websites of
+                        <a class="neat-link" target="_blank" href="https://slrncl.com">
+                        Nicolas Solerieu</a
+                            >,
+                        <a
+                            class="neat-link"
+                            target="_blank"
+                            href="https://www.jordienric.com/"
+                            >
+                        Jordi Enric</a
+                            >,
+                        <a
+                            class="neat-link"
+                            target="_blank"
+                            href="https://manuelmoreale.com"
+                            >
+                        Manuel Moreale</a
+                            >, and
+                        <a class="neat-link" target="_blank" href="https://brianlovin.com">
+                        Brian Lovin</a
+                            >.
+                    </p>
+                    <p class="project__body">
+                        HTML, CSS
+                    </p>
+                </div>
+            </article>
+            <article class="project">
+                <a
+                    class="project__image-wrapper"
+                    target="_blank"
+                    href="https://github.com/ashleymays/piano-keyboard-simulator"
+                    >
+                <img
+                    class="project__image"
+                    alt="Piano Keyboard Simulator"
+                    src="./images/pianoKeyboardSimulator.webp"
+                    />
+                </a>
+                <div>
+                    <h2 class="project__heading">Piano Keyboard Simulator.</h2>
+                    <p class="project__body">
+                        A virtual keyboard (the music kind, not the computer kind) that lets
+                        users play their desktop, tablet, or phone as a mini keyboard. I
+                        started this project in July 2022, updating and maintaining the code
+                        and design in the time since.
+                    </p>
+                    <p class="project__body">
+                        React, HTML, CSS, JavaScript, Node, Express
+                    </p>
+                </div>
+            </article>
+            <article class="project">
+                <a
+                    class="project__image-wrapper"
+                    target="_blank"
+                    href="https://github.com/ashleymays/goodybee"
+                    >
+                <img
+                    class="project__image"
+                    alt="Goodybee"
+                    src="./images/goodybee.webp"
+                    />
+                </a>
+                <div>
+                    <h2 class="project__heading">Goodybee.</h2>
+                    <p class="project__body">
+                        A web app to find and save recipes from all over the web. This was
+                        my first app with a backend component, so needless to say I learned
+                        a lot while making it.
+                    </p>
+                    <p class="project__body">
+                        EJS, CSS, JavaScript, Node, Express, AWS, Heroku, REST API
+                    </p>
+                </div>
+            </article>
+        </section>
+        <section class="full-page">
+            <h2 class="full-page__heading">Connect with me.</h2>
             <a
-              class="neat-link"
-              target="_blank"
-              href="https://www.jordienric.com/"
-            >
-              Jordi Enric</a
-            >,
-            <a
-              class="neat-link"
-              target="_blank"
-              href="https://manuelmoreale.com"
-            >
-              Manuel Moreale</a
-            >, and
-            <a class="neat-link" target="_blank" href="https://brianlovin.com">
-              Brian Lovin</a>.
-          </p>
-          <p class="project__body">
-            HTML, CSS
-          </p>
-        </div>
-      </article>
-      <article class="project">
-        <a
-          class="project__image-wrapper"
-          target="_blank"
-          href="https://github.com/ashleymays/piano-keyboard-simulator"
-        >
-          <img
-            class="project__image"
-            alt="Piano Keyboard Simulator"
-            src="./images/pianoKeyboardSimulator.webp"
-          />
-        </a>
-        <div>
-          <h2 class="project__heading">Piano Keyboard Simulator.</h2>
-          <p class="project__body">
-            A virtual keyboard (the music kind, not the computer kind) that lets
-            users play their desktop, tablet, or phone as a mini keyboard. I
-            started this project in July 2022, updating and maintaining the code
-            and design in the time since.
-          </p>
-          <p class="project__body">
-            React, HTML, CSS, JavaScript, Node, Express
-          </p>
-        </div>
-      </article>
-      <article class="project">
-        <a
-          class="project__image-wrapper"
-          target="_blank"
-          href="https://github.com/ashleymays/goodybee"
-        >
-          <img
-            class="project__image"
-            alt="Goodybee"
-            src="./images/goodybee.webp"
-          />
-        </a>
-        <div>
-          <h2 class="project__heading">Goodybee.</h2>
-          <p class="project__body">
-            A web app to find and save recipes from all over the web. This was
-            my first app with a backend component, so needless to say I learned
-            a lot while making it.
-          </p>
-          <p class="project__body">
-            EJS, CSS, JavaScript, Node, Express, AWS, Heroku, REST API
-          </p>
-        </div>
-      </article>
-    </section>
-    <section class="full-page">
-      <h2 class="full-page__heading">Connect with me.</h2>
-      <a
-        class="full-page__body neat-link"
-        target="_blank"
-        href="https://github.com/ashleymays"
-      >
-        github.com/ashleymays</a
-      >
-      <a class="full-page__body neat-link" href="mailto:ashleymays091@gmail.com"
-        >ashleymays091@gmail.com</a
-      >
-    </section>
-  </body>
+                class="full-page__body neat-link"
+                target="_blank"
+                href="https://github.com/ashleymays"
+                >
+            github.com/ashleymays</a
+                >
+            <a class="full-page__body neat-link" href="mailto:ashleymays091@gmail.com"
+                >ashleymays091@gmail.com</a
+                >
+        </section>
+    </body>
 </html>
