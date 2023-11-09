@@ -3,17 +3,15 @@
 }
 
 :root {
-  --font-size-base: clamp(1.52rem, 0.34vw + 1.22rem, 1.58rem);
-  --font-size-md: clamp(1.75rem, 0.44vw + 1.55rem, 2.02rem);
-  --font-size-lg: clamp(2.87rem, 0.75vw + 2.62rem, 3.41rem);
+  --font-size-sm: clamp(1.48rem, 0.4vw + 1.32rem, 1.68rem);
+  --font-size-base: clamp(1.55rem, 0.32vw + 1.42rem, 1.725rem);
 
-  --font-main: "Segoe UI", Helvetica, sans-serif;
+  --font-main: Jost, "Segoe UI", Roboto, Helvetica, sans-serif;
 
-  --text-color: rgba(50, 50, 50, 100%);
-  --text-color-70: rgba(50, 50, 50, 70%);
-  --line-color: rgba(35, 35, 35, 15%);
-  --page-background: rgba(252, 252, 252, 100%);
-  --image-background: rgba(245, 245, 245, 100%);
+  --text-color-primary: hsl(0, 0%, 17.5%);
+  --text-color-secondary: hsla(0, 0%, 20%, 0.65);
+  --page-background: hsl(0, 0%, 98%);
+  --image-background: hsl(0, 0%, 95%);
 }
 
 html,
@@ -24,46 +22,66 @@ body {
 html {
   font-size: 10px;
   margin: 0;
+  scroll-behavior: smooth;
 }
 
 body {
   background: var(--page-background);
-  font-family: var(--font-main);
-  width: clamp(30%, 51rem, 90%);
+  font: 400 var(--font-size-base) var(--font-main);
+  color: var(--text-color-primary);
+  width: clamp(32.5%, 45rem, 88%);
   margin: auto;
+  letter-spacing: 0.015em;
 }
 
 h1,
 h2,
 a {
-  color: var(--text-color);
+  color: inherit;
+  text-decoration: none;
 }
 
 h1,
 h2 {
-  font-weight: 500;
+  font: inherit;
+  font-size: inherit;
   line-height: 1.45em;
-}
-
-h1 {
-  font-size: var(--font-size-lg);
-  margin: clamp(12.5%, 12.5rem, 30%) 0 min(12.5rem, 12.5%);
-}
-
-h2 {
-  font-size: var(--font-size-md);
 }
 
 footer,
 p {
-  font-size: var(--font-size-base);
-  color: var(--text-color-70);
+  color: var(--text-color-secondary);
   line-height: 1.8em;
 }
 
+.full-page {
+  height: 100vh;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+
+.full-page__heading {
+  margin-bottom: min(5rem, 7.5%);
+}
+
+.full-page__body {
+  margin: 0.5em 0;
+}
+
+.neat-link {
+  display: inline;
+  width: max-content;
+  color: var(--text-color-primary);
+  border-bottom: 0.05em solid var(--text-color-secondary);
+  transition: border-bottom 0.25s;
+}
+
 /* Projects */
-.project {
-  margin: 32.5% 0;
+.projects {
+  display: flex;
+  flex-flow: column;
+  row-gap: 15rem;
 }
 
 .project__image-wrapper,
@@ -73,50 +91,47 @@ p {
 
 .project__image-wrapper {
   background: var(--image-background);
-  padding: 15% 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  padding: 12.5% 0;
+  display: grid;
+  place-items: center;
 }
 
 .project__image {
-  width: 75%;
+  width: 77.5%;
+  transition:
+    box-shadow 0.375s,
+    transform 0.375s;
 }
 
-.project-link {
-  display: inline-block;
-  text-decoration: none;
-  margin: 6.5% 0 3.5%;
+.project__heading {
+  margin: 7.5% 0;
 }
 
-.project-detail {
-  margin: 0 0 5%;
-}
-
-/* Contact */
-.contact {
-  margin: 35% 0;
-}
-
-.line {
-  background: var(--line-color);
-  width: 100%;
-  height: 0.1rem;
-  margin: 10% 0;
-}
-
-/* Footer */
-footer {
-  padding: 0 0 13%;
+.project__body {
+  font-size: var(--font-size-sm);
+  margin: 2rem 0;
 }
 
 /* Configure Dark Mode Color Scheme */
 @media (prefers-color-scheme: dark) {
   :root {
-    --text-color: rgba(232, 230, 227, 100%);
-    --text-color-70: rgba(232, 230, 227, 70%);
-    --line-color: rgba(230, 230, 230, 10%);
-    --page-background: rgba(27, 29, 30, 100%);
-    --image-background: rgba(30, 32, 33, 100%);
+    --text-color-primary: hsl(36, 10%, 75%);
+    --text-color-secondary: hsla(36, 10%, 90%, 0.45);
+    --page-background: hsl(180, 4%, 5%);
+    --image-background: hsl(180, 3%, 6%);
+  }
+}
+
+/* Enable Hover Effects on Desktop */
+@media screen and (min-width: 1024px) {
+  .project__image-wrapper:hover .project__image {
+    box-shadow: 0 0.9rem 2.2rem -0.2rem hsla(0, 0%, 0%, 0.05);
+    -webkit-box-shadow: 0 0.9rem 2.2rem -0.2rem hsla(0, 0%, 0%, 0.05);
+    -moz-box-shadow: 0 0.9rem 2.2rem -0.2rem hsla(0, 0%, 0%, 0.05);
+    transform: translateY(-0.35rem) scale(1.01);
+  }
+
+  .neat-link:hover {
+    border-bottom-color: var(--text-color-primary);
   }
 }
