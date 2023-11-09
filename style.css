@@ -6,10 +6,10 @@
   --font-size-sm: clamp(1.48rem, 0.4vw + 1.32rem, 1.68rem);
   --font-size-base: clamp(1.55rem, 0.32vw + 1.42rem, 1.725rem);
 
-  --font-main: Jost, "Segoe UI", Roboto, Helvetica, sans-serif;
+  --font-main: Jost, "Segoe UI", Arial, Helvetica, sans-serif;
 
   --text-color-primary: hsl(0, 0%, 17.5%);
-  --text-color-secondary: hsla(0, 0%, 20%, 0.65);
+  --text-color-secondary: hsla(0, 0%, 20%, 0.7);
   --page-background: hsl(0, 0%, 98%);
   --image-background: hsl(0, 0%, 95%);
 }
@@ -22,13 +22,11 @@ body {
 html {
   font-size: 10px;
   margin: 0;
-  scroll-behavior: smooth;
 }
 
 body {
   background: var(--page-background);
-  font: 400 var(--font-size-base) var(--font-main);
-  color: var(--text-color-primary);
+  font: 300 var(--font-size-base) var(--font-main);
   width: clamp(32.5%, 45rem, 88%);
   margin: auto;
   letter-spacing: 0.015em;
@@ -37,7 +35,7 @@ body {
 h1,
 h2,
 a {
-  color: inherit;
+  color: var(--text-color-primary);
   text-decoration: none;
 }
 
@@ -116,7 +114,7 @@ p {
 @media (prefers-color-scheme: dark) {
   :root {
     --text-color-primary: hsl(36, 10%, 75%);
-    --text-color-secondary: hsla(36, 10%, 90%, 0.45);
+    --text-color-secondary: hsla(36, 10%, 90%, 0.5);
     --page-background: hsl(180, 4%, 5%);
     --image-background: hsl(180, 3%, 6%);
   }
