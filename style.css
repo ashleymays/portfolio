@@ -71,7 +71,7 @@ p {
   display: inline;
   width: max-content;
   color: var(--text-color-primary);
-  border-bottom: 0.05em solid var(--text-color-secondary);
+  border-bottom: 0.1em solid var(--text-color-secondary);
   transition: border-bottom 0.25s;
 }
 
@@ -120,7 +120,7 @@ p {
   }
 }
 
-/* Enable Hover Effects on Desktop */
+/* Add Hover Effects on Desktop */
 @media screen and (min-width: 1024px) {
   .project__image-wrapper:hover .project__image {
     box-shadow: 0 0.9rem 2.2rem -0.2rem hsla(0, 0%, 0%, 0.05);
