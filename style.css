@@ -3,15 +3,15 @@
 }
 
 :root {
-  --font-size-sm: clamp(1.48rem, 0.4vw + 1.32rem, 1.68rem);
-  --font-size-base: clamp(1.55rem, 0.32vw + 1.42rem, 1.725rem);
+  --font-size-sm: clamp(1.48rem, 0.40vw + 1.32rem, 1.68rem);
+  --font-size-base: clamp(1.53rem, 0.32vw + 1.42rem, 1.72rem);
 
   --font-main: Jost, "Segoe UI", Arial, Helvetica, sans-serif;
 
-  --text-color-primary: hsl(0, 0%, 17.5%);
+  --text-color-primary: hsl(0, 0%, 20%);
   --text-color-secondary: hsla(0, 0%, 20%, 0.7);
-  --page-background: hsl(0, 0%, 98%);
-  --image-background: hsl(0, 0%, 95%);
+  --page-background: hsl(0, 0%, 99%);
+  --image-background: hsl(0, 0%, 97%);
 }
 
 html,
@@ -29,7 +29,7 @@ body {
   font: 400 var(--font-size-base) var(--font-main);
   width: clamp(32.5%, 45rem, 88%);
   margin: auto;
-  letter-spacing: 0.015em;
+  letter-spacing: 0.007em;
 }
 
 h1,
@@ -68,11 +68,12 @@ p {
 }
 
 .neat-link {
-  display: inline;
   width: max-content;
-  color: var(--text-color-primary);
-  border-bottom: 0.1em solid var(--text-color-secondary);
-  transition: border-bottom 0.25s;
+}
+
+.neat-link:after {
+  content: " ↗";
+  color: inherit;
 }
 
 /* Projects */
@@ -114,22 +115,18 @@ p {
 @media (prefers-color-scheme: dark) {
   :root {
     --text-color-primary: hsl(36, 10%, 75%);
-    --text-color-secondary: hsla(36, 10%, 90%, 0.5);
+    --text-color-secondary: hsla(36, 10%, 75%, 0.55);
     --page-background: hsl(180, 4%, 5%);
-    --image-background: hsl(180, 3%, 6%);
+    --image-background: hsl(180, 1%, 6.5%);
   }
 }
 
 /* Add Hover Effects on Desktop */
 @media screen and (min-width: 1024px) {
   .project__image-wrapper:hover .project__image {
-    box-shadow: 0 0.9rem 2.2rem -0.2rem hsla(0, 0%, 0%, 0.05);
-    -webkit-box-shadow: 0 0.9rem 2.2rem -0.2rem hsla(0, 0%, 0%, 0.05);
-    -moz-box-shadow: 0 0.9rem 2.2rem -0.2rem hsla(0, 0%, 0%, 0.05);
-    transform: translateY(-0.35rem) scale(1.01);
-  }
-
-  .neat-link:hover {
-    border-bottom-color: var(--text-color-primary);
+    box-shadow: 0 0.625rem 1.5rem -0.15rem hsla(0, 0%, 0%, 0.1);
+    -webkit-box-shadow: 0 0.625rem 1.5rem -0.15rem hsla(0, 0%, 0%, 0.1);
+    -moz-box-shadow: 0 0.625rem 1.5rem -0.15rem hsla(0, 0%, 0%, 0.1);
+    transform: translateY(-0.375rem) scale(1.01);
   }
 }
