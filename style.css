@@ -115,8 +115,8 @@ p {
   :root {
     --text-color-primary: hsl(36, 10%, 76%);
     --text-color-secondary: hsla(36, 10%, 76%, 0.6);
-    --page-background: hsl(180, 4%, 5%);
-    --image-background: hsl(180, 1%, 6.5%);
+    --page-background: hsl(180, 4%, 5.5%);
+    --image-background: hsl(180, 4%, 6.625%);
   }
 }
 
