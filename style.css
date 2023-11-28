@@ -27,7 +27,7 @@ body {
   font: 400 var(--font-size-base) Jost, "Segoe UI", Arial, Helvetica, sans-serif;
   width: clamp(32.5%, 45rem, 88%);
   margin: auto;
-  letter-spacing: 0.007em;
+  letter-spacing: 0.025em;
 }
 
 h1,
