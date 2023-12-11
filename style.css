@@ -24,7 +24,12 @@ html {
 
 body {
   background: var(--page-background);
-  font: 400 var(--font-size-base) Jost, "Segoe UI", Arial, Helvetica, sans-serif;
+  font:
+    400 var(--font-size-base) Jost,
+    "Segoe UI",
+    Arial,
+    Helvetica,
+    sans-serif;
   width: clamp(32.5%, 45rem, 88%);
   margin: auto;
   letter-spacing: 0.025em;
@@ -120,8 +125,8 @@ p {
   }
 }
 
-/* Add Hover Effects on Desktop */
-@media screen and (min-width: 1024px) {
+/* Add Hover Effects */
+@media screen and (hover: hover) {
   .project__image-wrapper:hover .project__image {
     box-shadow: 0 0.625rem 1.5rem -0.15rem hsla(0, 0%, 0%, 0.1);
     -webkit-box-shadow: 0 0.625rem 1.5rem -0.15rem hsla(0, 0%, 0%, 0.1);
