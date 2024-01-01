@@ -1,112 +1,103 @@
 <!DOCTYPE html>
 <html lang="en-US">
-    <!--
-      ___           ___                 
-     /\  \         /\__\                
-     \:\  \       /:/ _/_         ___   
-      \:\  \     /:/ /\__\       /|  |  
-  ___ /::\  \   /:/ /:/ _/_     |:|  |  
- /\  /:/\:\__\ /:/_/:/ /\__\    |:|  |  
- \:\/:/  \/__/ \:\/:/ /:/  /  __|:|__|  
-  \::/__/       \::/_/:/  /  /::::\  \  
-   \:\  \        \:\/:/  /   ~~~~\:\  \ 
-    \:\__\        \::/  /         \:\__\
-     \/__/         \/__/           \/__/
 
-     Thanks for checking out my website!
-  -->
-    <head>
-        <meta charset="utf-8" />
-        <link rel="icon" href="./images/favicon.ico" />
-        <title>Ashley Mays</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="description" content="Hey, I'm Ashley. I’m a programmer — web developer, to be specific. For work, I'm an application support engineer at Siemens where I work on SaaS solutions for lots of different companies." />
-        <meta name="color-scheme" content="light dark" />
-        <meta property="og:title" content="Ashley Mays" />
-        <meta property="og:description" content="Hey, I'm Ashley. I’m a programmer — web developer, to be specific. For work, I'm an application support engineer at Siemens where I work on SaaS solutions for lots of different companies." />
-        <meta property="og:url" content="https://ashleymays.dev" />
-        <meta property="og:type" content="website" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet" />
-        <link rel="stylesheet" type="text/css" href="./style.css" />
-        <link rel="preload" as="image" href="./images/goodybee.webp" />
-        <link rel="preload" as="image" href="./images/pianoKeyboardSimulator.webp" />
-        <link rel="preload" as="image" href="./images/portfolio.webp" />
-    </head>
-    <body>
-        <section class="full-page">
-            <h1 class="full-page__heading">
-                Hi I'm Ashley — web developer and amateur weightlifter.
-            </h1>
-            <p class="full-page__body">
-                I'm an application support engineer (for work) and developer (for play). Outside of tech stuff, I lift weights and drive around to random places I've never been to.
+<head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="./images/favicon.ico" />
+    <title>Ashley Mays</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description"
+        content="Hey, I'm Ashley. I’m a programmer — web developer, to be specific. For work, I'm an application support engineer at Siemens where I work on SaaS solutions for lots of different companies." />
+    <meta name="color-scheme" content="light dark" />
+    <meta property="og:title" content="Ashley Mays" />
+    <meta property="og:description"
+        content="Hey, I'm Ashley. I’m a programmer — web developer, to be specific. For work, I'm an application support engineer at Siemens where I work on SaaS solutions for lots of different companies." />
+    <meta property="og:url" content="https://ashleymays.dev" />
+    <meta property="og:type" content="website" />
+    <link rel="preload" as="image" href="./images/goodybee.webp" />
+    <link rel="preload" as="image" href="./images/pianoKeyboardSimulator.webp" />
+    <link rel="preload" as="image" href="./images/portfolio.webp" />
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+</head>
+
+<body>
+    <h1>
+        Ashley Mays <br />
+        Full Stack Web Developer
+    </h1>
+    <p>
+        I'm an application support engineer (for work) and developer (for play). Outside of tech stuff, I lift weights
+        and drive around to random places I've never been to.
+    </p>
+    <p>
+        I use this space to showcase my personal projects. Feel free to read more about them below.
+    </p>
+    <article class="project">
+        <div class="project__image-wrapper">
+            <img class="project__image" alt="Piano Keyboard Simulator" src="./images/pianoKeyboardSimulator.webp" />
+        </div>
+        <div>
+            <a target="_blank" href="https://github.com/ashleymays/piano-keyboard-simulator">
+                <h2 class="neat-link">
+                    Piano Keyboard Simulator
+                </h2>
+            </a>
+            <p>
+                A virtual keyboard (the music kind, not the computer kind) that lets users play their desktop,
+                tablet, or phone as a mini keyboard. I started this project in July 2022, updating and maintaining
+                the code and design in
+                the time since.
             </p>
-            <p class="full-page__body">
-                I use this space to showcase my personal projects. Feel free to read more about them below.
+            <p>
+                React, Node, Express, HTML, SCSS, JavaScript, Web Audio API, Jest
             </p>
-        </section>
-        <section class="projects">
-            <article class="project">
-                <div class="project__image-wrapper">
-                    <img class="project__image" alt="Piano Keyboard Simulator" src="./images/pianoKeyboardSimulator.webp" />
-                </div>
-                <div>
-                    <a target="_blank" href="https://github.com/ashleymays/piano-keyboard-simulator">
-                        <h2 class="project__heading neat-link">
-                            Piano Keyboard Simulator
-                        </h2>
-                    </a>
-                    <p class="project__body">
-                        A virtual keyboard (the music kind, not the computer kind) that lets users play their desktop, tablet, or phone as a mini keyboard. I started this project in July 2022, updating and maintaining the code and design in
-                        the time since.
-                    </p>
-                    <p class="project__body">
-                        React, Node, Express, HTML, SCSS, JavaScript, Web Audio API, Jest
-                    </p>
-                </div>
-            </article>
-            <article class="project">
-                <div class="project__image-wrapper">
-                    <img class="project__image" alt="Portfolio" src="./images/portfolio.webp" />
-                </div>
-                <div>
-                    <a target="_blank" href="https://github.com/ashleymays/portfolio">
-                        <h2 class="project__heading neat-link">
-                            Portfolio
-                        </h2>
-                    </a>
-                    <p class="project__body">
-                        Hey, that's the name of the website (IYKYK). I wanted it to feel uncluttered, so I went for a minimalist style. Originally I built it with React and SCSS, but honestly this website doesn't need all of that.
-                    </p>
-                    <p class="project__body">
-                        HTML, CSS
-                    </p>
-                </div>
-            </article>
-            <article class="project">
-                <div class="project__image-wrapper">
-                    <img class="project__image" alt="Goodybee" src="./images/goodybee.webp" />
-                </div>
-                <div>
-                    <a target="_blank" href="https://github.com/ashleymays/goodybee">
-                        <h2 class="project__heading neat-link">
-                            Goodybee
-                        </h2>
-                    </a>
-                    <p class="project__body">
-                        A web app to find and save recipes from all over the web. This was my first app with a backend component, so needless to say I learned a lot while making it.
-                    </p>
-                    <p class="project__body">
-                        EJS, CSS, JavaScript, Node, Express, MongoDB, AWS, Heroku, REST API
-                    </p>
-                </div>
-            </article>
-        </section>
-        <section class="full-page">
-            <p class="full-page__subheading">I'm not a huge fan of social media, so if you want to get in touch with me, you can email me at the link below. Or stalk me on Github, whatever you prefer.</p>
-            <a class="full-page__body neat-link" href="mailto:ashleymays091@gmail.com">ashleymays091@gmail.com</a>
-            <a class="full-page__body neat-link" target="_blank" href="https://github.com/ashleymays">github.com/ashleymays</a>
-        </section>
-    </body>
+        </div>
+    </article>
+    <article class="project">
+        <div class="project__image-wrapper">
+            <img class="project__image" alt="Portfolio" src="./images/portfolio.webp" />
+        </div>
+        <div>
+            <a target="_blank" href="https://github.com/ashleymays/portfolio">
+                <h2 class="neat-link">
+                    Portfolio
+                </h2>
+            </a>
+            <p>
+                Hey, that's the name of the website (IYKYK). I wanted it to feel uncluttered, so I went for a
+                minimalist style. Originally I built it with React and SCSS, but honestly this website doesn't need
+                all of that.
+            </p>
+            <p>
+                HTML, CSS
+            </p>
+        </div>
+    </article>
+    <article class="project">
+        <div class="project__image-wrapper">
+            <img class="project__image" alt="Goodybee" src="./images/goodybee.webp" />
+        </div>
+        <div>
+            <a target="_blank" href="https://github.com/ashleymays/goodybee">
+                <h2 class="neat-link">
+                    Goodybee
+                </h2>
+            </a>
+            <p>
+                A web app to find and save recipes from all over the web. This was my first app with a backend
+                component, so needless to say I learned a lot while making it.
+            </p>
+            <p>
+                EJS, CSS, JavaScript, Node, Express, MongoDB, AWS, Heroku, REST API
+            </p>
+        </div>
+    </article>
+    <section class="contact">
+        <p>I'm not a huge fan of social media, so if you want to get in touch with me, you
+            can email me at the link below. Or stalk me on Github, whatever you prefer.</p>
+        <a class="neat-link" href="mailto:ashleymays091@gmail.com">ashleymays091@gmail.com</a>
+        <a class="neat-link" target="_blank" href="https://github.com/ashleymays">github.com/ashleymays</a>
+    </section>
+</body>
+
 </html>

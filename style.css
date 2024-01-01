@@ -3,9 +3,6 @@
 }
 
 :root {
-  --font-size-sm: clamp(1.52rem, 0.32vw + 1.25rem, 1.68rem);
-  --font-size-base: clamp(1.57rem, 0.35vw + 1.32rem, 1.72rem);
-
   --text-color-primary: hsl(0, 0%, 20%);
   --text-color-secondary: hsla(0, 0%, 20%, 0.7);
   --page-background: hsl(0, 0%, 99%);
@@ -18,21 +15,22 @@ body {
 }
 
 html {
-  font-size: 10px;
   margin: 0;
 }
 
 body {
   background: var(--page-background);
-  font:
-    400 var(--font-size-base) Jost,
-    "Segoe UI",
-    Arial,
-    Helvetica,
-    sans-serif;
-  width: clamp(32.5%, 45rem, 88%);
+  font: 400 1rem system-ui, sans-serif;
+  width: clamp(32.5%, 30rem, 88%);
   margin: auto;
-  letter-spacing: 0.025em;
+  line-height: 1.8em;
+}
+
+h1,
+h2,
+p,
+a {
+  font: inherit;
 }
 
 h1,
@@ -42,32 +40,12 @@ a {
   text-decoration: none;
 }
 
-h1,
-h2 {
-  font: inherit;
-  font-size: inherit;
-  line-height: 1.45em;
+h1 {
+  margin: 27.5vh 0 2.5rem;
 }
 
-footer,
 p {
   color: var(--text-color-secondary);
-  line-height: 1.8em;
-}
-
-.full-page {
-  height: 100vh;
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-}
-
-.full-page__heading {
-  margin-bottom: min(5rem, 7.5%);
-}
-
-.full-page__body {
-  margin: 0.5em 0;
 }
 
 .neat-link {
@@ -80,11 +58,12 @@ p {
   color: inherit;
 }
 
-/* Projects */
-.projects {
-  display: flex;
-  flex-flow: column;
-  row-gap: 15rem;
+
+
+/******************* Projects *******************/
+
+.project {
+  margin: 10rem 0;
 }
 
 .project__image-wrapper,
@@ -94,7 +73,8 @@ p {
 
 .project__image-wrapper {
   background: var(--image-background);
-  padding: 12.5% 0;
+  padding: 11% 0;
+  margin-bottom: 1.5rem;
   display: grid;
   place-items: center;
 }
@@ -106,26 +86,37 @@ p {
     transform 0.375s;
 }
 
-.project__heading {
-  margin: 8.5% 0 3.75%;
+
+/******************* Contact *******************/
+
+.contact {
+  height: 100vh;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
 }
 
-.project__body {
-  font-size: var(--font-size-sm);
-  margin: 2rem 0;
+.contact .neat-link {
+  margin: 0.125rem 0;
 }
 
-/* Configure Dark Mode Color Scheme */
+
+
+/******************* Configure Dark Mode Color Scheme *******************/
+
 @media (prefers-color-scheme: dark) {
   :root {
-    --text-color-primary: hsl(36, 10%, 76%);
-    --text-color-secondary: hsla(36, 10%, 76%, 0.6);
-    --page-background: hsl(180, 4%, 5.5%);
-    --image-background: hsl(180, 4%, 6.625%);
+    --text-color-primary: hsl(36, 10%, 72%);
+    --text-color-secondary: hsla(36, 10%, 72%, 0.7);
+    --page-background: hsl(180, 3.75%, 4.5%);
+    --image-background: hsl(180, 3.75%, 5.5%);
   }
 }
 
-/* Add Hover Effects */
+
+
+/******************* Add Hover Effects *******************/
+
 @media screen and (hover: hover) {
   .project__image-wrapper:hover .project__image {
     box-shadow: 0 0.625rem 1.5rem -0.15rem hsla(0, 0%, 0%, 0.1);
