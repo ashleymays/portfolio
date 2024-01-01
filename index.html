@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en-US">
-
 <head>
     <meta charset="utf-8" />
     <link rel="icon" href="./images/favicon.ico" />
@@ -15,7 +14,7 @@
     <meta property="og:url" content="https://ashleymays.dev" />
     <meta property="og:type" content="website" />
     <link rel="preload" as="image" href="./images/goodybee.webp" />
-    <link rel="preload" as="image" href="./images/pianoKeyboardSimulator.webp" />
+    <link rel="preload" as="image" href="./images/piano-keyboard-simulator.webp" />
     <link rel="preload" as="image" href="./images/portfolio.webp" />
     <link rel="stylesheet" type="text/css" href="./style.css" />
 </head>
@@ -33,9 +32,7 @@
         I use this space to showcase my personal projects. Feel free to read more about them below.
     </p>
     <article class="project">
-        <div class="project__image-wrapper">
-            <img class="project__image" alt="Piano Keyboard Simulator" src="./images/pianoKeyboardSimulator.webp" />
-        </div>
+        <img class="project__image" alt="Piano Keyboard Simulator" src="./images/piano-keyboard-simulator.webp" />
         <div>
             <a target="_blank" href="https://github.com/ashleymays/piano-keyboard-simulator">
                 <h2 class="neat-link">
@@ -43,9 +40,7 @@
                 </h2>
             </a>
             <p>
-                A virtual keyboard (the music kind, not the computer kind) that lets users play their desktop,
-                tablet, or phone as a mini keyboard. I started this project in July 2022, updating and maintaining
-                the code and design in
+                A virtual keyboard (the music kind, not the computer kind) that lets users play their desktop, tablet, or phone as a mini keyboard. I started this project in July 2022, updating and maintaining the code and design in
                 the time since.
             </p>
             <p>
@@ -54,9 +49,7 @@
         </div>
     </article>
     <article class="project">
-        <div class="project__image-wrapper">
-            <img class="project__image" alt="Portfolio" src="./images/portfolio.webp" />
-        </div>
+        <img class="project__image" alt="Portfolio" src="./images/portfolio.webp" />
         <div>
             <a target="_blank" href="https://github.com/ashleymays/portfolio">
                 <h2 class="neat-link">
@@ -74,9 +67,7 @@
         </div>
     </article>
     <article class="project">
-        <div class="project__image-wrapper">
-            <img class="project__image" alt="Goodybee" src="./images/goodybee.webp" />
-        </div>
+        <img class="project__image" alt="Goodybee" src="./images/goodybee.webp" />
         <div>
             <a target="_blank" href="https://github.com/ashleymays/goodybee">
                 <h2 class="neat-link">
@@ -95,8 +86,10 @@
     <section class="contact">
         <p>I'm not a huge fan of social media, so if you want to get in touch with me, you
             can email me at the link below. Or stalk me on Github, whatever you prefer.</p>
-        <a class="neat-link" href="mailto:ashleymays091@gmail.com">ashleymays091@gmail.com</a>
-        <a class="neat-link" target="_blank" href="https://github.com/ashleymays">github.com/ashleymays</a>
+        <div class="contact__neat-links">
+            <a class="neat-link" href="mailto:ashleymays091@gmail.com">ashleymays091@gmail.com</a>
+            <a class="neat-link" target="_blank" href="https://github.com/ashleymays">github.com/ashleymays</a>
+        </div>
     </section>
 </body>
 
