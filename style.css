@@ -19,7 +19,9 @@ html {
 
 body {
   background: var(--page-background);
-  font: 400 1.05rem system-ui, sans-serif;
+  font:
+    400 1.05rem system-ui,
+    sans-serif;
   width: clamp(28%, 30rem, 89%);
   margin: auto;
   line-height: 1.8em;
@@ -61,8 +63,6 @@ p {
   color: inherit;
 }
 
-
-
 /******************* Projects *******************/
 
 .project {
@@ -77,7 +77,7 @@ p {
 /******************* Contact *******************/
 
 .contact {
-  margin: 35vh 0;
+  margin: 30vh 0;
 }
 
 .contact__neat-links {
@@ -86,9 +86,8 @@ p {
   row-gap: 0.325rem;
 }
 
-
-
 /******************* Configure Dark Mode Color Scheme *******************/
+
 @media (prefers-color-scheme: dark) {
   :root {
     --text-color-primary: hsl(210, 22%, 89%);
