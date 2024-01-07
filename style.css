@@ -3,9 +3,10 @@
 }
 
 :root {
-  --text-color-primary: hsl(0, 0%, 17.5%);
-  --text-color-secondary: hsla(0, 0%, 20%, 0.675);
-  --page-background: hsl(0, 0%, 100%);
+  --c-bg-page: #fafafa;
+  --c-text-primary: #121212;
+  --c-text-secondary: #555;
+  --c-bg-code: #f0f0f0;
 }
 
 html,
@@ -18,11 +19,11 @@ html {
 }
 
 body {
-  background: var(--page-background);
+  background: var(--c-bg-page);
   font:
     400 1.05rem system-ui,
     sans-serif;
-  width: clamp(28%, 30rem, 89%);
+  width: clamp(28%, 30rem, 90%);
   margin: auto;
   line-height: 1.8em;
 }
@@ -37,7 +38,7 @@ a {
 h1,
 h2,
 a {
-  color: var(--text-color-primary);
+  color: var(--c-text-primary);
   text-decoration: none;
 }
 
@@ -50,7 +51,7 @@ h2 {
 }
 
 p {
-  color: var(--text-color-secondary);
+  color: var(--c-text-secondary);
 }
 
 .neat-link {
@@ -63,8 +64,6 @@ p {
   color: inherit;
 }
 
-/******************* Projects *******************/
-
 .project {
   margin: 12rem 0;
 }
@@ -74,7 +73,15 @@ p {
   margin-bottom: 1.5rem;
 }
 
-/******************* Contact *******************/
+.project__tech-stack code {
+  display: inline-block;
+  font-size: 0.85rem;
+  background: var(--c-bg-code);
+  color: var(--c-text-secondary);
+  padding: 0.9em 0.7em;
+  line-height: 0;
+  border-radius: 0.5em;
+}
 
 .contact {
   margin: 30vh 0;
@@ -86,12 +93,11 @@ p {
   row-gap: 0.325rem;
 }
 
-/******************* Configure Dark Mode Color Scheme *******************/
-
 @media (prefers-color-scheme: dark) {
   :root {
-    --text-color-primary: hsl(210, 22%, 89%);
-    --text-color-secondary: hsla(210, 22%, 89%, 0.65);
-    --page-background: hsl(210, 9%, 7%);
+    --c-bg-page: #121212;
+    --c-text-primary: #c1c1c1;
+    --c-text-secondary: #808080;
+    --c-bg-code: #1a1a1a;
   }
 }
