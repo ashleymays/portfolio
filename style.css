@@ -3,10 +3,9 @@
 }
 
 :root {
-  --c-bg-page: #fafafa;
-  --c-text-primary: #121212;
-  --c-text-secondary: #555;
-  --c-bg-code: #f0f0f0;
+  --c-bg-page: #020512;
+  --c-text-primary: #E8E6E3;
+  --c-text-secondary: #E8E6E3A6;
 }
 
 html,
@@ -20,17 +19,47 @@ html {
 
 body {
   background: var(--c-bg-page);
-  font:
-    400 1.05rem system-ui,
-    sans-serif;
-  width: clamp(28%, 30rem, 90%);
+  font-family: Inter, system-ui, sans-serif;
+  width: min(576px, 90%);
   margin: auto;
-  line-height: 1.8em;
+  /*-moz-font-feature-settings: "salt";
+  -webkit-font-feature-settings: "salt";
+  font-feature-settings: "salt";*/
 }
 
-h1,
-h2,
-p,
-a {
-  font: inherit;
+h1 {
+  font-size: 2.125em;
+  color: var(--c-text-primary);
+}
+
+h5 {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+p {
+  color: var(--c-text-secondary);
+  line-height: 1.7;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  padding: 0.75em 0;
+}
+
+section {
+  margin: 22.5% 0;
+}
+
+.secondary-text-color {
+  color: var(--c-text-secondary);
+}
+
+.experience-container {
+  display: grid;
+  grid-template-columns: 32.5% auto;
 }
