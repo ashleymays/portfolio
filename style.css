@@ -64,10 +64,6 @@ section {
   margin: 22.5% 0;
 }
 
-.secondary-text-color {
-  color: var(--c-text-secondary);
-}
-
 a {
   display: inline-block;
 }
@@ -81,6 +77,10 @@ a,
 
 .neat-link:after {
   content: ' ↗';
+}
+
+.secondary-text-color {
+  color: var(--c-text-secondary);
 }
 
 .project-list {
