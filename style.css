@@ -5,7 +5,7 @@
 :root {
   --c-bg-page: rgb(22, 24, 25);
   --c-text-primary: rgb(221, 218, 213);
-  --c-text-secondary: rgba(221, 218, 213, 0.6);
+  --c-text-secondary: rgba(221, 218, 213, 0.7);
 }
 
 html,
