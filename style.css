@@ -21,7 +21,7 @@ body {
   background: var(--c-bg-page);
   font-family: Inter, system-ui, sans-serif;
   width: min(576px, 88%);
-  margin: max(11%, 15vh) auto 0;
+  margin: max(7.5%, 12.5vh) auto 0;
 }
 
 ul {
@@ -41,7 +41,7 @@ h6 {
 }
 
 h1 {
-  font-size: 2em;
+  font-size: 2.25em;
 }
 
 h2 {
