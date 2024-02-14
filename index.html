@@ -26,7 +26,8 @@
             <span class="secondary-text-color">A software developer and applications engineer.</span>
         </h1>
         <p>
-            I develop and scale enterprise SaaS applications for companies around the world. Outside of tech stuff, I lift weights and re-watch episodes of 90s sitcoms.
+            I develop and scale enterprise SaaS applications for companies around the world. Outside of tech stuff, I
+            lift weights and re-watch episodes of 90s sitcoms.
             <br /><br />
             I use this space to showcase my personal projects. Feel free to read more about them below.
         </p>
@@ -108,6 +109,19 @@
             </li>
         </ul>
     </section>
+    <footer>
+        Copyright &copy; <span id="year"></span> Ashley Mays <br />
+        Design inspired by the websites of <a target="_blank" href="https://alexjpate.com/">Alex J. Pate</a>, <a target="_blank"
+            href="https://brittanychiang.com/">Brittany Chiang</a>, and <a
+            target="_blank" href="https://www.sarahdayan.dev/">Sarah Dayan</a>.
+    </footer>
+
+    <script defer type="text/javascript">
+        // Insert current year into footer
+        const yearElement = document.getElementById('year');
+        const currentYear = new Date().getFullYear();
+        yearElement.textContent = currentYear;
+    </script>
 </body>
 
 </html>
