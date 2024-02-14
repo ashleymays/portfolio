@@ -3,9 +3,9 @@
 }
 
 :root {
-  --c-bg-page: rgb(22, 24, 25);
-  --c-text-primary: rgb(221, 218, 213);
-  --c-text-secondary: rgba(221, 218, 213, 0.7);
+  --c-bg-page: rgb(20, 22, 23);
+  --c-text-primary: rgb(198, 193, 185);
+  --c-text-secondary: rgba(198, 193, 185, 0.625);
 }
 
 html,
@@ -105,7 +105,7 @@ a,
 }
 
 .contact-link-list p {
-  margin: 0.5em 0;
+  margin: 0.25em 0;
 }
 
 footer {
