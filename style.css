@@ -68,6 +68,10 @@ section {
   color: var(--c-text-secondary);
 }
 
+a {
+  display: inline-block;
+}
+
 a,
 .neat-link {
   text-decoration: none;
