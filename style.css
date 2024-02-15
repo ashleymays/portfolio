@@ -45,22 +45,6 @@ h1 {
   font-size: 2.125em;
 }
 
-h2 {
-  font-size: 1.125em;
-  margin-bottom: 0.5em;
-}
-
-h5,
-h6 {
-  font-size: 0.825em;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-}
-
-h6 {
-  margin: 0;
-}
-
 p {
   color: var(--c-text-secondary);
   line-height: 1.7;
@@ -70,15 +54,26 @@ section {
   margin: 22.5% 0;
 }
 
-a {
-  display: inline-block;
-}
-
 a,
 .neat-link {
   text-decoration: none;
   color: var(--c-text-primary);
   width: max-content;
+}
+
+a {
+  display: inline-block;
+}
+
+.subheading,
+.experience__timeline {
+  font-size: 0.825em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.experience__timeline {
+  margin: 0;
 }
 
 .neat-link:after {
@@ -95,14 +90,19 @@ a,
   row-gap: 3em;
 }
 
-.experience-container {
+.project__heading {
+  font-size: 1.125em;
+  margin-bottom: 0.5em;
+}
+
+.experience {
   display: inline-grid;
   grid-template-columns: 32.5% auto;
   align-items: baseline;
 }
 
-.experience-container h4,
-.experience-container h5 {
+.experience__job-title,
+.experience__timeline {
   margin: 0;
 }
 
