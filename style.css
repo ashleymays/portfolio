@@ -3,9 +3,9 @@
 }
 
 :root {
-  --c-bg-page: rgb(22, 24, 25);
-  --c-text-primary: rgb(221, 218, 213);
-  --c-text-secondary: rgba(221, 218, 213, 0.7);
+  --c-bg-page: rgb(15, 16, 17);
+  --c-text-primary: rgb(227, 228, 232);
+  --c-text-secondary: rgba(227, 228, 232, 0.6);
 }
 
 html,
