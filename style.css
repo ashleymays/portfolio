@@ -4,8 +4,12 @@
 
 :root {
   --c-bg-page: rgb(5, 5, 5);
-  --c-text-primary: rgb(238, 238, 238);
-  --c-text-secondary: rgba(238, 238, 238, 0.7);
+  --c-text-light: rgb(238, 238, 238);
+  --c-text-dark: rgba(238, 238, 238, 0.7);
+  --c-text-darker: rgba(238, 238, 238, 0.55);
+  --font-size-sm: 0.9em;
+  --font-size-base: 0.975em;
+  --font-size-lg: 2.25em;
 }
 
 html,
@@ -21,7 +25,7 @@ html {
 body {
   background: var(--c-bg-page);
   font-family: Inter, system-ui, sans-serif;
-  width: min(525px, 88%);
+  width: min(550px, 89%);
   margin: max(8%, 12.5vh) auto 5%;
 }
 
@@ -31,8 +35,8 @@ h3,
 h4,
 h5,
 h6 {
-  color: var(--c-text-primary);
-  line-height: 1.25;
+  color: var(--c-text-light);
+  line-height: 1.4;
   font-weight: 500;
 }
 
@@ -40,57 +44,69 @@ h2,
 h3,
 h4,
 h5,
-h6,
-p {
-  font-size: 0.95em;
+h6 {
+  font-size: var(--font-size-base);
 }
 
 h1 {
-  font-size: 1.625em;
+  font-size: var(--font-size-lg);
+  font-weight: 600;
 }
 
-h2 {
-  margin-bottom: 0.5em;
-}
-
-h6 {
-  color: var(--c-text-secondary);
-  margin: 0;
+h3 {
+  margin: 0.75em 0;
 }
 
 p {
-  color: var(--c-text-secondary);
+  font-size: var(--font-size-base);
+  color: var(--c-text-dark);
   line-height: 1.7;
-  font-weight: 400;
+  margin: 0;
 }
 
 .page-section {
-  margin: 20% 0;
+  margin: 5em 0;
+}
+
+.section-heading {
+  color: var(--c-text-light);
+  font-size: var(--font-size-base);
+}
+
+.subsection-heading {
+  color: var(--c-text-darker);
+  font-size: var(--font-size-sm);
+}
+
+.list {
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-flow: column;
+}
+
+.list li {
+  display: grid;
+  grid-template-columns: 32.5% auto;
+  column-gap: 0.5em;
+  align-items: baseline;
+  width: 100%;
+}
+
+.list-item-spacing {
+  row-gap: 2.5em;
 }
 
 a,
 .neat-link {
   text-decoration: none;
-  color: var(--c-text-primary);
+  color: var(--c-text-light);
   width: max-content;
 }
 
 a {
   display: inline-block;
-}
-
-.split-column {
-  display: inline-grid;
-  grid-template-columns: 32.5% auto;
-  align-items: baseline;
-  width: 100%;
-}
-
-.subheading {
-  color: var(--c-text-primary);
-  letter-spacing: 1px;
-  font-size: 0.825em;
-  text-transform: uppercase;
+  padding: 0;
 }
 
 .neat-link {
@@ -110,14 +126,13 @@ a {
   margin-left: 0.5em;
 }
 
-.project-list {
-  display: flex;
-  flex-flow: column;
-  row-gap: 2.5em;
-}
-
 footer {
+  padding-top: 5em;
   font-size: 0.85em;
   line-height: 1.5;
-  color: var(--c-text-secondary);
+  color: var(--c-text-darker);
+}
+
+footer a {
+  color: var(--c-text-dark);
 }
