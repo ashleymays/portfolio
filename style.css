@@ -33,31 +33,21 @@ body {
   margin: max(5%, 112px) auto 5%;
 }
 
-.main-section {
-  margin-bottom: 16.25%;
-}
-
-.main-section__heading {
+.main-heading {
   font-size: var(--font-size-lg);
   letter-spacing: -1px;
   font-weight: 600;
   margin: 0;
   line-height: var(--line-height-sm);
+  margin-bottom: 16.25%;
 }
 
-.main-section__heading__title {
+.main-heading__title {
   color: var(--c-text-light);
 }
 
-.main-section__heading__subtitle {
+.main-heading__subtitle {
   color: var(--c-text-dark);
-}
-
-.main-section__content {
-  color: var(--c-text-dark);
-  line-height: var(--line-height-md);
-  font-size: var(--font-size-md);
-  font-weight: 500;
 }
 
 .section {
