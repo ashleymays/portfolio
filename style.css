@@ -7,9 +7,13 @@
   --c-text-light: rgb(220, 220, 220);
   --c-text-dark: rgba(220, 220, 220, 0.625);
   --c-text-darker: rgba(220, 220, 220, 0.5);
-  --font-size-sm: 0.9em;
+  --font-size-sm: 0.925em;
   --font-size-base: 0.975em;
+  --font-size-md: 1.125em;
   --font-size-lg: 2.25em;
+  --line-height-lg: 1.6;
+  --line-height-md: 1.4;
+  --line-height-sm: 1.25;
 }
 
 html,
@@ -26,19 +30,19 @@ body {
   background: var(--c-bg-page);
   font-family: Inter, system-ui, sans-serif;
   width: min(568px, 90%);
-  margin: max(5%, 96px) auto 5%;
+  margin: max(5%, 112px) auto 5%;
 }
 
 .main-section {
-  margin-bottom: 15%;
+  margin-bottom: 16.25%;
 }
 
 .main-section__heading {
   font-size: var(--font-size-lg);
-  letter-spacing: -1.25px;
+  letter-spacing: -1px;
   font-weight: 600;
-  margin-bottom: 1em;
-  line-height: 1.25;
+  margin: 0;
+  line-height: var(--line-height-sm);
 }
 
 .main-section__heading__title {
@@ -49,8 +53,15 @@ body {
   color: var(--c-text-dark);
 }
 
+.main-section__content {
+  color: var(--c-text-dark);
+  line-height: var(--line-height-md);
+  font-size: var(--font-size-md);
+  font-weight: 500;
+}
+
 .section {
-  margin: 15% 0;
+  margin: 12.5% 0;
 }
 
 .section__heading,
@@ -58,7 +69,7 @@ body {
   color: var(--c-text-light);
   font-size: var(--font-size-base);
   font-weight: 500;
-  line-height: 1.25;
+  line-height: var(--line-height-sm);
 }
 
 .list,
@@ -85,7 +96,7 @@ body {
 .list__item__content {
   color: var(--c-text-dark);
   font-size: var(--font-size-base);
-  line-height: 1.6;
+  line-height: var(--line-height-lg);
   margin: 0;
 }
 
@@ -93,12 +104,12 @@ body {
   color: var(--c-text-darker);
   font-size: var(--font-size-sm);
   font-weight: 500;
-  line-height: 1.6;
+  line-height: var(--line-height-lg);
   margin: 0;
 }
 
 .list__item__heading {
-  line-height: 1.6;
+  line-height: var(--line-height-lg);
   margin: 0.625em 0;
 }
 
@@ -131,6 +142,7 @@ body {
   color: var(--c-text-darker);
   font-size: var(--font-size-sm);
   margin-top: 25%;
+  line-height: var(--line-height-lg);
 }
 
 .footer a {
