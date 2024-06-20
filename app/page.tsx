@@ -6,7 +6,7 @@ import { Footer } from '../components/footer';
 
 export default function Home() {
   return (
-    <main className="flex flex-col gap-y-16 mt-36 mb-12 mx-auto w-11/12 sm:8/12 md:6/12 lg:w-4/12">
+    <main className="flex flex-col gap-y-16 mt-36 mb-10 mx-auto w-11/12 sm:8/12 md:6/12 lg:w-4/12">
       <About />
       <Projects />
       <Experience />

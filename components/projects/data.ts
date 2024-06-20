@@ -30,7 +30,7 @@ export const projects: Project[] = [
     title: 'Task Management API',
     description:
       'A REST API for managing projects and tasks. Basically Jira without all of the extra stuff.',
-    techStack: ['Postgres', 'Prisma ORM', 'Node', 'Express', 'Mocha', 'Chai']
+    techStack: ['Node', 'Express', 'Postgres', 'Prisma']
   },
   {
     timeline: {
@@ -41,15 +41,6 @@ export const projects: Project[] = [
     title: 'Piano Keyboard Simulator',
     description:
       'A virtual keyboard (the music kind, not the computer kind) that lets users play their desktop, tablet, or phone like a mini keyboard.',
-    techStack: [
-      'React',
-      'Redux Toolkit',
-      'SCSS',
-      'Node',
-      'Express',
-      'Mocha',
-      'Chai',
-      'Vite'
-    ]
+    techStack: ['React', 'Redux Toolkit', 'SCSS', 'Vite', 'Node', 'Express']
   }
 ];
