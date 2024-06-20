@@ -4,7 +4,7 @@ export const Links = () => {
   return (
     <section>
       <h2 className="text-white text-sm mb-8">Links</h2>
-      <ul className="flex flex-col p-0 gap-y-1">
+      <ul className="flex flex-col p-0 gap-y-4">
         {links.map((link) => (
           <Link
             key={link.url}
@@ -18,8 +18,8 @@ export const Links = () => {
 
 const Link = ({ url, title, visibleUrl }: LinkType) => {
   return (
-    <li className="flex items-baseline flex-wrap md:flex-nowrap">
-      <h4 className="grow-0 shrink-0 basis-36 text-neutral-400 text-sm mb-2 md:mb-0">
+    <li className="flex items-baseline flex-col md:flex-row">
+      <h4 className="grow-0 shrink-0 basis-6 md:basis-36 text-neutral-400 text-sm mb-2 md:mb-0">
         {title}
       </h4>
       <a
