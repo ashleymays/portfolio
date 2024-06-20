@@ -4,7 +4,7 @@ export const Projects = () => {
   return (
     <section>
       <h2 className="text-white text-sm mb-8">Projects</h2>
-      <ul className="flex flex-col p-0 gap-y-12">
+      <ul className="flex flex-col p-0 gap-y-16">
         {projects.map((project) => (
           <Project
             key={project.title}
