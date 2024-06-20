@@ -2,7 +2,7 @@ import type { ReactNode } from 'react';
 
 export const Footer = () => {
   return (
-    <footer className="text-gray-400 text-sm leading-relaxed">
+    <footer className="text-neutral-400 text-sm leading-relaxed">
       Design inspired by the websites of{' '}
       <Link url="https://bonhomme.lol/">Maxime Bonhomme</Link>,{' '}
       <Link url="https://alexjpate.com/">Alex J. Pate</Link>, and{' '}
