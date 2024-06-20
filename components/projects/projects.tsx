@@ -6,7 +6,10 @@ export const Projects = () => {
       <h2 className="text-white text-sm mb-8">Projects</h2>
       <ul className="flex flex-col p-0 gap-y-12">
         {projects.map((project) => (
-          <Project key={project.title} {...project} />
+          <Project
+            key={project.title}
+            {...project}
+          />
         ))}
       </ul>
     </section>
@@ -20,7 +23,11 @@ const Project = ({ timeline, title, url, description }: ProjectType) => {
         {timeline.start} - {timeline.end}
       </h4>
       <div>
-        <a className="text-white text-sm inline-block mb-4 md:mb-3" target="_blank" href={url}>
+        <a
+          className="text-white text-sm inline-block mb-4 md:mb-3"
+          target="_blank"
+          href={url}
+        >
           <h3>{title} ↗</h3>
         </a>
         <p className="text-slate-400 text-sm leading-relaxed">{description}</p>

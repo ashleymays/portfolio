@@ -6,7 +6,10 @@ export const Experience = () => {
       <h2 className="text-white text-sm mb-8">Work</h2>
       <ul className="flex flex-col p-0 gap-y-12">
         {jobs.map((job) => (
-          <Job key={job.title} {...job} />
+          <Job
+            key={job.title}
+            {...job}
+          />
         ))}
       </ul>
     </section>
