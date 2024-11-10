@@ -20,7 +20,7 @@ export const Links = () => {
 const Link = ({ url, title, visibleUrl }: LinkType) => {
   return (
     <Item>
-      <h4 className="grow-0 shrink-0 basis-6 md:basis-36 text-neutral-400 text-base">
+      <h4 className="grow-0 shrink-0 basis-6 md:basis-36 text-neutral-400 text-base mb-1">
         {title}
       </h4>
       <a

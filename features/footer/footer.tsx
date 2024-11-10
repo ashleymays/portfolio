@@ -20,7 +20,7 @@ const Link = ({ url, children }: LinkProps) => {
     <a
       target="_blank"
       href={url}
-      className="duration-150	hover:text-white"
+      className="hover:text-white"
     >
       {children}
     </a>

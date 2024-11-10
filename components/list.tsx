@@ -24,7 +24,7 @@ type ItemsProps = {
 export const Items = ({ children, spacing = 'normal' }: ItemsProps) => {
   return (
     <ul
-      className={`flex-1 flex flex-col p-0 gap-y-16 ${spacing === 'tight' ? 'gap-y-8' : 'gap-y-16'}`}
+      className={`flex-1 flex flex-col p-0 gap-y-16 ${spacing === 'tight' ? 'gap-y-10' : 'gap-y-16'}`}
     >
       {children}
     </ul>

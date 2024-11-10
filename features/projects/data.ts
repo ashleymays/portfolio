@@ -7,11 +7,11 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    url: 'https://github.com/ashleymays/nodejs-utils',
-    title: 'Node.js Utils',
+    url: 'https://github.com/ashleymays/piano-keyboard-simulator',
+    title: 'Piano Keyboard Simulator',
     description:
-      'A collection of functions and other code snippets I use to make Node.js and Express.js projects served as an NPM package.',
-    techStack: ['TypeScript', 'Node']
+      'A virtual keyboard (the music kind, not the computer kind) that lets users play their desktop, tablet, or phone like a mini keyboard.',
+    techStack: ['React', 'Redux Toolkit', 'SCSS', 'Vite', 'Node', 'Express']
   },
   {
     url: 'https://github.com/ashleymays/task-management-api',
@@ -21,10 +21,10 @@ export const projects: Project[] = [
     techStack: ['Node', 'Express', 'Postgres', 'Prisma']
   },
   {
-    url: 'https://github.com/ashleymays/piano-keyboard-simulator',
-    title: 'Piano Keyboard Simulator',
+    url: 'https://github.com/ashleymays/nodejs-utils',
+    title: 'Node.js Utils',
     description:
-      'A virtual keyboard (the music kind, not the computer kind) that lets users play their desktop, tablet, or phone like a mini keyboard.',
-    techStack: ['React', 'Redux Toolkit', 'SCSS', 'Vite', 'Node', 'Express']
+      'A collection of functions and other code snippets I use to make Node.js and Express.js projects served as an NPM package.',
+    techStack: ['TypeScript', 'Node']
   }
 ];

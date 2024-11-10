@@ -9,7 +9,7 @@ export type Job = {
 
 export const jobs: Job[] = [
   {
-    title: 'Software Developer @ Siemens Digital Logistics',
+    title: 'Software Developer @ Siemens',
     description:
       'Build and maintain high-traffic logistics software for companies around the world. Work closely with project managers and fellow developers to create performant real-time applications.',
     timeline: {
