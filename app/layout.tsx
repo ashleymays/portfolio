@@ -1,8 +1,10 @@
-import './globals.css';
+import localFont from 'next/font/local';
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
+import './globals.css';
 
-const inter = Inter({ subsets: ['latin'] });
+const inter = localFont({
+  src: './InterVariable.ttf'
+});
 
 export const metadata: Metadata = {
   title: 'Ashley Mays',

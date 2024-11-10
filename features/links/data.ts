@@ -6,9 +6,9 @@ export type Link = {
 
 export const links: Link[] = [
   {
-    url: 'mailto:ashleymays091@gmail.com',
+    url: 'mailto:ashleymays910@gmail.com',
     title: 'Email',
-    visibleUrl: 'ashleymays091@gmail.com'
+    visibleUrl: 'ashleymays910@gmail.com'
   },
   {
     url: 'https://github.com/ashleymays',

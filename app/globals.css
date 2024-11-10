@@ -3,7 +3,14 @@
 @tailwind utilities;
 
 @layer base {
+  html {
+    color-scheme: dark;
+  }
+
   body {
-    @apply bg-neutral-950;
+    background-color: rgb(39 39 42);
+    font-feature-settings: 'cv10', 'cv06';
+    -webkit-font-feature-settings: 'cv10', 'cv06';
+    -moz-font-feature-settings: 'cv10', 'cv06';
   }
 }

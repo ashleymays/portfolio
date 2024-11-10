@@ -1,8 +1,4 @@
 export type Project = {
-  timeline: {
-    start: number;
-    end: number | 'present';
-  };
   title: string;
   url: string;
   description: string;
@@ -11,10 +7,6 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    timeline: {
-      start: 2024,
-      end: 'present'
-    },
     url: 'https://github.com/ashleymays/nodejs-utils',
     title: 'Node.js Utils',
     description:
@@ -22,10 +14,6 @@ export const projects: Project[] = [
     techStack: ['TypeScript', 'Node']
   },
   {
-    timeline: {
-      start: 2023,
-      end: 'present'
-    },
     url: 'https://github.com/ashleymays/task-management-api',
     title: 'Task Management API',
     description:
@@ -33,10 +21,6 @@ export const projects: Project[] = [
     techStack: ['Node', 'Express', 'Postgres', 'Prisma']
   },
   {
-    timeline: {
-      start: 2022,
-      end: 'present'
-    },
     url: 'https://github.com/ashleymays/piano-keyboard-simulator',
     title: 'Piano Keyboard Simulator',
     description:
