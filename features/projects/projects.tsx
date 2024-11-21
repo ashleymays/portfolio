@@ -1,4 +1,6 @@
-import { List, Title, Items, Item } from '@/components/list';
+import { List, Title, Items, Item, ItemTag } from '@/components/list';
+import { ExternalLink } from '@/components/external-link';
+import { formatTimeline } from '@/utils/format-timeline';
 import { projects, type Project as ProjectType } from './data';
 
 export const Projects = () => {
@@ -17,22 +19,14 @@ export const Projects = () => {
   );
 };
 
-const Project = ({ title, url, description, techStack }: ProjectType) => {
+const Project = ({ timeline, title, url, description }: ProjectType) => {
   return (
     <Item>
-      <a
-        className="text-white text-base inline-block mb-4 md:mb-3"
-        target="_blank"
-        href={url}
-      >
-        <h3>{title} ↗</h3>
-      </a>
-      <p className="text-neutral-400 text-base leading-relaxed">
-        {description}
-      </p>
-      <p className="mt-4 text-neutral-500 text-base leading-relaxed">
-        {techStack.join(' • ')}
-      </p>
+      <ItemTag>{formatTimeline(timeline)}</ItemTag>
+      <div>
+        <ExternalLink href={url}>{title}</ExternalLink>
+        <p className="text-neutral-400 text-base">{description}</p>
+      </div>
     </Item>
   );
 };

@@ -1,10 +1,9 @@
+import type { Timeline } from '@/utils/format-timeline';
+
 export type Job = {
   title: string;
   description: string;
-  timeline: {
-    start: number;
-    end: number | 'present';
-  };
+  timeline: Timeline;
 };
 
 export const jobs: Job[] = [
@@ -14,7 +13,7 @@ export const jobs: Job[] = [
       'Build and maintain high-traffic logistics software for companies around the world. Work closely with project managers and fellow developers to create performant real-time applications.',
     timeline: {
       start: 2023,
-      end: 'present'
+      end: null
     }
   }
 ];

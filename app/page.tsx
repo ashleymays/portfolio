@@ -6,9 +6,9 @@ import { Footer } from '@/features/footer';
 
 export default function Home() {
   return (
-    <main className="flex flex-col gap-y-16 mx-auto w-10/12 md:11/12">
+    <main className="flex flex-col gap-y-24 mx-auto w-11/12 md:w-7/12 lg:w-5/12">
       <About />
-      <div className="flex flex-col gap-y-48">
+      <div className="flex flex-col gap-y-20">
         <Projects />
         <Experience />
         <Links />

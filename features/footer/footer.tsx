@@ -2,10 +2,10 @@ import type { ReactNode } from 'react';
 
 export const Footer = () => {
   return (
-    <footer className="mb-12 text-neutral-400 text-sm leading-relaxed">
+    <footer className="mb-12 text-neutral-400 text-sm">
       Design inspired by the websites of{' '}
-      <Link url="https://www.graz.io//">Sebastian Graz</Link> and{' '}
-      <Link url="https://rsms.me//">Rasmus Andersson</Link>.
+      <Link url="https://read.cv/manuelmoreale/">Manuel Moreale</Link> and{' '}
+      <Link url="https://bonhomme.lol/">Maxime Bonhomme</Link>.
     </footer>
   );
 };
