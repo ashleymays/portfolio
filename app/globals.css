@@ -8,6 +8,9 @@
   }
 
   body {
-    background-color: rgb(39 39 42);
+    background-color: rgb(24 24 27);
+    font-feature-settings: 'cv11';
+    -webkit-font-feature-settings: 'cv11';
+    -moz-font-feature-settings: 'cv11';
   }
 }

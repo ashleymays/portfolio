@@ -25,7 +25,7 @@ const Project = ({ timeline, title, url, description }: ProjectType) => {
       <ItemTag>{formatTimeline(timeline)}</ItemTag>
       <div>
         <ExternalLink href={url}>{title}</ExternalLink>
-        <p className="text-neutral-400 text-base">{description}</p>
+        <p className="text-neutral-400 text-sm">{description}</p>
       </div>
     </Item>
   );

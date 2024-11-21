@@ -8,7 +8,7 @@ type ExternalLinkProps = {
 export const ExternalLink = ({ href, children }: ExternalLinkProps) => {
   return (
     <a
-      className="text-white text-base inline-block"
+      className="text-white text-sm inline-block"
       target="_blank"
       href={href}
     >

@@ -6,7 +6,7 @@ import { Footer } from '@/features/footer';
 
 export default function Home() {
   return (
-    <main className="flex flex-col gap-y-24 mx-auto w-11/12 md:w-7/12 lg:w-5/12">
+    <main className="flex flex-col gap-y-24 mx-auto w-[min(512px,90%)]">
       <About />
       <div className="flex flex-col gap-y-20">
         <Projects />

@@ -23,8 +23,8 @@ const Job = ({ timeline, title, description }: JobType) => {
     <Item>
       <ItemTag>{formatTimeline(timeline)}</ItemTag>
       <div>
-        <h3 className="text-base mb-4 md:mb-3">{title}</h3>
-        <p className="text-neutral-400 text-base">{description}</p>
+        <h3 className="text-sm mb-4 md:mb-3">{title}</h3>
+        <p className="text-neutral-400 text-sm">{description}</p>
       </div>
     </Item>
   );

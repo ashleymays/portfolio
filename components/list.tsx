@@ -9,7 +9,7 @@ export const List = ({ children }: { children: ReactNode }) => {
 };
 
 export const Title = ({ children }: { children: ReactNode }) => {
-  return <h2 className="pb-8 md:mb-auto text-base">{children}</h2>;
+  return <h2 className="pb-8 md:mb-auto text-sm">{children}</h2>;
 };
 
 type ItemsProps = {
@@ -20,7 +20,7 @@ type ItemsProps = {
 export const Items = ({ children, spacing = 'normal' }: ItemsProps) => {
   return (
     <ul
-      className={`w-full flex flex-col ${spacing === 'tight' ? 'gap-y-4' : 'gap-y-12'}`}
+      className={`w-full flex flex-col ${spacing === 'tight' ? 'gap-y-2' : 'gap-y-10'}`}
     >
       {children}
     </ul>
@@ -37,7 +37,7 @@ export const Item = ({ children }: { children: ReactNode }) => {
 
 export const ItemTag = ({ children }: { children: ReactNode }) => {
   return (
-    <h4 className="grow-0 shrink-0 basis-36 text-neutral-400 text-base mb-2 md:mb-0">
+    <h4 className="grow-0 shrink-0 basis-full md:basis-36 text-neutral-400 text-sm mb-2 md:mb-0">
       {children}
     </h4>
   );
